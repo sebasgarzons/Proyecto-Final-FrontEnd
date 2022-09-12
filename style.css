@@ -9,3 +9,15 @@
     --details: #76BA99;
 
 }
+
+@font-face {
+    font-family: 'Olivia';
+    src: url('fonts/Olivia.ttf') format('truetype');
+    
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
