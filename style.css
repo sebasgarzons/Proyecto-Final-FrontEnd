@@ -1,23 +1,137 @@
 :root {
 
-    /* paleta */
-    --white: #ffffff;
-    --black: #0000;
-    --dark-brown: #361500;
-    --light: #FFEDED;
-    --light-pink: #FDD2BF;
-    --details: #76BA99;
+  /* paleta */
+  --white: #ffffff;
+  --black: #0000;
+  --dark-brown: #361500;
+  --light: #FFEDED;
+  --light-pink: #FDD2BF;
+  --details: #76BA99;
 
 }
 
 @font-face {
-    font-family: 'Olivia';
-    src: url('fonts/Olivia.ttf') format('truetype');
-    
-  }
+  font-family: 'Olivia';
+  src: url('fonts/Olivia.ttf') format('truetype');
+  font-family: 'Futura';
+  src: url('fonts/FuturaPTBook.otf') format('truetype');
+  
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+
+  width: 90%;  
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cafes {
+/* 
+  background-color: var(--light-pink); */
+  margin: 20px auto;
+display: grid;  
+grid-template-columns: repeat(4, 300px);
+grid-template-rows: repeat(2, 300px);
+} 
+  
+
+.divider__text{
+  font-family: 'Olivia';
+  color: var(--details);
+  font-size: 4em;
+}
+
+
+.cafes__img {
+display: block;
+width: 300px;
+height: 300px;
+object-fit: cover;
+
+
+}
+
+.cafes__description {
+padding: 1rem;
+text-align: center;
+
+
+}
+
+
+.cafes__title {
+  font-family: 'Olivia';
+  margin: 1em 0;
+
+
+  /* font-family: 'Futura';
+  text-transform: uppercase; */
+}
+
+
+
+
+.grid1 { 
+grid-row:  1/2;
+grid-column: 1/2;
+
+
+}
+.grid2 { 
+
+ grid-row: 1/2;
+ grid-column: 2/3;
+
+ }
+
+.grid3 { 
+
+ grid-row: 1/2;
+ grid-column: 3/4;
+
+}
+
+.grid4 { 
+
+  grid-row: 1/2;
+grid-column: 4/5;
+}
+
+.grid5 { 
+
+ grid-row: 2/3;
+ grid-column: 4/5;
+
+ }
+
+.grid6 { 
+
+
+  grid-row: 2/3;
+grid-column: 3/4;
+
+}
+
+.grid7 { 
+
+
+grid-row: 2/3;
+grid-column: 2/3;
+
+}
+
+.grid8 {
+
+
+  grid-row: 2/3;
+grid-column: 1/2;
+}
