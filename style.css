@@ -12,31 +12,33 @@
 
 @font-face {
   font-family: "Futura";
-  src: url("fonts/FuturaPTBook.otf") format("truetype");
-  
-  
+  src: url("fonts/FuturaPTBook.otf");  
+ 
+}
+@font-face {
   font-family: "Olivia";
-  src: url("fonts/Olivia.ttf") format("truetype");
+  src: url("fonts/Olivia.ttf");
 }
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  list-style: none;
 }
 
-.container {
+.main {
   width: 90%;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 6em;
 }
 
 .cafes {
-  font-family: "Futura";
-  margin: 20px auto;
+  font-family: "Futura";  
   display: grid;
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: 160px 300px 300px;
@@ -49,6 +51,14 @@
   object-fit: cover;
 }
 
+
+.cafes__title {
+  font-family: "Olivia";
+  font-size: 2rem;
+  line-height: 58px;
+  /* margin: 0.5em; */
+  letter-spacing: 1px;
+}
 .cafes__description {
   font-family: "Futura";
   padding: 1rem;
@@ -59,20 +69,15 @@
   justify-content: space-around;
 }
 
-.cafes__title {
-  font-family: "Olivia";
-  font-size: 2rem;
-  line-height: 58px;
-  /* margin: 0.5em; */
-  letter-spacing: 1px;
-}
+
 
 .grid0 {
-  font-family: Olivia;
+  font-family: Futura;  
   color: var(--details);
   font-size: 4em;
   grid-area: 1 / 1 / 2 / -1;
   text-align: center;
+  
 }
 
 .grid1 {
@@ -105,4 +110,54 @@
 
 .grid8 {
   grid-area: 3 / 1 / 3 / 2;
+}
+
+.aboutus {  
+display: flex;  
+flex-direction: row;  
+justify-content: space-between;  
+width: inherit;
+}
+
+.aboutus__info {
+  display: flex;  
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3em;
+}
+
+.aboutus__title{ 
+  font-family: "Futura";
+  text-transform: uppercase;
+  /* color: var(--details); */
+  font-size: 3em;
+  line-height: 58px;
+
+  letter-spacing: 1px;
+}
+
+
+.aboutus__icon {
+  display: inline-block;
+  font-size: 17px;
+}
+
+
+
+.contact__item {
+  display: block;
+  padding: .5em 0;
+}
+
+.contact__icon {
+  font-size: 2em;
+  margin-right: .5em;
+  vertical-align: middle;
+  color: var(--details);
+}
+
+
+.aboutus__map {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
 }

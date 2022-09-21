@@ -12,6 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/logos/gato-verde.ico">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
     <title>Aromas y Maullidos</title>
 </head>
 <body>    
@@ -19,42 +22,43 @@
     <!-- NAV -->
     <!-- HEADER -->
 
-    <main class="main container">
+    <main class="main">
 
 
-        <div class=""></div>
-
-    
 
 
     <!-- MENÚ CAFES -->
+    <!-- Falta agregar accesibilidad - 
+    reducir tamaño de img
+    textos -->
+
 
         <section class="cafes">           
-            <h2 class="cafes__header grid0">Nuestro Menu</h2>      
+            <h2 class="cafes__header grid0">Nuestro Menú</h2>      
             
-        <img src="./img/cafe.jpg" alt="" class="cafes__img grid1">
+        <img src="./img/cafe.jpg" loading="lazy" alt="Taza negra de cafe de especialidad con un art latte" class="cafes__img grid1">
             <div class="cafes__description grid2">
                 <h2 class="cafes__title">Cafe de Especialidad</h2>
-                <p class="cafes__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A non aut aliquam neque ipsam accusantium voluptate maiores maxime, obcaecati libero nam eum doloremque pariatur dicta laboriosam labore voluptates quia rem.</p>
+                <p class="cafes__paragraph">Disfruta de toda nuestra variedad de cafés hechos con grano molido </p>
             </div>
 
 
-            <img src="./img/pancake2.jpg" alt="" class="cafes__img grid3">
+            <img src="./img/pancake2.jpg" loading="lazy" alt="" class="cafes__img grid3">
             <div class="cafes__description grid4">
                 <h2 class="cafes__title">PanCat</h2>
                 <p class="cafes__paragraph">Pancakes de la casa con salsa de frutos rojos y una fruta a su elección.</p>
             </div>
 
             
-            <img src="./img/frappe4.jpg" alt="" class="cafes__img grid5">
+            <img src="./img/frappe4.jpg" loading="lazy" alt="" class="cafes__img grid5">
             <div class="cafes__description grid6">
                 <h2 class="cafes__title">Frappe Oreo</h2>
-                <p class="cafes__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A non aut aliquam neque ipsam accusantium voluptate maiores maxime, obcaecati libero nam eum doloremque pariatur dicta laboriosam labore voluptates quia rem.</p>
+                <p class="cafes__paragraph">Exquisita bebida fría a base de cafe, galletas Oreo, extra de crema y salsa de chocolate.</p>
             </div>
-            <img src="img/brunch.jpg" alt="" class="cafes__img grid7">
+            <img src="img/brunch.jpg" loading="lazy" alt="" class="cafes__img grid7">
             <div class="cafes__description grid8">
                 <h2 class="cafes__title">Brunch y Meriendas</h2>
-                <p class="cafes__paragraph">Menús armados para compartir con dos personas. Una selección de los mejores  platos de la casa con opciones dulces y saladas. Incluye café.</p>
+                <p class="cafes__paragraph">Menús armados para compartir con dos personas. Una selección de los mejores platos de la casa con opciones dulces y saladas. Incluye café.</p>
             </div>
         </section>
 
@@ -66,7 +70,26 @@
 
 
     <!-- ABOUT US -->
-        <section class="aboutUs"></section>
+        <section class="aboutus">
+
+            <div class="aboutus__info">
+                <h2 class="aboutus__title">Veni a visitarnos</h2>
+                
+                <ul class="contact">
+                    <li class="contact__item"><i class='bx bxs-envelope contact__icon'></i>hola@aromasymaullidos.com</li>
+                    
+                    <li class="contact__item"><i class='bx bxs-phone contact__icon'></i> 999-999</li>
+                </ul>
+
+            </div>
+            <div class="aboutus__map">                
+                <iframe title="map" width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>            
+               
+            </div>
+
+
+        </section>
 
     <!-- FOOTER -->
         <footer class="footer">
@@ -74,5 +97,7 @@
         </footer>
     </main>
 
+
+   
 </body>
 </html>
