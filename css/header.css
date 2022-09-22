@@ -1,0 +1,215 @@
+:root {
+
+    /* paleta */
+    --white: #ffffff;
+    --black: #0000;
+    --dark-brown: #361500;
+    --light: #FFEDED;
+    --light-pink: #FDD2BF;
+    --details: #76BA99;
+
+}
+
+@font-face {
+    font-family: 'Olivia';
+    src: url('/fonts/Olivia.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'FuturaPTBook';
+    src: url('/fonts/FuturaPTBook.otf') format('truetype');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* img {
+  vertical-align: top;
+} */
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: 800px;
+    top: 200px;
+    background-image: url(/Proyecto-Final-FrontEnd/img/header/Union.svg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background: rgba(255, 237, 237, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.nav1 {
+    background: transparent;
+    height: 80px;
+    color: #000;
+}
+
+.nav2 {
+    background: rgba(255, 237, 237, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    height: 100px;
+    color: #000;
+
+}
+
+.contenedor-nav {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    height: inherit;
+    overflow: hidden;
+}
+
+
+
+nav .enlaces a {
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'FuturaPTBook';
+    color: var(--dark-brown);
+    border-bottom: 3px solid transparent;
+
+}
+
+nav .enlaces a:hover {
+    border-bottom: 3px solid var(--light-pink);
+    transition: 0.6;
+}
+
+.logo .logo img {
+    height: 80px;
+}
+
+.icono {
+    display: none;
+    font-size: 24px;
+    padding: 23.5px 20px;
+}
+
+.carrito a svg {
+    fill: var(--dark-brown);
+}
+
+.carrito a svg:hover {
+    fill: var(--light-pink);
+}
+
+.textos {
+    width: 88%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* flex-direction: column;
+    align-items: center; */
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+}
+
+.textos h1 {
+    font-family: 'olivia';
+    color: var(--dark-brown);
+    font-style: normal;
+    font-size: 4rem;
+    margin-top: 24px;
+    margin-bottom: 15px;
+
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    .nav2 {
+        background: rgba(255, 237, 237, 0.25);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(5px);
+    }
+
+    .icono {
+        display: inline-block;
+        margin-left: 300px;
+        cursor: pointer;
+
+    }
+
+    .carrito a svg {
+        display: none;
+    }
+
+    .enlaces {
+        position: fixed;
+        top: 80px;
+        /* background: transparent; */
+        left: 0;
+        /* height: 100%; */
+        transition: 1s;
+        width: 0;
+        overflow: hidden;
+        background: rgba(255, 237, 237, 0.25);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(10px);
+        /* color: #000; */
+    }
+
+
+    .enlaces a {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    nav .enlaces a:hover {
+        background-color: RGB(253, 210, 191, 0.25);
+        transition: 0.6;
+    }
+
+    .textos {
+        width: 95%;
+        height: 70%;
+        display: flex;
+        justify-content: flex-end;
+        /* flex-direction: column;
+    align-items: center; */
+        color: #fff;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+    }
+
+    .textos h1 {
+        font-size: 50px;
+    }
+
+}
