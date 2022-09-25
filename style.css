@@ -302,7 +302,7 @@ margin: auto;
 .map {
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 
-} */
+} 
 
 /* WHATSAPP */
 
@@ -321,8 +321,7 @@ margin: auto;
   
   border-radius: 50px;
   border: 1px solid #a19f9f39;
-  z-index: 1000000;
-
+ 
   
   
   
