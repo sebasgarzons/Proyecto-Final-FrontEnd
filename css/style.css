@@ -13,12 +13,12 @@
 
 @font-face {
   font-family: "Futura";
-  src: url("fonts/FuturaPTBook.otf");  
+  src: url("../fonts/FuturaPTBook.otf");  
  
 }
 @font-face {
   font-family: "Olivia";
-  src: url("fonts/Olivia.ttf");
+  src: url("../fonts/Olivia.ttf");
 }
 
 * {
@@ -38,18 +38,11 @@
 }
 .main {
   
-margin: 20px auto;
-  
-display: flex;
-  
-flex-direction: column;
-  
-/* justify-content: center; */
-  
-align-items: center;
-  
-gap: 6em;
-  
+margin: 20px auto;  
+display: flex;  
+flex-direction: column;  
+align-items: center;  
+gap: 6em;  
 width: 85%;
 }
 
@@ -63,11 +56,9 @@ width: 85%;
   color: var(--light);
   text-align: center;
   font-family: "Futura";
-  padding: 4.5em 0;
-  /* margin: auto; */
+  padding: 4.5em 0; 
   width: 100%;
   gap: 3em 1em;
-  /* margin: auto; */
   justify-content: center;
   align-items: center;
   justify-items: center;
@@ -76,40 +67,34 @@ width: 85%;
 .item1 {
 
    grid-row: 1 / 2;
-  grid-column: 1 / 2;
+    grid-column: 1 / 2;
   
 }
 .item2{
 
     grid-row: 1 / 2;
-  grid-column: 2 / 3;
+    grid-column: 2 / 3;
   
 }
 
 .item3{
 
-   grid-row: 1 / 2;
-  grid-column: 3 / 4;
-  
-}
-
-/* .item4 {
-  grid-row: 1/ 1;
-  grid-column: 4/ 4;
-} */
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+  }
 
 
- .item4 {
+
+
+.item4 {
 
 grid-row: 2/ 2;
-
 grid-column: 1/ 2;
 } 
 
 .item5{
 
 grid-row: 2 / 3;
-
 grid-column: 2 4;
 }
 .item6{
@@ -120,10 +105,9 @@ grid-column: 2 4;
 }
 
 .menu__item {
-  /* height: 100%; */
+  
   display: flex;
-  flex-direction: column;
-  /* gap: 1em; */
+  flex-direction: column;  
   align-items: center;
   justify-content: center;
 }
@@ -182,7 +166,7 @@ grid-column: 2 4;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
-  /* width: 70%; */
+  width: 100%;
   margin: auto;
 }
 .cafes__container {  
