@@ -49,6 +49,8 @@ flex-direction: column;
 align-items: center;
   
 gap: 6em;
+  
+width: 85%;
 }
 
 
@@ -314,13 +316,10 @@ grid-column: 2 4;
   background-size: 43px;
   background-position: center;
   width: 59px;
-  height: 59px;
-  
+  height: 59px;  
   border-radius: 50px;
   border: 1px solid #a19f9f39;
-  z-index: 1000000;
-
-  
+ 
   
   
 }
