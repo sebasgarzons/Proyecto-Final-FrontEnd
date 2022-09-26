@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: "Futura";
-  src: url("fonts/FuturaPTBook.otf") format("truetype");
+  src: url("./fonts/FuturaPTBook.otf") format("truetype");
   
   
   font-family: "Olivia";
-  src: url("fonts/Olivia.ttf") format("truetype");
+  src: url("./fonts/Olivia.ttf") format("truetype");
 }
 
 * {

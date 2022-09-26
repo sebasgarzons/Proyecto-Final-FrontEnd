@@ -13,13 +13,13 @@
 
 @font-face {
     font-family: 'Olivia';
-    src: url('/fonts/Olivia.ttf') format('truetype');
+    src: url('../fonts/Olivia.ttf') format('truetype');
 
 }
 
 @font-face {
     font-family: 'FuturaPTBook';
-    src: url('/fonts/FuturaPTBook.otf') format('truetype');
+    src: url('../fonts/FuturaPTBook.otf') format('truetype');
 
 }
 
@@ -35,11 +35,12 @@ header {
     width: 100%;
     height: 800px;
     top: 200px;
-    background-image: url(/img/header/Union.svg);
+    background-image: url('../img/header/Union.svg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'FuturaPTBook';
 }
 
 nav {
@@ -142,7 +143,7 @@ nav .enlaces a:hover::before {
 }
 
 .textos h1 {
-    font-family: 'olivia';
+    font-family: 'Olivia';
     color: var(--dark-brown);
     font-style: normal;
     font-size: 4rem;
