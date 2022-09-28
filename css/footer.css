@@ -31,11 +31,12 @@
 
 .container-footer {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
     width: 100%;
     background-color: var(--dark-brown);
     align-items: center;
+    padding: 24px 0px;
 }
 
 .logo__footer {
@@ -52,6 +53,8 @@
     font-size: 2rem;
     font-family: 'Olivia';
     color: var(--light);
+    position: relative;
+    top: 31px;
 }
 
 .subtitulo__footer h3{
@@ -62,13 +65,13 @@
     grid-column: 3;
     grid-row: 1;
     justify-self: end;
-
     display: grid;
     grid-template-columns: repeat(4, max-content);
     gap: 10px;
     justify-self: center;
     align-self: center;
-
+    position: relative;
+    top: 25px;
 }
 
 .iconos__footer .icono_ftr a {
@@ -116,12 +119,12 @@
 .parrafo__footer {
     grid-column: 2;
     grid-row: 2;
-
     display: grid;
     font-size: 1rem;
     font-family: 'FuturaPTBook';
     color: var(--light);
     justify-content: center;
     align-content: center;
+    background-color: #000;
+    padding: 12px 0px;
 }
-
