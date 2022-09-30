@@ -32,8 +32,8 @@
 
 
 .body {
+  background-color: var(--light-pink);
   
-  background-color: #EEE7DF;
 
 }
 
@@ -43,7 +43,7 @@
     /* background-image: url('../img/bg/bg2.png');
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: var(--light-pink);
+    
     margin: 20px auto;
     display: flex;
     flex-direction: column;
@@ -52,8 +52,7 @@
 }
 
 .container {
-   width: 85%;
-   /* background-color: #EEE7DF; */
+   width: 85%; 
 }
 
 
@@ -350,43 +349,50 @@ justify-content: space-around;
   
   color: var(--light-pink);
   display: grid; 
-
-   grid-template-rows: repeat(2, 1fr);
-   grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 550px auto;
+  grid-template-rows: 1fr auto;  
+  gap: 1em;
    
-   height: 100%;
+  
 }
 
 
 .aboutus__contact {
   grid-row-start: 1;
-   grid-column-start: 1;
-
-   grid-row-end: 2;
-   grid-column-end: 2;
-
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
   background-color: var(--dark-brown);
+  padding: 2em;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.aboutus__title{ 
-  font-family: "Olivia";  
-  font-size: 3em;
+.aboutus__title{
+  font-family: "Olivia";
+  font-size: 2.6em;
   line-height: 58px;
-  letter-spacing: 1px;
-  margin-bottom: .5em;  
+  letter-spacing: 2px;
+  margin-bottom: .5em;
+  text-align: center;
 }
 
+
+.contact__item {
+  padding: .4em 0;
+  font-size: 1.2rem;   
+  vertical-align: middle;
+}
 
 .aboutus__icon {
-  display: inline-block;
-  font-size: 17px;  
+  display: block;   
+  font-size: 1.2rem; 
+  margin-top: 0.6em;
+ 
 }
 
 
-.contact__item {  
-  padding: .5em 0;
-  font-size: 1.2rem;
-}
+
 
 
 .map {
@@ -395,13 +401,12 @@ justify-content: space-around;
 
   grid-row-end: 2;
   grid-column-end: 3;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  
   }
 
-.map__iframe {
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  width: 100%;
-  /* height: 100%; */
-}
+/* _______________________FORM ____________________ */
 
 .form {
   grid-row-start: 2;
@@ -409,7 +414,123 @@ justify-content: space-around;
 
   grid-row-end: 3;
   grid-column-end: 3;
+  background-color: var(--details);
+  color: var(--dark-brown);
+
+  
+
+
+  margin-top: 10px;    
+  padding: 2em;
+  border-radius: 7px;
+  box-shadow: 0px 6px 4px -2px rgba(0,0,0,0.36);
 }
+
+
+.form__container  {
+ 
+display: flex;
+ 
+flex-direction: column;
+ 
+position: relative;
+ 
+display: flex;
+ 
+flex-direction: column;
+ 
+/* width: inherit; */
+ 
+align-items: center;
+}
+
+
+.form__title {
+  font-family: "Olivia";
+  font-size: 2.6em;
+  line-height: 58px;
+  letter-spacing: 2px;
+  margin-bottom: .5em;
+  text-align: center;
+
+}
+
+.form__paragraph {
+  display: inline-block;
+  color: var(--dark-brown);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.input {
+  width: 70%;
+  padding: 1.2em 1.5em;
+  border-radius: 7px;
+}
+
+
+
+input::placeholder{
+  font-weight: 700;
+  color: var(--dark-brown);
+}
+
+
+
+.errorcontainer {
+  position: relative;
+  text-align: right;
+  
+}
+.iconerror {
+  
+  position: absolute;
+  right: 22px;
+  bottom: 36px;
+}
+
+
+.error {
+  
+  text-align: right;
+  font-style: italic;
+}
+
+.form__button {
+  padding: 1.5em;
+  text-align: center;
+  
+  text-transform: uppercase;
+  color: var(--white);    
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px; 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* WHATSAPP */
 
@@ -419,7 +540,7 @@ justify-content: space-around;
   position: fixed;
   left: 95%;
   top: 88%;
-  background-image: url('../img/whatsapp.svg');
+  background-image: url('../img/icons/whatsapp.svg');
   background-color: var(--whatsapp);
   background-repeat: no-repeat;
   background-size: 43px;
