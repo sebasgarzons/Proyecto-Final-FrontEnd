@@ -412,7 +412,7 @@ justify-content: space-around;
   position: fixed;
   left: 95%;
   top: 88%;
-  background-image: url('/img/whatsapp.svg');
+  background-image: url('../img/whatsapp.svg');
   background-color: var(--whatsapp);
   background-repeat: no-repeat;
   background-size: 43px;
