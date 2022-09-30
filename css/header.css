@@ -120,11 +120,6 @@ nav .enlaces a:hover::before {
 
 }
 
-.logo img:hover {
-    filter: hue-rotate(90deg);
-
-}
-
 .logo img:hover{
     filter: hue-rotate(90deg);
 }
