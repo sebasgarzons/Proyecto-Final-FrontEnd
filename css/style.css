@@ -338,22 +338,25 @@ justify-content: space-around;
 
 /* --------------------------------------------------------- */
 .aboutus {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  
   color: var(--light-pink);
-  align-items: center;
+  
  
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 1em;
+  display: grid; 
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  gap: 0px;
+  height: 100%;
 }
 
 
 .aboutus__contact {
-  grid-column: 1/2;
-  /* width: 50%; */
+  grid-row-start: 1;
+   grid-column-start: 1;
+
+   grid-row-end: 3;
+   grid-column-end: 3;
   background-color: var(--dark-brown);
 }
 
@@ -379,16 +382,24 @@ justify-content: space-around;
 
 
 .map {
-  grid-column: 2/3;
-  grid-row: auto;
-  width: 400px;
-  height: 400px;
-}
+  grid-row-start: 1;
+   grid-column-start: 3;
+
+   grid-row-end: 3;
+   grid-column-end: 5;}
 
 .map__iframe {
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   width: 100%;
   /* height: 100%; */
+}
+
+.form {
+  grid-row-start: 3;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 5;
 }
 
 /* WHATSAPP */
