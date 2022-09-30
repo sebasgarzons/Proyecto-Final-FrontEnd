@@ -292,6 +292,12 @@ justify-content: space-around;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 5px;
+  filter: saturate(0);
+  transition: all 0.5s;
+}
+
+.cafes__img:hover{
+  filter: saturate(100%);
 }
 
 
