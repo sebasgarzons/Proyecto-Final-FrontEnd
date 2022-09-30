@@ -40,7 +40,7 @@
 
 
 .main {
-    background-image: url('../img/bg/backgr.jpg');
+    background-image: url('../img/bg/bg2.png');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px auto;  
@@ -52,7 +52,7 @@
 
 .container {
    width: 85%;
-   background-color: #EEE7DF;
+   /* background-color: #EEE7DF; */
   
 }
 
@@ -412,7 +412,7 @@ justify-content: space-around;
   position: fixed;
   left: 95%;
   top: 88%;
-  background-image: url('/img/whatsapp.svg');
+  background-image: url('../img/whatsapp.svg');
   background-color: var(--whatsapp);
   background-repeat: no-repeat;
   background-size: 43px;
