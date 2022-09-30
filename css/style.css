@@ -32,7 +32,7 @@
 
 
 .body {
-
+  
   background-color: #EEE7DF;
 
 }
@@ -43,23 +43,21 @@
     background-image: url('../img/bg/bg2.png');
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 20px auto;  
-    display: flex;  
-    flex-direction: column;  
-    align-items: center;  
-    gap: 6em;      
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6em;
 }
 
 .container {
    width: 85%;
    /* background-color: #EEE7DF; */
-  
 }
 
 
 .intro {
-  display:
-  flex;
+  display:  flex;
   background-color: #EEE7DF;
   padding: 4em 9em;
   justify-content: space-between;
@@ -342,66 +340,55 @@ justify-content: space-around;
 .aboutus {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  color: var(--light-pink);
   align-items: center;
-  background: url('./img/bg/bean1.png');
-  background-size: 284px;
-  background-repeat: no-repeat;
-  background-position: 46% 100%;
-  background-color: var(--white);
  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1em;
 }
 
-.aboutus__location {
-  font-size: 2rem;
-}
-.aboutus__info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.3em;
+
+.aboutus__contact {
+  grid-column: 1/2;
+  /* width: 50%; */
+  background-color: var(--dark-brown);
 }
 
 .aboutus__title{ 
-  font-family: "Futura";
-  text-transform: uppercase; 
+  font-family: "Olivia";  
   font-size: 3em;
   line-height: 58px;
   letter-spacing: 1px;
-  margin-bottom: .5em;
-  
+  margin-bottom: .5em;  
 }
 
 
 .aboutus__icon {
   display: inline-block;
-  font-size: 17px;
-  
+  font-size: 17px;  
 }
 
 
-.contact__item {
-  display: block;
+.contact__item {  
   padding: .5em 0;
   font-size: 1.2rem;
 }
 
-.contact__icon {
-  font-size: 1.5em;
-  margin-right: .5em;
-  color: var(--dark-brown);
-  display: block;
-  background-color: var(--light-pink);
-  border-radius: 50%;
-  padding: 5px;
-  text-align: center;
-
-}
-
 
 .map {
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  grid-column: 2/3;
+  grid-row: auto;
+  width: 400px;
+  height: 400px;
+}
 
+.map__iframe {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  width: 100%;
+  /* height: 100%; */
 }
 
 /* WHATSAPP */
