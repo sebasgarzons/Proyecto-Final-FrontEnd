@@ -96,8 +96,8 @@
 }
 
 .iconos__footer .whatsaap a:hover{
-    color:   #43C253;
-    border: 2px solid  #43C253;
+    color:  #43c253;
+    border: 2px solid  #25d366;
     background-color: var(--light-pink);
     box-shadow:  0 0 20px var(--light);
 }
