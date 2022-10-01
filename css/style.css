@@ -465,6 +465,7 @@ input::placeholder{
   position: relative;
   text-align: left;
   padding-bottom: 1em;
+  visibility: hidden;
 }
 .iconerror {
   position: absolute;
