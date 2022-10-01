@@ -1,0 +1,38 @@
+[
+  {
+    "precio":3.99,
+    "id": 1,
+    "title": "Café Negro",
+    "thumbnailUrl": "/img/carrito/cafe_negro.jpg"
+  },
+  {
+    "precio": 2.50,
+    "id": 2,
+    "title": "Cheesecake",
+    "thumbnailUrl": "/img/carrito/cheesecake.jpg"
+  },
+  {
+    "precio": 4.99,
+    "id": 3,
+    "title": "Copa Explosiva de Café",
+    "thumbnailUrl": "/img/carrito/copa.jpg"
+  },
+  {
+    "precio": 1.99,
+    "id": 4,
+    "title": "Cupcake",
+    "thumbnailUrl": "/img/carrito/cupcake.jpg"
+  },
+  {
+    "precio": 4.50,
+    "id": 5,
+    "title": "Frappe",
+    "thumbnailUrl": "/img/carrito/frappe3.jpg"
+  },
+  {
+    "precio": 3.50,
+    "id": 6,
+    "title": "French Toast",
+    "thumbnailUrl": "/img/carrito/french-toast.jpg"
+  }
+]
