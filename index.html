@@ -346,8 +346,7 @@
                         contacto@aromasymaullidos.com
                     </li>
                 </ul>            
-            </div>
-     
+            </div>   
 
 
                 <div class="map">
@@ -359,33 +358,35 @@
                 </div>
 
             
-            <form class="form" id="form">
-                
+            <form class="form" id="form">                
 
                     <h4 class="form__title"> Nuestro newsletter</h4>
                     <p class="form__paragraph">Inscribite para recibir todas las novedades.</p>
 
                   <div class="form__container ">
+
                       <label for="form__name"></label>
                       <input type="text" class="form__name input input--error" id="form__name" placeholder="Nombre">
-                      <div id="firstname-error" class="errorcontainer">
+
+
+                      <div id="nameerror" class="errorcontainer">
                         <img src="img/icons/error.svg" alt="error" class="iconerror">
                         <small class="error">Ingresa tu nombre</small>
                       </div>
-                  </div>
+                  
                 
-                  <div class="form__container ">
+                
                       <label for="form__email"></label>
                       <input type="email" class="form__email input input--error" id="form__email" placeholder="Email">
                       
-                      <div id="email-error" class="errorcontainer">
+                      <div id="emailerror" class="errorcontainer">
                         <img src="img/icons/error.svg" alt="error" class="iconerror">
                         <small class="error">Ingresa un correo válido.</small>
                       </div>
                   </div>
                 
 
-                    <input type="submit" class="form__button" id="form__button" value="INSCRIBIRSE">       
+                    <button type="submit" class="form__button" id="form__button">  INSCRIBIRSE</button>     
             
             
           </form>     
@@ -434,6 +435,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/newsletter.js"></script>
+
 </body>
 
 </html>
