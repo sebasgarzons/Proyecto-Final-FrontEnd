@@ -134,6 +134,7 @@ nav .enlaces a:hover::before {
 
 .carrito a svg:hover {
     fill: var(--light-pink);
+    filter:drop-shadow(1px 1px 6px var(--dark-brown));
 }
 
 .textos {
