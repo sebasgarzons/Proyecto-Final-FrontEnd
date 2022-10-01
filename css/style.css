@@ -32,35 +32,32 @@
 
 
 .body {
-
-  background-color: #EEE7DF;
+  background-color: var(--light-pink);
+  
 
 }
 
 
 
 .main {
-    background-image: url('../img/bg/bg2.png');
+    /* background-image: url('../img/bg/bg2.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    margin: 20px auto;  
-    display: flex;  
-    flex-direction: column;  
-    align-items: center;  
-    gap: 6em;      
+    background-size: cover; */
+    
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6em;
 }
 
 .container {
-   width: 85%;
-   /* background-color: #EEE7DF; */
-  
+   width: 85%; 
 }
 
 
 .intro {
-  display:
-  flex;
-  background-color: #EEE7DF;
+  display:  flex;  
   padding: 4em 9em;
   justify-content: space-between;
   align-items: center;
@@ -225,16 +222,13 @@ grid-column: 2 4;
 
 .menu__item {
   
-display: flex;
-  
+display: flex;  
 height: 100%;
-  
-flex-direction: column;
-  
-align-items: center;
-  
+flex-direction: column;  
+align-items: center;  
 justify-content: space-around;
 }
+
 .menu__img {
 
   display: inline-block;
@@ -242,6 +236,10 @@ justify-content: space-around;
   height: 100px;
 }
 
+/* .menu__img:hover {
+  filter: brightness(78%);
+
+} */
 
 .menu__title {
   font-family: "Olivia";
@@ -292,7 +290,15 @@ justify-content: space-around;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 5px;
+  transition: all 0.5s
 }
+
+.cafes__img:hover{
+  filter: saturate(150%);
+  transform: scale(1.01);
+}
+
+
 
 
 .cafes__item--wide {
@@ -340,69 +346,175 @@ justify-content: space-around;
 
 /* --------------------------------------------------------- */
 .aboutus {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  background: url('./img/bg/bean1.png');
-  background-size: 284px;
-  background-repeat: no-repeat;
-  background-position: 46% 100%;
-  background-color: var(--white);
+  
+  color: var(--light-pink);
+  display: grid; 
+  grid-template-columns: 40% auto;
+  grid-template-rows: 1fr auto;  
+  gap: 1em;
  
+   
+  
 }
 
-.aboutus__location {
-  font-size: 2rem;
-}
-.aboutus__info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.3em;
+
+.aboutus__contact {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+  background-color: var(--dark-brown);
+  padding: 2em;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.aboutus__title{ 
-  font-family: "Futura";
-  text-transform: uppercase; 
-  font-size: 3em;
-  line-height: 58px;
-  letter-spacing: 1px;
+.aboutus__title{
+  font-family: "Olivia";
+  font-size: 2.6em;
+  
+  letter-spacing: 2px;
   margin-bottom: .5em;
-  
-}
-
-
-.aboutus__icon {
-  display: inline-block;
-  font-size: 17px;
-  
+  text-align: center;
 }
 
 
 .contact__item {
-  display: block;
-  padding: .5em 0;
-  font-size: 1.2rem;
+  padding: .4em 0;
+  font-size: 1.2rem;   
+  vertical-align: middle;
 }
 
-.contact__icon {
-  font-size: 1.5em;
-  margin-right: .5em;
+.aboutus__icon {
+  display: block;   
+  font-size: 1.2rem; 
+  margin-top: 0.6em;
+ 
+}
+
+
+.map__iframe {
+  grid-row: 1/2;
+  grid-column-start: 2;
+  
+  grid-column-end: 3;
+  border-radius: 7px;  
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ 
+  
+  }
+
+/* _______________________FORM ____________________ */
+
+.form {
+  grid-row: 2/3;
+  grid-column: 1/3; 
   color: var(--dark-brown);
-  display: block;
-  background-color: var(--light-pink);
-  border-radius: 50%;
-  padding: 5px;
+  text-align: center; 
+  padding: 2em;
+  border-radius: 7px;
+  
+  
+}
+
+.form__container {
+  width: 77%;
+  margin: auto;
+}
+
+
+
+.form__title {
+  font-family: "Olivia";
+  font-size: 2.6em;
+ border-top: 1px solid black;
+ padding-top: 1em;
+  letter-spacing: 2px;
+
+}
+
+.form__paragraph {
+  display: inline-block;
+  color: var(--dark-brown);
+  font-size: 1.5rem;
   text-align: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.input {
+  
+padding: 1.2em 1.5em;  
+border-radius: 7px;  
+width: 100%;
+}
+
+
+
+input::placeholder{
+  
+  color: var(--dark-brown);
+  text-transform: uppercase;
+}
+
+
+.errorcontainer {
+  position: relative;
+  text-align: left;
+  padding-bottom: 1em;
+}
+.iconerror {
+  position: absolute;
+  
+right: 40px;  
+bottom: 53px;
+  
 
 }
 
 
-.map {
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-
+.error {
+  
+text-align: left;  
+font-style: italic;  
+font-size: 1.2rem;
 }
+
+.form__button {
+  padding: 1.5em;
+  text-align: center;
+  background-color: var(--dark-brown);
+  color: var(--light);
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  width: 40%;
+  border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* WHATSAPP */
 
@@ -412,7 +524,7 @@ justify-content: space-around;
   position: fixed;
   left: 95%;
   top: 88%;
-  background-image: url('../img/whatsapp.svg');
+  background-image: url('../img/icons/whatsapp.svg');
   background-color: var(--whatsapp);
   background-repeat: no-repeat;
   background-size: 43px;
