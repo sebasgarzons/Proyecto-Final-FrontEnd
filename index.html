@@ -198,30 +198,6 @@
 
       
 
-            <div class="menu__item item3">
-                <img src="./img/menu/granos.png" alt="" class="menu__img">
-                <h2 class="menu__title">Vegan</h2>
-                <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
-                    voluptatibus accusamus molestiae cum facere magni minus.</p>
-            </div>
-            <div class="menu__item item4">
-                <img src="./img/menu/takeaway.png" alt="" class="menu__img">
-                <h2 class="menu__title">Take Away</h2>
-                <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
-                    voluptatibus accusamus molestiae cum facere magni minus.</p>
-            </div>
-            <div class="menu__item item5">
-                <img src="./img/menu/copa.png" alt="" class="menu__img">
-                <h2 class="menu__title">Postres</h2>
-                <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
-                    voluptatibus accusamus molestiae cum facere magni minus.</p>
-            </div>
-            <div class="menu__item item6">
-                <img src="./img/menu/torta2.png" alt="" class="menu__img">
-                <h2 class="menu__title">Tortas</h2>
-                <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
-                    voluptatibus accusamus molestiae cum facere magni minus. </p>
-            </div>
 
         <section class="content">
             <div class="slider_cats">
@@ -352,7 +328,7 @@
 
 
 
-        <section class="aboutus container">
+        <section class="aboutus  container">
 
             <div class="aboutus__contact">
                <h3 class="aboutus__title">Contacto</h3>
@@ -370,20 +346,50 @@
                         contacto@aromasymaullidos.com
                     </li>
                 </ul>            
-            </div>
-     
+            </div>   
 
 
-                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=437&amp;height=321&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://denemebonusuverensiteler.vip/">bonus veren siteler</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:321px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:321px;}.gmap_iframe {height:321px!important;}</style></div>
-            </div>
+                <div class="map">
+                   
+                        <iframe class="map__iframe" frameborder="0" scrolling="no"  src="https://maps.google.com/maps?width=437&amp;height=321&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                            
+                        </iframe>
+                        
+                </div>
 
             
-            <form action="" class="form">
-                <label for="">Nombre</label>
-                <input type="text">
-                <input type="email" name="" id="">
-                <input type="button" value="">
-            </form>
+            <form class="form" id="form">                
+
+                    <h4 class="form__title"> Nuestro newsletter</h4>
+                    <p class="form__paragraph">Inscribite para recibir todas las novedades.</p>
+
+                  <div class="form__container ">
+
+                      <label for="form__name"></label>
+                      <input type="text" class="form__name input input--error" id="form__name" placeholder="Nombre">
+
+
+                      <div id="nameerror" class="errorcontainer">
+                        <img src="img/icons/error.svg" alt="error" class="iconerror">
+                        <small class="error">Ingresa tu nombre</small>
+                      </div>
+                  
+                
+                
+                      <label for="form__email"></label>
+                      <input type="email" class="form__email input input--error" id="form__email" placeholder="Email">
+                      
+                      <div id="emailerror" class="errorcontainer">
+                        <img src="img/icons/error.svg" alt="error" class="iconerror">
+                        <small class="error">Ingresa un correo válido.</small>
+                      </div>
+                  </div>
+                
+
+                    <button type="submit" class="form__button" id="form__button">  INSCRIBIRSE</button>     
+            
+            
+          </form>     
             
         </section>
     </main>
@@ -402,7 +408,7 @@
         </div>
 
         <div class="subtitulo__footer">
-            <h3>Aromas  y  Maullidos</h3>
+            <h3>Aromas y Maullidos</h3>
         </div>
 
         <div class="iconos__footer">
@@ -429,6 +435,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/newsletter.js"></script>
+
 </body>
 
 </html>

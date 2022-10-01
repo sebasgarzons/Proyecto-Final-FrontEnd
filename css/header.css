@@ -1,7 +1,7 @@
 :root {
 
     /* paleta */
-
+    
     --white: #ffffff;
     --black: #0000;
     --dark-brown: #361500;
@@ -34,7 +34,6 @@
 header {
     width: 100%;
     height: 100vh;
-    /* top: 200px; */
     background-image: url('../img/header/header.jpg');
     background-attachment: fixed;
     background-position: center;
@@ -63,9 +62,9 @@ nav {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(5px);
     height: 110px;
-    z-index: 2;
-}
+    z-index: 11;
 
+}
 
 .contenedor-nav {
     display: flex;
@@ -107,8 +106,8 @@ nav .enlaces a::before {
 }
 
 nav .enlaces a:hover {
-    color: #000;
-
+    color: var(--light-pink);
+    text-shadow: 1px 1px 6px var(--dark-brown);
 }
 
 nav .enlaces a:hover::before {
@@ -117,7 +116,6 @@ nav .enlaces a:hover::before {
 
 .logo .logo img {
     height: 80px;
-
 }
 
 .logo img:hover{
