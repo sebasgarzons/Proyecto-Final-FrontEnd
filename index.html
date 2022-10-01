@@ -13,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logos/gato-verde.ico">
-
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -47,7 +46,7 @@
                 </div>
 
                 <div class="carrito">
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px" viewBox="0 0 24 24">
+                    <a href="/carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px" viewBox="0 0 24 24">
                             <circle cx="10.5" cy="19.5" r="1.5"></circle>
                             <circle cx="17.5" cy="19.5" r="1.5"></circle>
                             <path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path>
@@ -303,22 +302,22 @@
                 <ul id="listCats">
                     <li class="list_cats_li" id="indx_cts_li_1">
                         <div class="circle_cat">
-                            <img src="img/cat1.jpg">
+                            <img src="img/cat1.jpg" alt="">
                         </div>
                     </li>
                     <li class="list_cats_li" id="indx_cts_li_2">
                         <div class="circle_cat">
-                            <img src="img/cat2.jpg">
+                            <img src="img/cat2.jpg" alt="">
                         </div>
                     </li>
                     <li class="list_cats_li" id="indx_cts_li_3">
                         <div class="circle_cat">
-                            <img src="img/cat3.jpg">
+                            <img src="img/cat3.jpg" alt="">
                         </div>
                     </li>
                     <li class="list_cats_li" id="indx_cts_li_4">
                         <div class="circle_cat">
-                            <img src="img/cat5.jpg">
+                            <img src="img/cat5.jpg" alt="">
                         </div>
                     </li>
                     <li class="list_cats_li" id="indx_cts_li_5">
@@ -355,14 +354,14 @@
 
                 <div class="map">
                    
-                        <iframe class="map__iframe" frameborder="0" scrolling="no"  src="https://maps.google.com/maps?width=437&amp;height=321&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <iframe class="map__iframe" frameborder="0" scrolling="no"  src="https://maps.google.com/maps?width=437&amp;height=321&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" >
                             
                         </iframe>
                         
                 </div>
 
             
-            <form class="form" id="form">                
+            <form class="form" id="form" novalidate>                
 
                     <h4 class="form__title"> Nuestro newsletter</h4>
                     <p class="form__paragraph">Inscribite para recibir todas las novedades.</p>
@@ -380,8 +379,8 @@
                   
                 
                 
-                      <label for="form__email"></label>
-                      <input type="email" class="form__email input input--error" id="form__email" placeholder="Email">
+                      <label for="form__email"  ></label>
+                      <input type="email" class="form__email input input--error" id="form__email" placeholder="Email"  >
                       
                       <div id="emailerror" class="errorcontainer">
                         <img src="img/icons/error.svg" alt="error" class="iconerror">
