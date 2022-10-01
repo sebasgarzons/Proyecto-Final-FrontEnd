@@ -62,7 +62,7 @@ nav {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(5px);
     height: 110px;
-    z-index: 2;
+    z-index: 11;
 
 }
 
@@ -107,6 +107,7 @@ nav .enlaces a::before {
 
 nav .enlaces a:hover {
     color: var(--light-pink);
+    text-shadow: 1px 1px 6px var(--dark-brown);
 }
 
 nav .enlaces a:hover::before {
