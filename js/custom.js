@@ -1,8 +1,5 @@
 jQuery(document).ready(function ($) {
 	console.log("Hola");
-	
-
-
 
 	/*     let nav = document.querySelector('nav');
 	    let toggle = document.querySelector('.toggle');
@@ -88,7 +85,7 @@ $('#load_more').click(function () {
 		console.log('Entré aquí');
 		document.getElementById('load_more').innerText = 'View Less';
 	}
-	
+
 	load_more = document.getElementById('load_more').innerText;
 	console.log('El valor es: ' + load_more);
 
@@ -105,3 +102,16 @@ $('#load_more').click(function () {
 	}); */
 
 /* ----------------------------------------------------------------------- */
+
+$(".arrow_up").click(function() {
+
+	$("body, html").animate({
+		scrollTop: $("main").offset().top -80
+	},800);
+
+});
+
+let loader = document.getElementById('loader_cont_id');
+window.addEventListener('load', function() {
+	loader.style.display = 'none';
+});

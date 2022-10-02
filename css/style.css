@@ -50,6 +50,7 @@
   flex-direction: column;
   align-items: center;
   gap: 6em;
+  position: relative;
 }
 
 .container {
@@ -342,47 +343,13 @@ transition: opacity 1s ease 0s;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------------------------------------------- */
 .aboutus {
-
   color: var(--light-pink);
   display: grid;
   grid-template-columns: 40% auto;
   grid-template-rows: 1fr auto;
   gap: 1em;
-
-
-
 }
 
 
@@ -400,7 +367,6 @@ transition: opacity 1s ease 0s;
 .aboutus__title {
   font-family: "Olivia";
   font-size: 2.6em;
-
   letter-spacing: 2px;
   margin-bottom: .5em;
   text-align: center;
@@ -417,21 +383,17 @@ transition: opacity 1s ease 0s;
   display: block;
   font-size: 1.2rem;
   margin-top: 0.6em;
-
 }
 
 
 .map__iframe {
   grid-row: 1/2;
   grid-column-start: 2;
-
   grid-column-end: 3;
   border-radius: 7px;
   width: 100%;
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-
-
 }
 
 /* _______________________FORM ____________________ */
@@ -443,8 +405,6 @@ transition: opacity 1s ease 0s;
   text-align: center;
   padding: 2em;
   border-radius: 7px;
-
-
 }
 
 .form__container {
@@ -452,15 +412,12 @@ transition: opacity 1s ease 0s;
   margin: auto;
 }
 
-
-
 .form__title {
   font-family: "Olivia";
   font-size: 2.6em;
   border-top: 1px solid black;
   padding-top: 1em;
   letter-spacing: 2px;
-
 }
 
 .form__paragraph {
@@ -472,22 +429,17 @@ transition: opacity 1s ease 0s;
   margin-bottom: 1rem;
 }
 
-
 .input {
-
   padding: 1.2em 1.5em;
   border-radius: 7px;
   width: 100%;
 }
-
-
 
 input::placeholder {
 
   color: var(--dark-brown);
   text-transform: uppercase;
 }
-
 
 .errorcontainer {
   position: relative;
@@ -498,16 +450,11 @@ input::placeholder {
 
 .iconerror {
   position: absolute;
-
   right: 40px;
   bottom: 53px;
-
-
 }
 
-
 .error {
-
   text-align: left;
   font-style: italic;
   font-size: 1.2rem;
@@ -523,11 +470,9 @@ input::placeholder {
   border: none;
   width: 40%;
   border-radius: 7px;
-
   outline: 1px solid;
   outline-color: rgba(54, 21, 0, 0.4);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-
 }
 
 .form__button:hover {
@@ -536,36 +481,14 @@ input::placeholder {
   text-shadow: 1px 1px 6px var(--light-pink);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* WHATSAPP */
-
 
 .whatsapp__icon {
   display: block;
   position: fixed;
-  left: 95%;
-  top: 88%;
-  background-image: url('../img/icons/whatsapp.svg');
+  left: 94%;
+  top: 75%;
+  background-image: url(../img/icons/whatsapp.svg);
   background-color: var(--whatsapp);
   background-repeat: no-repeat;
   background-size: 43px;
@@ -578,8 +501,6 @@ input::placeholder {
   z-index: 23;
 }
 
-
 .whatsapp:hover {
   opacity: 0.7;
-
 }
