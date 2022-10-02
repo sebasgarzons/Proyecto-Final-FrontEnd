@@ -20,6 +20,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script defer src="js/custom.js"></script>
     <title>Aromas y Maullidos</title>
 </head>
 
@@ -66,7 +67,7 @@
 
     <main class="main">
 
-        <section class="intro">
+        <section class="intro hidden_rgth">
             <div class="intro__texts">
                 <h2 class="intro__title">Intro title</h2>
                 <p class="intro__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, neque
@@ -94,7 +95,7 @@
         </div>
 
 
-        <section class="menu container">
+        <section class="menu container hidden_lft">
 
             <div class="menu__item item1">
                 <img src="./img/menu/cafe.png" alt="" class="menu__img">
@@ -137,7 +138,7 @@
 
         </section>
 
-        <section class="container">
+        <section class="container hidden_rgth">
             <div class="cafes">
                 <figure class="cafes__item">
                     <img src="./img/comidas/brunch.jpg" alt="" class="cafes__img" />
@@ -205,7 +206,7 @@
 
 
 
-        <section class="content">
+        <section class="content hidden_lft">
             <div class="slider_cats">
                 <div class="cont_box_slider_cat_display cont_show" id="slider_cat_1">
                     <div class="box_slider_cat_display">
@@ -300,7 +301,7 @@
             </div>
         </section>
 
-        <section class="cont_slider_cats">
+        <section class="cont_slider_cats hidden_rgth">
             <div class="box_slider_cats">
                 <ul id="listCats">
                     <li class="list_cats_li" id="indx_cts_li_1">
@@ -332,9 +333,7 @@
             </div>
         </section>
 
-
-
-        <section class="aboutus  container">
+        <section class="aboutus container hidden_lft">
 
             <div class="aboutus__contact">
                 <h3 class="aboutus__title">Contacto</h3>
@@ -399,13 +398,11 @@
             </form>
 
         </section>
-    </main>
+        <!-- BOTON WHATSAPP -->
 
-    <!-- BOTON WHATSAPP -->
-
-    <div class="whatsapp">
         <a href="tel:+" class="whatsapp__icon" alt="Comunicate con nosotros vía whatsapp"></a>
-    </div>
+        <i class='bx bx-up-arrow-alt arrow_up'></i>
+    </main>
 
 
     <!-- FOOTER -->
@@ -438,10 +435,14 @@
     </footer>
     <p class="parrafo__footer">Copyright &copy; 2022 Autores: Sebastian - Mary - Katherine, todos los
         derechos reservados.</p>
+    <div class="loader_cont" id="loader_cont_id">
+        <div class="loader_box">
+            <span class="loader"></span>
+        </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/custom.js"></script>
     <script src="js/newsletter.js"></script>
 
 </body>
