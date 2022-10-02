@@ -279,11 +279,10 @@ transition: opacity 1s ease 0s;
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
   margin: auto;
-  height: 840px;
+  height: 39rem;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
 }
-
 
 .cafes__img {
   max-width: 100%;
@@ -313,9 +312,6 @@ transition: opacity 1s ease 0s;
   transform: scale(1.01);
 }
 
-
-
-
 .cafes__item--wide {
   grid-column: span 2;
 }
@@ -341,23 +337,10 @@ transition: opacity 1s ease 0s;
 }
 
 .load_more_height_first{
-  height: 1670px;
+  height: 105rem;
   transition: all 0.5s ease-in-out;
 }
 
-#view_less{
-  position: relative;
-  bottom: -40px;
-  left: 47%;
-  cursor: pointer;
-  transform: translate(0%, 0%);
-  text-align: center;
-  display: none;
-}
-
-.block{
-  display: block;
-}
 
 
 
