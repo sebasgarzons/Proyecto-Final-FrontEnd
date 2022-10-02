@@ -364,7 +364,8 @@
             </div>
 
 
-            <form class="form" id="form" novalidate>
+            <form class="form" id="form" novalidate action="https://formspree.io/f/myyvjevb"
+  method="POST">
 
                 <h4 class="form__title"> Nuestro newsletter</h4>
                 <p class="form__paragraph">Inscribite para recibir todas las novedades.</p>
@@ -372,7 +373,7 @@
                 <div class="form__container ">
 
                     <label for="form__name"></label>
-                    <input type="text" class="form__name input input--error" id="form__name" placeholder="Nombre">
+                    <input type="text" class="form__name input input--error" id="form__name" name="name" placeholder="Nombre">
 
 
                     <div id="nameerror" class="errorcontainer">
@@ -381,9 +382,8 @@
                     </div>
 
 
-
                     <label for="form__email"></label>
-                    <input type="email" class="form__email input input--error" id="form__email" placeholder="Email">
+                    <input type="email" class="form__email input input--error" id="form__email" placeholder="Email" name="email">
 
                     <div id="emailerror" class="errorcontainer">
                         <img src="img/icons/error.svg" alt="error" class="iconerror">
