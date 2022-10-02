@@ -115,3 +115,35 @@ let loader = document.getElementById('loader_cont_id');
 window.addEventListener('load', function() {
 	loader.style.display = 'none';
 });
+
+/* ----------------------------------------------------------------------- */
+
+const observer_left = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		console.log(entry);
+		if (entry.isIntersecting){
+			entry.target.classList.add('show');
+		}/*  else {
+			entry.target.classList.remove('show');
+		} */
+	});
+});
+
+
+const hiddenElements_left = document.querySelectorAll('.hidden_rgth');
+hiddenElements_left.forEach((el) => observer_left.observe(el));
+
+const observer_right = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		console.log(entry);
+		if (entry.isIntersecting){
+			entry.target.classList.add('show');
+		}/*  else {
+			entry.target.classList.remove('show');
+		} */
+	});
+});
+
+
+const hiddenElements_right = document.querySelectorAll('.hidden_lft');
+hiddenElements_right.forEach((el) => observer_right.observe(el));
