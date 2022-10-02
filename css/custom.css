@@ -30,6 +30,7 @@ body {
 .cont_slider_cats {
     display: block;
     text-align: center;
+    width: 100%;
 }
 
 .box_slider_cats {
