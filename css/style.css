@@ -33,8 +33,7 @@
 
 
 .body {
-  background-color: rgba(255,237,237,0.5)
-
+  background-color: rgba(255,237,237,0.5); 
 
 }
 
@@ -50,10 +49,13 @@
   flex-direction: column;
   align-items: center;
   gap: 6em;
+  position: relative;
+  width: 88%;
+  max-width: 1600px;
 }
 
 .container {
-  width: 85%;
+  width: 100%;
 }
 
 
@@ -116,42 +118,6 @@
   width: 71%;
   z-index: 1;
 }
-
-
-
-
-/* 
-.intro__pictures {
-  width: 43%;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-
-
-.intro__img--1 {
-  width: 110%;
-  position: relative;
-  bottom: 300px;
-  left: 1px;
- } 
-  
-  .intro__img--2 {
- position: absolute;
- top: 269px;
- left: -46px;
-}
-
-.intro__img--3 {
- position: relative;
- top: 413px;
- right: -278px;
- width: 328px;
- z-index: 1;
-}   */
-
-
 
 
 .headers__title {
@@ -232,6 +198,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+ 
 }
 
 .menu__img {
@@ -239,12 +206,16 @@
   display: inline-block;
   width: 100px;
   height: 100px;
+  transition: all 1s ease; 
+  filter: brightness(100%)
 }
 
-/* .menu__img:hover {
-  filter: brightness(78%);
+.menu__img:hover {
+  filter: brightness(130%);
 
-} */
+  
+} 
+
 
 .menu__title {
   font-family: "Olivia";
@@ -275,8 +246,10 @@
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
   margin: auto;
+  height: 39rem;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
 }
-
 
 .cafes__img {
   max-width: 100%;
@@ -290,6 +263,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s linear;
 }
 
 .cafes__img {
@@ -297,16 +271,13 @@
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
-  transition: all 0.5s
+  transition: all 0.5s linear;
 }
 
 .cafes__img:hover {
   filter: saturate(150%);
   transform: scale(1.01);
 }
-
-
-
 
 .cafes__item--wide {
   grid-column: span 2;
@@ -321,49 +292,30 @@
   grid-row: span 2;
 }
 
+#load_more{
+  position: relative;
+  bottom: -30px;
+  left: 0px;
+  cursor: pointer;
+  transform: translate(0%, 50%);
+  text-align: center;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.load_more_height_first{
+  height: 105rem;
+  transition: all 0.5s ease-in-out;
+}
 
 
 /* --------------------------------------------------------- */
 .aboutus {
-
   color: var(--light-pink);
   display: grid;
   grid-template-columns: 40% auto;
   grid-template-rows: 1fr auto;
   gap: 1em;
-
-
-
 }
 
 
@@ -381,7 +333,6 @@
 .aboutus__title {
   font-family: "Olivia";
   font-size: 2.6em;
-
   letter-spacing: 2px;
   margin-bottom: .5em;
   text-align: center;
@@ -398,21 +349,17 @@
   display: block;
   font-size: 1.2rem;
   margin-top: 0.6em;
-
 }
 
 
 .map__iframe {
   grid-row: 1/2;
   grid-column-start: 2;
-
   grid-column-end: 3;
   border-radius: 7px;
   width: 100%;
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-
-
 }
 
 /* _______________________FORM ____________________ */
@@ -424,8 +371,6 @@
   text-align: center;
   padding: 2em;
   border-radius: 7px;
-
-
 }
 
 .form__container {
@@ -433,15 +378,12 @@
   margin: auto;
 }
 
-
-
 .form__title {
   font-family: "Olivia";
   font-size: 2.6em;
   border-top: 1px solid black;
   padding-top: 1em;
   letter-spacing: 2px;
-
 }
 
 .form__paragraph {
@@ -453,22 +395,17 @@
   margin-bottom: 1rem;
 }
 
-
 .input {
-
   padding: 1.2em 1.5em;
   border-radius: 7px;
   width: 100%;
 }
-
-
 
 input::placeholder {
 
   color: var(--dark-brown);
   text-transform: uppercase;
 }
-
 
 .errorcontainer {
   position: relative;
@@ -479,16 +416,11 @@ input::placeholder {
 
 .iconerror {
   position: absolute;
-
   right: 40px;
   bottom: 53px;
-
-
 }
 
-
 .error {
-
   text-align: left;
   font-style: italic;
   font-size: 1.2rem;
@@ -504,11 +436,9 @@ input::placeholder {
   border: none;
   width: 40%;
   border-radius: 7px;
-
   outline: 1px solid;
   outline-color: rgba(54, 21, 0, 0.4);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-
 }
 
 .form__button:hover {
@@ -517,36 +447,14 @@ input::placeholder {
   text-shadow: 1px 1px 6px var(--light-pink);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* WHATSAPP */
-
 
 .whatsapp__icon {
   display: block;
   position: fixed;
-  left: 95%;
-  top: 88%;
-  background-image: url('../img/icons/whatsapp.svg');
+  left: 94%;
+  top: 75%;
+  background-image: url(../img/icons/whatsapp.svg);
   background-color: var(--whatsapp);
   background-repeat: no-repeat;
   background-size: 43px;
@@ -559,8 +467,6 @@ input::placeholder {
   z-index: 23;
 }
 
-
 .whatsapp:hover {
   opacity: 0.7;
-
 }

@@ -33,14 +33,12 @@
 
 header {
     width: 100%;
-    height: 500px;
-    background-image: url('../img/header/header\ \(1\).jpg');
-    background-size: cover;
-    object-fit: cover;
-    object-position: center center;
-    /* background-attachment: fixed;
+    height: 100vh;
+    background-image: url('../img/header/header.jpg');
+    background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'FuturaPTBook';
 }
 
