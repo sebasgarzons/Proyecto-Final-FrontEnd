@@ -13,14 +13,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logos/gato-verde.ico">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">    
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <script defer src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/custom.js"></script>    
     <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "0kNsWHL0Lh");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
     <title>Aromas y Maullidos</title>
 </head>
@@ -33,7 +33,7 @@
             <div class="contenedor-nav">
 
                 <div class="logo">
-                    <a href="#header"><img src="img/logos/logo-dark.png" alt="" width="100px" height="100px"></a>
+                    <a href="#header"><img src="img/logos/logo-dark.png" alt="Dibujo de un gatito sentado arriba de una taza y dentro de ella dice Aromas y Maullidos." width="100px" height="100px"></a>
                 </div>
 
                 <div class="enlaces" id="enlaces">
@@ -196,6 +196,8 @@
                     <img src="./img/comidas/frappe-cookie.jpg" alt="" class="cafes__img" />
                 </figure>
             </div>
+            <!-- <button id="load_more" class="button button--quidel button--round-s"> Load More</button> -->
+
             <a id="load_more">Load More</a>
             <!-- <a id="view_less">View Less</a> -->
         </section>
@@ -366,10 +368,10 @@
 
 
             <form class="form" id="form" action="https://formspree.io/f/myyvjevb"
-  method="POST">
+  method="POST" novalidate>
 
                 <h4 class="form__title"> Nuestro newsletter</h4>
-                <p class="form__paragraph">Inscribite para recibir todas las novedades.</p>
+                <p class="form__paragraph">Inscribete para recibir todas las novedades.</p>
 
                 <div class="form__container ">
 
@@ -401,38 +403,43 @@
         </section>
         <!-- BOTON WHATSAPP -->
 
-        <a href="tel:+" class="whatsapp__icon" alt="Comunicate con nosotros vía whatsapp"></a>
+        <a href="https://api.whatsapp.com/send?phone=34111223344" class="whatsapp__icon" alt="Comunicate con nosotros vía whatsapp" target="_blank" title="Comunicate con nosotros vía whatsapp"></a>
         <i class='bx bx-up-arrow-alt arrow_up'></i>
     </main>
 
 
     <!-- FOOTER -->
     <footer class="container-footer">
-        <div class="logo__footer">
-            <a href="#header"><img src="img/logos/light_pink.png" alt="" width="128px"></a>
+        <div class="container-box-footer">
+            <div class="logo__footer">
+                <a href="#header"><img src="img/logos/light_pink.png" alt="" width="128px"></a>
+            </div>
+    
+            <div class="subtitulo__footer">
+                <h3>Aromas y Maullidos</h3>
+            </div>
+    
+            <div class="iconos__footer">
+                <div class="cont_iconos_footer">
+                    <div class="icono_ftr instagram">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+        
+                    <div class="icono_ftr whatsaap">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+        
+                    <div class="icono_ftr twitter">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+        
+                    <div class="icono_ftr facebook">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="subtitulo__footer">
-            <h3>Aromas y Maullidos</h3>
-        </div>
-
-        <div class="iconos__footer">
-            <div class="icono_ftr instagram">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-
-            <div class="icono_ftr whatsaap">
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-
-            <div class="icono_ftr twitter">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-
-            <div class="icono_ftr facebook">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </div>
-        </div>
     </footer>
     <p class="parrafo__footer">Copyright &copy; 2022 Autores: Sebastian - Mary - Katherine, todos los
         derechos reservados.</p>
@@ -445,7 +452,7 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
-    <!-- <script src="js/newsletter.js"></script> -->
+    <script src="js/newsletter.js"></script>
 
 </body>
 
