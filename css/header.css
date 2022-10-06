@@ -34,12 +34,12 @@
 header {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/header/header1.jpg');
+    background-image: url(../img/header/header1.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-position: center -12px;
     background-repeat: no-repeat;
+    font-family: FuturaPTBook;
     background-size: cover;
-    font-family: 'FuturaPTBook';
 }
 
 nav {
