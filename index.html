@@ -13,14 +13,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logos/gato-verde.ico">
-
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">    
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/popup.css"> -->
+    <script defer src="js/custom.js"></script>    
+    <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "0kNsWHL0Lh");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
     <title>Aromas y Maullidos</title>
 </head>
 
@@ -32,7 +34,7 @@
             <div class="contenedor-nav">
 
                 <div class="logo">
-                    <a href="#header"><img src="img/logos/logo-dark.png" alt="" width="100px" height="100px"></a>
+                    <a href="#header"><img src="img/logos/logo-dark.png" alt="Dibujo de un gatito sentado arriba de una taza y dentro de ella dice Aromas y Maullidos." width="100px" height="100px"></a>
                 </div>
 
                 <div class="enlaces" id="enlaces">
@@ -47,7 +49,8 @@
                 </div>
 
                 <div class="carrito">
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px" viewBox="0 0 24 24">
+                    <a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px"
+                            viewBox="0 0 24 24">
                             <circle cx="10.5" cy="19.5" r="1.5"></circle>
                             <circle cx="17.5" cy="19.5" r="1.5"></circle>
                             <path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path>
@@ -66,7 +69,7 @@
 
     <main class="main">
 
-        <section class="intro">
+        <section class="intro hidden_rgth">
             <div class="intro__texts">
                 <h2 class="intro__title">Intro title</h2>
                 <p class="intro__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, neque
@@ -94,7 +97,7 @@
         </div>
 
 
-        <section class="menu container" >
+        <section class="menu container">
 
             <div class="menu__item item1">
                 <img src="./img/menu/cafe.png" alt="" class="menu__img">
@@ -137,66 +140,74 @@
 
         </section>
 
-        <section class="cafes container">
-            <figure class="cafes__item">
-                <img src="./img/comidas/brunch.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item">
-                <img src="./img/comidas/cafe.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item cafes__item--tall">
-                <img src="./img/comidas/cupcake.jpg" alt="" class="cafes__img">
-            </figure>
-            <figure class="cafes__item cafes__item--wide">
-                <img src="./img/comidas/coffee-cat2.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item">
-                <img src="./img/comidas/cupcakes2.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item cafes__item--tall">
-                <img src="./img/comidas/croissants.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item cafes__item--big">
-                <img src="./img/comidas/cafes5.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item">
-                <img src="./img/comidas/pancake2.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item cafes__item--wide">
-                <img src="./img/comidas/coffee-cat.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item cafes__item--big">
-                <img src="./img/comidas/cheesecake.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item">
-                <img src="./img/comidas/red-velvet.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item">
-                <img src="./img/comidas/frappe-cookie.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item cafes__item--tall">
-                <img src="./img/comidas/avotoast.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item">
-                <img src="./img/comidas/brunch3.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item cafes__item--tall">
-                <img src="./img/comidas/coffee-cat3.jfif" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item">
-                <img src="./img/comidas/copa.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item cafes__item--wide">
-                <img src="./img/comidas/french-toast.jpg" alt="" class="cafes__img" />
-            </figure>
-            <figure class="cafes__item cafes__item--tall">
-                <img src="./img/comidas/frappe-cookie.jpg" alt="" class="cafes__img" />
-            </figure>
+        <section class="container hidden_lft">
+            <div class="cafes">
+                <figure class="cafes__item">
+                    <img src="./img/comidas/brunch.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item">
+                    <img src="./img/comidas/cafe.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item cafes__item--tall">
+                    <img src="./img/comidas/cupcake.jpg" alt="" class="cafes__img">
+                </figure>
+                <figure class="cafes__item cafes__item--wide">
+                    <img src="./img/comidas/coffee-cat2.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item">
+                    <img src="./img/comidas/cupcakes2.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item cafes__item--tall">
+                    <img src="./img/comidas/croissants.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item cafes__item--big">
+                    <img src="./img/comidas/cafes5.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item">
+                    <img src="./img/comidas/pancake2.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item cafes__item--wide">
+                    <img src="./img/comidas/coffee-cat.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item cafes__item--big">
+                    <img src="./img/comidas/cheesecake.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item">
+                    <img src="./img/comidas/red-velvet.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item">
+                    <img src="./img/comidas/frappe-cookie.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item cafes__item--tall">
+                    <img src="./img/comidas/avotoast.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item">
+                    <img src="./img/comidas/brunch3.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item cafes__item--tall">
+                    <img src="./img/comidas/coffee-cat3.jfif" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item">
+                    <img src="./img/comidas/copa.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item cafes__item--wide">
+                    <img src="./img/comidas/french-toast.jpg" alt="" class="cafes__img" />
+                </figure>
+                <figure class="cafes__item cafes__item--tall">
+                    <img src="./img/comidas/frappe-cookie.jpg" alt="" class="cafes__img" />
+                </figure>
+            </div>
+            <!-- <button id="load_more" class="button button--quidel button--round-s"> Load More</button> -->
+
+            <a id="load_more">Load More</a>
+            <!-- <a id="view_less">View Less</a> -->
         </section>
 
-     <!-- .............................................................. -->
+        <!-- .............................................................. -->
+        <div class="headers" id="menu_container">
+            <h2 class="headers__title">Gatitos en adopcion</h2>
+        </div>
 
-      
 
 
         <section class="content">
@@ -284,7 +295,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button  class="btn_slider" id= "btn_slider">Adoptame</button>
+                            <button class="btn_slider" id= "btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat">
                             <img src="img/proxy.jpg">
@@ -294,9 +305,9 @@
             </div>
         </section>
 
-        <!-- Popup-adpción -->
+        <!-- Popup -->
 
-        <div class="overlay " id="overlay">
+        <div class="overlay" id="overlay">
         <div class="popup" id="popup">
             <a href="" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
             
@@ -320,27 +331,27 @@
         </div>
     </div>
 
-        <section class="cont_slider_cats">
+        <section class="cont_slider_cats hidden_rgth">
             <div class="box_slider_cats">
                 <ul id="listCats">
                     <li class="list_cats_li" id="indx_cts_li_1">
                         <div class="circle_cat">
-                            <img src="img/cat1.jpg">
+                            <img src="img/cat1.jpg" alt="">
                         </div>
                     </li>
                     <li class="list_cats_li" id="indx_cts_li_2">
                         <div class="circle_cat">
-                            <img src="img/cat2.jpg">
+                            <img src="img/cat2.jpg" alt="">
                         </div>
                     </li>
                     <li class="list_cats_li" id="indx_cts_li_3">
                         <div class="circle_cat">
-                            <img src="img/cat3.jpg">
+                            <img src="img/cat3.jpg" alt="">
                         </div>
                     </li>
                     <li class="list_cats_li" id="indx_cts_li_4">
                         <div class="circle_cat">
-                            <img src="img/cat5.jpg">
+                            <img src="img/cat5.jpg" alt="">
                         </div>
                     </li>
                     <li class="list_cats_li" id="indx_cts_li_5">
@@ -352,28 +363,25 @@
             </div>
         </section>
 
-
-
         <section class="aboutus container">
 
             <div class="aboutus__contact">
-               <h3 class="aboutus__title">Contacto</h3>
+                <h3 class="aboutus__title">Contacto</h3>
                 <ul class="contact">
                     <li class="contact__item"><i class='bx bxs-map contact__icon'></i>
                         Av. Camila Verduzco # 46. Gral. Renata Lugo
                     </li>
                     <li class="contact__item"><i class='bx bxs-calendar contact__icon'></i>
                         Lunes a Domingos. De 9am a 20pm</li>
-                    
+
                     <li class="contact__item"><i class='bx bxs-phone contact__icon'></i>
                         999-999
                     </li>
                     <li class="contact__item"><i class='bx bxs-envelope contact__icon'></i>
                         contacto@aromasymaullidos.com
                     </li>
-                </ul>            
+                </ul>
             </div>
-     
 
 
             <div class="map">
@@ -385,58 +393,96 @@
 
             </div>
 
-            
-            <form action="" class="form">
-                <label for="">Nombre</label>
-                <input type="text">
-                <input type="email" name="" id="">
-                <input type="button" value="">
+
+            <form class="form" id="form" action="https://formspree.io/f/myyvjevb"
+  method="POST" novalidate>
+
+                <h4 class="form__title"> Nuestro newsletter</h4>
+                <p class="form__paragraph">Inscribete para recibir todas las novedades.</p>
+
+                <div class="form__container ">
+
+                    <label for="form__name"></label>
+                    <input type="text" class="form__name input input--error" id="form__name" name="name" placeholder="Nombre">
+
+
+                    <div id="nameerror" class="errorcontainer">
+                        <img src="img/icons/error.svg" alt="error" class="iconerror">
+                        <small class="error">Ingresa tu nombre</small>
+                    </div>
+
+
+                    <label for="form__email"></label>
+                    <input type="email" class="form__email input input--error" id="form__email" placeholder="Email" name="email">
+
+                    <div id="emailerror" class="errorcontainer">
+                        <img src="img/icons/error.svg" alt="error" class="iconerror">
+                        <small class="error">Ingresa un correo válido.</small>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="form__button" id="form__button"> INSCRIBIRSE</button>
+
+
             </form>
-            
+
         </section>
+        <!-- BOTON WHATSAPP -->
+
+        <a href="https://api.whatsapp.com/send?phone=34111223344" class="whatsapp__icon" alt="Comunicate con nosotros vía whatsapp" target="_blank" title="Comunicate con nosotros vía whatsapp"></a>
+        <i class='bx bx-up-arrow-alt arrow_up'></i>
     </main>
-
-    <!-- BOTON WHATSAPP -->
-
-    <div class="whatsapp">
-        <a href="tel:+" class="whatsapp__icon" alt="Comunicate con nosotros vía whatsapp"></a>
-    </div>
 
 
     <!-- FOOTER -->
     <footer class="container-footer">
-        <div class="logo__footer">
-           <a href="#header"><img src="img/logos/light_pink.png" alt="" width="128px"></a>
+        <div class="container-box-footer">
+            <div class="logo__footer">
+                <a href="#header"><img src="img/logos/light_pink.png" alt="" width="128px"></a>
+            </div>
+    
+            <div class="subtitulo__footer">
+                <h3>Aromas y Maullidos</h3>
+            </div>
+    
+            <div class="iconos__footer">
+                <div class="cont_iconos_footer">
+                    <div class="icono_ftr instagram">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+        
+                    <div class="icono_ftr whatsaap">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+        
+                    <div class="icono_ftr twitter">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+        
+                    <div class="icono_ftr facebook">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="subtitulo__footer">
-            <h3>Aromas y Maullidos</h3>
-        </div>
-
-        <div class="iconos__footer">
-            <div class="icono_ftr instagram">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-
-            <div class="icono_ftr whatsaap">
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-
-            <div class="icono_ftr twitter">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-
-            <div class="icono_ftr facebook">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </div>
-        </div>
     </footer>
     <p class="parrafo__footer">Copyright &copy; 2022 Autores: Sebastian - Mary - Katherine, todos los
         derechos reservados.</p>
+    <div class="loader_cont" id="loader_cont_id">
+        <div class="loader_box">
+            <span class="loader"></span>
+        </div>
+    </div>
+
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/validaciones-popup.js"></script>
+    <script src="js/newsletter.js"></script>
+
 </body>
 
 </html>
