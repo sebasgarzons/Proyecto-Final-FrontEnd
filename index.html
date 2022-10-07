@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/popup.css"> -->
     <script defer src="js/custom.js"></script>    
     <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "0kNsWHL0Lh");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
     <title>Aromas y Maullidos</title>
@@ -222,7 +223,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button>Know me!</button>
+                            <button class="btn_slider" id= "btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat">
                             <img src="img/cat1.jpg">
@@ -240,7 +241,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button>Know me!</button>
+                            <button class="btn_slider" id= "btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display">
                             <img src="img/cat2.jpg">
@@ -258,7 +259,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button>Know me!</button>
+                            <button class="btn_slider" id= "btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat">
                             <img src="img/cat3.jpg">
@@ -276,7 +277,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button>Know me!</button>
+                            <button class="btn_slider" id= "btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display">
                             <img src="img/cat5.jpg">
@@ -294,7 +295,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button>Know me!</button>
+                            <button class="btn_slider" id= "btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat">
                             <img src="img/proxy.jpg">
@@ -303,6 +304,32 @@
                 </div>
             </div>
         </section>
+
+        <!-- Popup -->
+
+        <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            
+            <img src="img/logos/logo-dark.png" alt="" width="80px">
+            <h3>Formulario de Adopción</h3>
+
+            <form action="" id="form"  novalidate>
+                <div class="contenedor-inputs">
+                    <input type="text" name="" id="nombre" placeholder="Nombre">
+                    <input type="email" name="" id="email" placeholder="Email">
+                    <input type="tel" name="" id="telefono" placeholder="Móvil">
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar</button>
+
+                <div class="mensajes">
+                <p class="advertencias" id="advertencias"></p>
+                <p class="enviar" id="enviar"></p>
+                </div>
+            </form>
+        </div>
+    </div>
 
         <section class="cont_slider_cats hidden_rgth">
             <div class="box_slider_cats">
@@ -452,6 +479,8 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/validaciones-popup.js"></script>
     <script src="js/newsletter.js"></script>
 
 </body>
