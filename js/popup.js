@@ -8,7 +8,10 @@ boton.addEventListener('click', function(){
     popup.classList.add('active');
 })
 
-cerrar.addEventListener('click', function(){
+
+cerrar.addEventListener('click', e=>{
+    e.preventDefault()
     overlay.classList.remove('active');
     popup.classList.remove('active');
+    //overlay.reload();
 })

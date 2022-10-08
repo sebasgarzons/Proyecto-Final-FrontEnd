@@ -164,11 +164,6 @@ body {
     outline: 1px solid;
     outline-color: rgba(54, 21, 0, 0.4);
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-    /* border-radius: 25px;
-    border: 1px solid #28badf;
-    outline: none;
-    padding: 8px 16px;
-    cursor: pointer */
 }
 
 .slider_cat_text button:hover{
@@ -246,11 +241,14 @@ body {
     line-height: 52px;
     font-size: 20px;
     text-align: center;
+    text-transform: lowercase;
     border: 1.5px solid var(--dark-brown);
     color: var(--dark-brown);
     font-family: 'FuturaPTBook' ;
     
+    
 }
+
 
 .popup form .contenedor-inputs input:focus{
     outline: unset;
