@@ -78,7 +78,7 @@
     visibility: hidden;
 }
 
-.overlay.active{
+.active_form_overlay{
     visibility: visible;
 }
 
@@ -197,20 +197,20 @@
 
 /* Animaciones */
 
-.popup.active{
+.active_form{
     opacity: 1;
     transform: scale(1);
 }
 
-.popup.active img{
+.active_form img{
     animation: entradaImagen .8s ease .5s forwards;
 }
 
-.popup.active h3{
+.active_form h3{
     animation: entradaTitulo .8s ease .5s forwards;
 }
 
-.popup.active .contenedor-inputs{
+.active_form .contenedor-inputs{
     animation: entradaInputs 1s ease 1s forwards;
 }
 
