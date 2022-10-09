@@ -351,7 +351,7 @@ input::placeholder {
   font-size: 1.2rem;
 }
 
-.form__button {
+.button {
   padding: 1.5em;
   text-align: center;
   background-color: var(--dark-brown);
@@ -365,7 +365,7 @@ input::placeholder {
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
 }
 
-.form__button:hover {
+.button:hover {
   outline-color: rgba(54, 21, 0, 0);
   outline-offset: 80px;
   text-shadow: 1px 1px 6px var(--light-pink);

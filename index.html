@@ -192,9 +192,9 @@
                     <img src="./img/comidas/frappe-cookie.jpg" alt="" class="cafes__img" />
                 </figure>
             </div>
-            <!-- <button id="load_more" class="button button--quidel button--round-s"> Load More</button> -->
+           
 
-            <a id="load_more">Load More</a>
+            <a id="load_more" class="button">Load More</a>
             <!-- <a id="view_less">View Less</a> -->
         </section>
 
@@ -389,23 +389,20 @@
             </div>
 
 
-            <form class="form" id="form" action="https://formspree.io/f/myyvjevb"
-  method="POST" novalidate>
+           <form   action="https://formspree.io/f/myyvjevb"
+           method="POST">
 
                 <h4 class="form__title"> Nuestro newsletter</h4>
                 <p class="form__paragraph">Inscribete para recibir todas las novedades.</p>
 
                 <div class="form__container ">
-
                    
                     <input type="text" class="form__name input input--error" id="form__name" name="name" placeholder="Nombre">
-
 
                     <div id="nameerror" class="errorcontainer">
                         <img src="img/icons/error.svg" alt="error" class="iconerror">
                         <small class="error">Ingresa tu nombre</small>
                     </div>
-
 
                     
                     <input type="email" class="form__email input input--error" id="form__email" placeholder="Email" name="email">
@@ -417,7 +414,7 @@
                 </div>
 
 
-                <button type="submit" class="form__button" id="form__button"> INSCRIBIRSE</button>
+                <button type="submit" class="form__button button" id="form__button"> INSCRIBIRSE</button>
 
 
             </form>
@@ -471,12 +468,12 @@
         </div>
     </div>
 
-
+    <script src="js/newsletter.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/validaciones-popup.js"></script>
-    <script src="js/newsletter.js"></script>
+     <script src="js/popup.js"></script> 
+     <script src="js/validaciones-popup.js"></script>
+    
 
 </body>
 
