@@ -24,7 +24,7 @@ $(".btn_slider").click(function() {
 
 });
 
-$(".btn-cerrar-popup").click(function() {
+$(".btn-cerrar-popup").click( e=> {
     e.preventDefault();
     console.log('click');
 	$(".overlay_form").removeClass("active_form_overlay");
