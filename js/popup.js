@@ -1,4 +1,4 @@
-var boton = document.getElementById('btn_slider'),
+var boton = document.getElementsByClassName('button-adopt'),
     overlay = document.getElementById('overlay'),
     popup = document.getElementById('popup'),
     cerrar = document.getElementById('btn-cerrar-popup');
@@ -16,7 +16,7 @@ var boton = document.getElementById('btn_slider'),
     //overlay.reload();
 }) */
 
-$(".btn_slider").click(function() {
+$(".button-adopt").click(function() {
     console.log('click');
 	$(".overlay_form").addClass("active_form_overlay");
     console.log('click_overlay');
