@@ -72,7 +72,7 @@ $('#load_more').click(function () {
 	let load_more = document.getElementById('load_more').innerText;
 	console.log('El valor es: ' + load_more);
 
-	switch (load_more){
+	switch (load_more) {
 		case "Load More":
 			document.getElementById('load_more').innerText = 'View Less';
 			break;
@@ -81,17 +81,17 @@ $('#load_more').click(function () {
 			break;
 	}
 
-/* 	if (load_more = 'Load More') {
-		console.log('Entré aquí');
-		document.getElementById('load_more').innerText = 'View Less';
-	}
+	/* 	if (load_more = 'Load More') {
+			console.log('Entré aquí');
+			document.getElementById('load_more').innerText = 'View Less';
+		}
 
-	load_more = document.getElementById('load_more').innerText;
-	console.log('El valor es: ' + load_more);
+		load_more = document.getElementById('load_more').innerText;
+		console.log('El valor es: ' + load_more);
 
-	if(load_more = 'View Less'){
-		document.getElementById('load_more').innerText = 'View More';
-	} */
+		if(load_more = 'View Less'){
+			document.getElementById('load_more').innerText = 'View More';
+		} */
 
 });
 
@@ -103,16 +103,16 @@ $('#load_more').click(function () {
 
 /* ----------------------------------------------------------------------- */
 
-$(".arrow_up").click(function() {
+$(".arrow_up").click(function () {
 
 	$("body, html").animate({
-		scrollTop: $("main").offset().top -80
-	},800);
+		scrollTop: $("main").offset().top - 80
+	}, 800);
 
 });
 
 let loader = document.getElementById('loader_cont_id');
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
 	loader.style.display = 'none';
 });
 
@@ -121,11 +121,12 @@ window.addEventListener('load', function() {
 const observer_left = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		console.log(entry);
-		if (entry.isIntersecting){
+		if (entry.isIntersecting) {
 			entry.target.classList.add('show');
-		}/*  else {
-			entry.target.classList.remove('show');
-		} */
+		}
+		/*  else {
+					entry.target.classList.remove('show');
+				} */
 	});
 });
 
@@ -136,14 +137,49 @@ hiddenElements_left.forEach((el) => observer_left.observe(el));
 const observer_right = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		console.log(entry);
-		if (entry.isIntersecting){
+		if (entry.isIntersecting) {
 			entry.target.classList.add('show');
-		}/*  else {
-			entry.target.classList.remove('show');
-		} */
+		}
+		/*  else {
+					entry.target.classList.remove('show');
+				} */
 	});
 });
 
 
 const hiddenElements_right = document.querySelectorAll('.hidden_lft');
 hiddenElements_right.forEach((el) => observer_right.observe(el));
+
+
+/* const typeWriter = document.getElementById("typewriter-text");
+const text = "En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.";
+
+typeWriter.innerHTML = text;
+typeWriter.style.setProperty("--characters", text.length); */
+
+
+const maquina4 = document.getElementById('maquina-escribir4')
+
+const maquinaEscribir3 = (text = '',tiempo = 10, etiqueta = '') => {
+  let arrayCaracteres = text.split('')
+  etiqueta.innerHTML = ''
+  let i = 0
+  let j = text.length
+  let escribir = setInterval(function(){
+    if (i === arrayCaracteres.length) {
+      etiqueta.innerHTML = text.substring(0,j)
+ 
+      if (j === 0) {
+        etiqueta.innerHTML = ''
+        i = 0
+        j = text.length
+      }
+    } else {
+      etiqueta.innerHTML += arrayCaracteres[i]
+      i++
+    }
+  }, tiempo)
+}
+
+
+maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4)
