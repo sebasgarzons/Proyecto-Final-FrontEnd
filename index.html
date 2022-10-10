@@ -13,22 +13,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logos/gato-verde.ico">
-    <link rel="stylesheet" href="css/header.css">    
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
 
 
-    <link rel="stylesheet" href="css/custom.css">    
+    <link rel="stylesheet" href="css/custom.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/botones.css">
-   
-    <script defer src="js/custom.js"></script>  
-      
-    <script>(function(d){var s = d.createElement("script");s.setAttribute("data-account", "0kNsWHL0Lh");s.setAttribute("src", "https://cdn.userway.org/widget.js");(d.body || d.head).appendChild(s);})(document)</script>
+
+    <script defer src="js/custom.js"></script>
+
+    <script>
+        (function (d) {
+            var s = d.createElement("script");
+            s.setAttribute("data-account", "0kNsWHL0Lh");
+            s.setAttribute("src", "https://cdn.userway.org/widget.js");
+            (d.body || d.head).appendChild(s);
+        })(document)
+    </script>
     <title>Aromas y Maullidos</title>
 </head>
 
@@ -40,14 +47,18 @@
             <div class="contenedor-nav">
 
                 <div class="logo">
-                    <a href="#header"><img src="img/logos/logo-dark.png" alt="Dibujo de un gatito sentado arriba de una taza y dentro de ella dice Aromas y Maullidos." width="100px" height="100px"></a>
+                    <a href="#header"><img src="img/logos/logo-dark.png"
+                            alt="Dibujo de un gatito sentado arriba de una taza y dentro de ella dice Aromas y Maullidos."
+                            width="100px" height="100px"></a>
                 </div>
 
                 <div class="enlaces" id="enlaces">
                     <a href="#menu_container" id="enlace-menu" class="btn-header">Menu</a>
                     <a href="#" id="enlace-gatitos" class="btn-header">Gatitos</a>
-                    
-                    <a href="#" id="enlace-reserva" class="btn-header">Reserva</a>
+
+                    <!-- <a href="#" id="enlace-reserva" class="btn-header">Reserva</a> -->
+                    <button href="#" id="enlace-reserva" class="btn-header">Reserva</button>
+
                     <a href="#aboutus" id="enlace-sobre-nosotros" class="btn-header">Sobre Nosotros</a>
                 </div>
 
@@ -205,7 +216,7 @@
                     <img src="./img/comidas/frappe-cookie.jpg" alt="" class="cafes__img" />
                 </figure>
             </div>
-           
+
             <button id="load_more" class="button button-viewmore">Load More</button>
             <!-- <a id="load_more" class="button">Load More</a> -->
             <!-- <a id="view_less">View Less</a> -->
@@ -231,7 +242,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                                <button class="button button-adopt" id= "btn_slider">Adoptame</button>
+                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat">
                             <img src="img/cat1.jpg">
@@ -249,7 +260,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button class="button button-adopt" id= "btn_slider">Adoptame</button>
+                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display">
                             <img src="img/cat2.jpg">
@@ -267,7 +278,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                                <button class="button button-adopt" id= "btn_slider">Adoptame</button>
+                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat">
                             <img src="img/cat3.jpg">
@@ -285,7 +296,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                                <button class="button button-adopt" id= "btn_slider">Adoptame</button>
+                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display">
                             <img src="img/cat5.jpg">
@@ -303,7 +314,7 @@
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                                <button class="button button-adopt" id= "btn_slider">Adoptame</button>
+                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat">
                             <img src="img/proxy.jpg">
@@ -316,28 +327,28 @@
         <!-- Popup -->
 
         <div class="overlay overlay_form" id="">
-        <div class="popup popup_form" id="">
-            <a href="" id="" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-            
-            <img src="img/logos/logo-dark.png" alt="" width="80px">
-            <h3>Formulario de Adopción</h3>
+            <div class="popup popup_form" id="">
+                <a href="" id="" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
 
-            <form action="" id="form_adopt"  novalidate>
-                <div class="contenedor-inputs">
-                    <input type="text" name="" id="nom_adopt" placeholder="Nombre">
-                    <input type="email" name="" id="eml_adopt" placeholder="nombre@correo.com">
-                    <input type="tel" name="" id="tel_adopt" placeholder="09-9999-9999">
-                </div>
+                <img src="img/logos/logo-dark.png" alt="" width="80px">
+                <h3>Formulario de Adopción</h3>
 
-                <button type="submit" class="btn-submit button button-adopt">Enviar</button>
+                <form action="" id="form_adopt" novalidate>
+                    <div class="contenedor-inputs">
+                        <input type="text" name="" id="nom_adopt" placeholder="Nombre">
+                        <input type="email" name="" id="eml_adopt" placeholder="nombre@correo.com">
+                        <input type="tel" name="" id="tel_adopt" placeholder="09-9999-9999">
+                    </div>
 
-                <div class="mensajes">
-                <p class="advertencias" id="advertencias"></p>
-                <p class="enviar" id="enviar"></p>
-                </div>
-            </form>
+                    <button type="submit" class="btn-submit button button-adopt">Enviar</button>
+
+                    <div class="mensajes">
+                        <p class="advertencias" id="advertencias"></p>
+                        <p class="enviar" id="enviar"></p>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
 
         <section class="cont_slider_cats hidden_rgth">
             <div class="box_slider_cats">
@@ -402,23 +413,24 @@
             </div>
 
 
-           <form class="form" action="https://formspree.io/f/myyvjevb"
-           method="POST">
+            <form class="form" action="https://formspree.io/f/myyvjevb" method="POST">
 
                 <h4 class="form__title"> Nuestro newsletter</h4>
                 <p class="form__paragraph">Inscribete para recibir todas las novedades.</p>
 
                 <div class="form__container ">
-                   
-                    <input type="text" class="form__name input input--error" id="form__name" name="name" placeholder="Nombre" required>
+
+                    <input type="text" class="form__name input input--error" id="form__name" name="name"
+                        placeholder="Nombre" required>
 
                     <div id="nameerror" class="errorcontainer">
                         <img src="img/icons/error.svg" alt="error" class="iconerror">
                         <small class="error">Ingresa tu nombre</small>
                     </div>
 
-                    
-                    <input type="email" class="form__email input input--error" id="form__email" placeholder="Email" name="email" required>
+
+                    <input type="email" class="form__email input input--error" id="form__email" placeholder="Email"
+                        name="email" required>
 
                     <div id="emailerror" class="errorcontainer">
                         <img src="img/icons/error.svg" alt="error" class="iconerror">
@@ -433,10 +445,11 @@
             </form>
         </section>
 
-        
+
         <!-- BOTON WHATSAPP -->
 
-        <a href="https://api.whatsapp.com/send?phone=34111223344" class="whatsapp__icon" alt="Comunicate con nosotros vía whatsapp" target="_blank" title="Comunicate con nosotros vía whatsapp"></a>
+        <a href="https://api.whatsapp.com/send?phone=34111223344" class="whatsapp__icon"
+            alt="Comunicate con nosotros vía whatsapp" target="_blank" title="Comunicate con nosotros vía whatsapp"></a>
         <i class='bx bx-up-arrow-alt arrow_up'></i>
     </main>
 
@@ -447,25 +460,25 @@
             <div class="logo__footer">
                 <a href="#header"><img src="img/logos/light_pink.png" alt="" width="128px"></a>
             </div>
-    
+
             <div class="subtitulo__footer">
                 <h3>Aromas y Maullidos</h3>
             </div>
-    
+
             <div class="iconos__footer">
                 <div class="cont_iconos_footer">
                     <div class="icono_ftr instagram">
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
-        
+
                     <div class="icono_ftr whatsaap">
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
-        
+
                     <div class="icono_ftr twitter">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
-        
+
                     <div class="icono_ftr facebook">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                     </div>
@@ -485,9 +498,9 @@
     <script src="js/newsletter.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
-     <script src="js/popup.js"></script> 
-     <script src="js/validaciones-popup.js"></script>
-    
+    <script src="js/popup.js"></script>
+    <script src="js/validaciones-popup.js"></script>
+
 
 </body>
 
