@@ -514,6 +514,13 @@ body {
     transition-delay: 1500ms;
 } */
 
+
+.btn-submit{
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 12px 28px
+}
+
 /* =================================================================
 
     Qué hace inset?

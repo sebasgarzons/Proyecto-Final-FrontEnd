@@ -1,11 +1,12 @@
-const nombre = document.getElementById('nombre');
-const email = document.getElementById('email');
-const telefono = document.getElementById('telefono');
-const form = document.getElementById('form');
-const parrafo = document.getElementById('advertencias');
-const enviado = document.getElementById('enviar');
+let nom = document.getElementById('nom_adopt');
+let eml = document.getElementById('eml_adopt');
+let telefono = document.getElementById('tel_adopt');
+let form_adopt = document.getElementById('form_adopt');
+let parrafo = document.getElementById('advertencias');
+let enviado = document.getElementById('enviar');
 
-form.addEventListener("submit", e=> {
+form_adopt.addEventListener("submit", e=> {
+    console.log('submit form')
     e.preventDefault()
 
     let advertencias = ""
@@ -14,22 +15,22 @@ form.addEventListener("submit", e=> {
     let telefonoV = /^[09][0-9]{9,9}$/
     parrafo.innerHTML = ""
 
-    if(nombre.value.length < 6){
+    if(nom.value.length < 6){
         advertencias += 'El nombre no es valido. <br>'
         entrar = true
-        nombre.style.border = '1px solid red'
+        nom.style.border = '1px solid red'
     }
-        else if (nombre.value.length > 6){
-            nombre.style.border = '1px solid green'
+        else if (nom.value.length > 6){
+            nom.style.border = '1px solid green'
         }
 
-    if(!regexEmail.test(email.value)){
+    if(!regexEmail.test(eml.value)){
         advertencias += 'El email no es valido. <br>'
         entrar = true
-        email.style.border = '1px solid red'
+        eml.style.border = '1px solid red'
     }
-        else if (regexEmail.test(email.value)){
-            email.style.border =' 1px solid green'
+        else if (regexEmail.test(eml.value)){
+            eml.style.border =' 1px solid green'
         }
 
     if(!telefonoV.test(telefono.value)){
@@ -49,6 +50,24 @@ form.addEventListener("submit", e=> {
         enviado.innerHTML = "Enviado"
         alert("Enviado");
         form.reset();
-    
     }
 })
+
+console.log('Validaciones enter')
+
+$(".btn-submit").click(function() {
+    console.log('click on validaciones');
+/* 	$(".overlay_form").addClass("active_form_overlay");
+    console.log('click_overlay');
+	$(".popup_form").addClass("active_form"); */
+
+});
+
+/* $(".btn-cerrar-popup").click( e=> {
+    e.preventDefault();
+    console.log('click');
+	$(".overlay_form").removeClass("active_form_overlay");
+    console.log('click_overlay');
+	$(".popup_form").removeClass("active_form");
+
+}); */
