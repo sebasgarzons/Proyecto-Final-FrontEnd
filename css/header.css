@@ -77,7 +77,7 @@ nav {
     overflow: hidden;
 }
 
-nav .enlaces a {
+.btn-header {
     position: relative;
     display: inline-block;
     padding: 5px 0;
@@ -91,10 +91,10 @@ nav .enlaces a {
     color: var(--dark-brown);
     border-bottom: 3px solid transparent;
     transition: color 0.3s ease-in-out;
-
+    cursor: pointer;
 }
 
-nav .enlaces a::before {
+.btn-header::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -105,12 +105,12 @@ nav .enlaces a::before {
     transition: transform 0.3s ease-in-out;
 }
 
-nav .enlaces a:hover {
+.btn-header:hover {
     color: var(--light-pink);
     text-shadow: 1px 1px 6px var(--dark-brown);
 }
 
-nav .enlaces a:hover::before {
+.btn-header:hover::before {
     transform: scaleX(1);
 }
 
@@ -192,7 +192,7 @@ nav .enlaces a:hover::before {
     }
 
 
-    nav .enlaces a {
+    .btn-header {
         display: block;
         width: 100%;
         height: 50px;
@@ -201,7 +201,7 @@ nav .enlaces a:hover::before {
 
     }
 
-    nav .enlaces a:hover {
+    .btn-header:hover {
         background-color: RGB(253, 210, 191, 0.25);
         transition: 0.6;
     }
