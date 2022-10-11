@@ -1,34 +1,3 @@
-:root {
-
-    /* paleta */
-
-    --white: #ffffff;
-    --black: #0000;
-    --dark-brown: #361500;
-    --light: #FFEDED;
-    --light-pink: #FDD2BF;
-    --details: #76BA99;
-
-}
-
-@font-face {
-    font-family: 'Olivia';
-    src: url('/fonts/Olivia.ttf') format('truetype');
-
-}
-
-@font-face {
-    font-family: 'FuturaPTBook';
-    src: url('/fonts/FuturaPTBook.otf') format('truetype');
-
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .container-footer {
     display: flex;
     width: 100%;

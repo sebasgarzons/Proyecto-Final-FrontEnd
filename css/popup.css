@@ -1,32 +1,4 @@
-:root {
 
-    /* paleta */
-    --white: #ffffff;
-    --black: #0000;
-    --dark-brown: #361500;
-    --light: #FFEDED;
-    --light-pink: #FDD2BF;
-    --details: #76BA99;
-
-}
-
-@font-face {
-    font-family: 'Olivia';
-    src: url('fonts/Olivia.ttf') format('truetype');
-
-}
-
-@font-face {
-    font-family: 'FuturaPTBook';
-    src: url('/fonts/FuturaPTBook.otf') format('truetype');
-
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
 /* body{
     background-color: var(--white);
@@ -115,7 +87,7 @@
 
 .popup h3{
     font-size: 36px;
-    font-family:'FuturaPTBook';
+    font-family: Futura;
     opacity: 0;
     margin-bottom: 20px;
 }
@@ -134,7 +106,7 @@
     text-align: center;
     border: 1.5px solid var(--dark-brown);
     color: var(--dark-brown);
-    font-family: 'FuturaPTBook' ;
+    font-family: Futura;
     text-transform: none;
     
     
@@ -162,7 +134,7 @@
     text-align: left;
     color: red;
     padding-top: 20px;
-    font-family: 'FuturaPTBook';
+    font-family: Futura;
     font-size: 19px;
 }
 
@@ -171,7 +143,7 @@
     text-align: left;
     color: var(--dark-brown);
     padding-top: 20px;
-    font-family: 'FuturaPTBook';
+    font-family: Futura;
     font-weight: 600;
     font-size: 15px;
 }
