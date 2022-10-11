@@ -508,6 +508,7 @@ nav {
   border-radius: 7px;
   width: 100%;
   border: 1px solid var(--dark-brown);
+  margin: 1rem;
 }
 
 .input-nws::placeholder {
@@ -515,24 +516,6 @@ nav {
   text-transform: uppercase;
 }
 
-.errorcontainer {
-  position: relative;
-  text-align: left;
-  padding-bottom: 1em;
-  visibility: hidden;
-}
-
-.iconerror {
-  position: absolute;
-  right: 40px;
-  bottom: 53px;
-}
-
-.error {
-  text-align: left;
-  font-style: italic;
-  font-size: 1.2rem;
-}
 
 .whatsapp__icon {
   display: block;
