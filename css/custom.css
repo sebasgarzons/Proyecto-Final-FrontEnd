@@ -4,6 +4,10 @@ html {
     box-sizing: border-box;
 }
 
+button{
+    all: unset;
+}
+
 body {
     overflow-x: hidden;
     position: relative;
@@ -148,29 +152,14 @@ body {
     margin: 0;
 }
 
-.slider_cat_text button {
-    margin-top: 24px;
-    padding: 0 20px;
-    margin-bottom: 20px;
-    height: 40px;
-    line-height: 40px;
-    border: none;
-    color: var(--light-pink);
-    background-color: var(--dark-brown);
-    font-family: 'FuturaPTBook';
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 7px;
-    outline: 1px solid;
-    outline-color: rgba(54, 21, 0, 0.4);
-    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-}
+/* .button-viewmore {
+    padding: 1em;  
+    margin: auto;
+    width: 24%;
+   
+} */
 
-.slider_cat_text button:hover{
-    outline-color: rgba(54, 21, 0, 0);
-    outline-offset: 80px;
-    text-shadow: 1px 1px 6px var(--light-pink);
-}
+
 
 /* Popup */
 
@@ -202,6 +191,7 @@ body {
     transition: .2s ease all;
     transform: scale(0.7);
     opacity: 0;
+    z-index: 2;
 }
 
 .popup .btn-cerrar-popup{
@@ -256,7 +246,7 @@ body {
     
 }
 
-.popup form .btn-submit{
+/* .popup form .btn-submit{
     padding: 0 20px;
     height: 40px;
     line-height: 40px;
@@ -276,7 +266,7 @@ body {
     outline-color: rgba(54, 21, 0, 0);
     outline-offset: 80px;
     text-shadow: 1px 1px 6px var(--light-pink);
-}
+} */
 
 .popup form ::placeholder{
     color: var(--dark-brown);
@@ -527,6 +517,17 @@ body {
 .cafes__item:nth-child(9){
     transition-delay: 1500ms;
 } */
+
+
+.btn-submit{
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 12px 28px
+}
+
+.caja{
+    max-width: 0px;
+}
 
 /* =================================================================
 

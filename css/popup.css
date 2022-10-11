@@ -76,10 +76,9 @@
     align-items: center;
     justify-content: center;
     visibility: hidden;
-    z-index: 50;
 }
 
-.overlay.active{
+.active_form_overlay{
     visibility: visible;
 }
 
@@ -126,7 +125,7 @@
 }
 
 
-.popup form .contenedor-inputs input{
+.popup form .contenedor-inputs .input-adopt  {
     width: 100%;
     margin-bottom: 20px;
     height: 52px;
@@ -136,16 +135,18 @@
     border: 1.5px solid var(--dark-brown);
     color: var(--dark-brown);
     font-family: 'FuturaPTBook' ;
+    text-transform: none;
+    
     
 }
 
-.popup form .contenedor-inputs input:focus{
+.popup form .contenedor-inputs .input-adopt:focus{
     outline: unset;
     border: 2px solid var(--dark-brown);
     
 }
 
-.popup form .btn-submit{
+/* .button{
     padding: 0 20px;
     height: 40px;
     line-height: 40px;
@@ -161,15 +162,16 @@
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.popup form .btn-submit:hover{
+.button:hover{
     outline-color: rgba(54, 21, 0, 0);
     outline-offset: 80px;
     text-shadow: 1px 1px 6px var(--light-pink);
-}
+} */
 
 .popup form ::placeholder{
     color: var(--dark-brown);
     opacity: 0.6;
+    text-transform: none;
 }
 
 .mensajes{
@@ -198,20 +200,20 @@
 
 /* Animaciones */
 
-.popup.active{
+.active_form{
     opacity: 1;
     transform: scale(1);
 }
 
-.popup.active img{
+.active_form img{
     animation: entradaImagen .8s ease .5s forwards;
 }
 
-.popup.active h3{
+.active_form h3{
     animation: entradaTitulo .8s ease .5s forwards;
 }
 
-.popup.active .contenedor-inputs{
+.active_form .contenedor-inputs{
     animation: entradaInputs 1s ease 1s forwards;
 }
 
