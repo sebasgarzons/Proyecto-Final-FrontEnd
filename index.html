@@ -57,7 +57,7 @@
                     <a href="#" id="enlace-gatitos" class="btn-header">Gatitos</a>
 
                     <!-- <a href="#" id="enlace-reserva" class="btn-header">Reserva</a> -->
-                    <button href="#" id="enlace-reserva" class="btn-header">Reserva</button>
+                    <button href="#" id="reserva__button" class="btn-header">Reserva</button>
 
                     <a href="#aboutus" id="enlace-sobre-nosotros" class="btn-header">Sobre Nosotros</a>
                 </div>
@@ -364,9 +364,9 @@
 
                 <form action="" id="form_adopt" novalidate>
                     <div class="contenedor-inputs">
-                        <input type="text" name="" id="nom_adopt" placeholder="Nombre">
-                        <input type="email" name="" id="eml_adopt" placeholder="nombre@correo.com">
-                        <input type="tel" name="" id="tel_adopt" placeholder="09-9999-9999">
+                        <input class="input-adopt" type="text" name="" id="nom_adopt" placeholder="Nombre">
+                        <input class="input-adopt" type="email" name="" id="eml_adopt" placeholder="nombre@correo.com">
+                        <input class="input-adopt" type="tel" name="" id="tel_adopt" placeholder="0123456789">
                     </div>
 
                     <button type="submit" class="btn-submit button button-adopt">Enviar</button>
@@ -449,7 +449,7 @@
 
                 <div class="form__container ">
 
-                    <input type="text" class="form__name input input--error" id="form__name" name="name"
+                    <input type="text" class="form__name input-nws input--error" id="form__name" name="name"
                         placeholder="Nombre" required>
 
                     <div id="nameerror" class="errorcontainer">
@@ -458,7 +458,7 @@
                     </div>
 
 
-                    <input type="email" class="form__email input input--error" id="form__email" placeholder="Email"
+                    <input type="email" class="form__email input-nws input--error" id="form__email" placeholder="Email"
                         name="email" required>
 
                     <div id="emailerror" class="errorcontainer">
@@ -524,6 +524,77 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<div class="modal" id="email-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+
+
+        <div class="modal-content-left">
+            <img src="img/modal-cat.jpg" alt="Un gato gris sentado a la mesa mirando un plato de pancakes." class="modal-img">
+        </div>
+
+        <div class="modal-content-right">
+            <form action="/" method="GET" class="modal-form" id="form-reserva">
+                <img src="img/logos/logo-dark.png" alt="" width="80px">
+                <h1>Haz tu reserva</h1>
+                 
+                <div class="form-validation-reserva">
+                    <input type="text" class="modal-input" id="reserva-name" name="nombre" placeholder="Nombre">
+                    <p>Error Message</p>
+                </div>
+
+                <div class="form-validation-reserva">
+                    <input type="email" class="modal-input" id="reserva-email" name="email" placeholder="nombre@correo.com">
+                    <p>Error Message</p>
+                </div>
+
+                <div class="form-validation-reserva">
+                    <input type="tel" class="modal-input" id="reserva-phone" name="telefono" placeholder="999-999" >
+                    <p>Error Message</p>
+                </div>
+                
+                <div class="form-date">
+                    <div class="form-validation-reserva">
+                        <input type="date" class="modal-input" id="reserva-date" name="fecha" >
+                        <p>Error Message</p>
+                    </div>
+                    
+                    <div class="form-validation-reserva">
+                        <input type="time" class="modal-input" id="reserva-time" name="hora"
+                        min="09:00" max="18:00" >
+                        <p>Error Message</p>
+                    </div>
+                </div>
+
+
+
+                <input type="submit" class=" button modal-input-btn" value="Reservar">
+                </form>
+        </div>
+
+    </div>
+</div>
+
+
+ 
+    <script defer src="js/reserva.js"></script>
     <script src="js/newsletter.js"></script>
     <script src="js/jquery.js"></script>
     <!-- <script src="js/main.js"></script> -->

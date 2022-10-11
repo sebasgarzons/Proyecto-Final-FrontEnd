@@ -12,15 +12,15 @@ form_adopt.addEventListener("submit", e=> {
     let advertencias = ""
     let entrar = false
     let regexEmail= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
-    let telefonoV = /^[09][0-9]{9,9}$/
+    let telefonoV = /^[00][0-9]{9,9}$/
     parrafo.innerHTML = ""
 
-    if(nom.value.length < 6){
+    if(nom.value.length < 1){
         advertencias += 'El nombre no es valido. <br>'
         entrar = true
         nom.style.border = '1px solid red'
     }
-        else if (nom.value.length > 6){
+        else if (nom.value.length > 1){
             nom.style.border = '1px solid green'
         }
 
