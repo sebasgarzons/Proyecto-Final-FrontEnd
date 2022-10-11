@@ -56,14 +56,14 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 520px);
-  z-index: 2;
+  z-index: 3;
 }
 
 .imgs img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.3;
+  opacity: 0.6;
   /* filter: grayscale(100%); */
 }
 
@@ -82,7 +82,7 @@
   top: 50%;
   left: 50%;
   text-align: center;
-  z-index: 1;
+  z-index: 3;
   transform: translate(-50%, -50%);
 }
 
@@ -372,14 +372,14 @@
   margin-bottom: 1rem;
 }
 
-.input {
+.input-nws {
   padding: 1.2em 1.5em;
   border-radius: 7px;
   width: 100%;
   border: 1px solid var(--dark-brown);
 }
 
-input::placeholder {
+.input-nws::placeholder {
   color: var(--dark-brown);
   text-transform: uppercase;
 }
@@ -499,3 +499,162 @@ input::placeholder {
     opacity: 0;
   }
 } */
+
+
+
+/* FORM DE RESERVA */
+
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(12, 1, 1, 0.89);
+  display: none;
+  box-shadow: 0px 0px 5px 0px rgba(54, 21, 0, 0.2);
+}
+
+.modal-content {
+  background: var(--light);
+  margin: 11% auto;
+  width: 60%;
+  /* box-shadow: 0 5px 8px 0 rgb(0, 0, 0 , 0.2); */
+  position: relative;
+  border-radius: 3px;
+  min-height: 620px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  }
+
+
+.modal-content-left {
+  position: relative;
+  
+}
+
+.modal-img {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ object-fit: cover;
+ transform: translate(-50%, -50%);
+}
+.modal-content-right {
+  position: relative;
+  
+  
+}
+
+.modal-form {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 74%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.modal-form h1 {
+  font-size: 36px;
+  text-align: center;
+  /* width: 88%; */
+  margin-bottom: 1.5rem;
+}
+
+.form-validation-reserva {
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+
+  
+.form-validation-reserva p {
+  font-size: 1rem;
+  color: red;
+  /* position: absolute; */
+  top: 1.8rem;
+  /* margin-top: 0.4rem;
+  margin-bottom: 0.3rem; */
+  display: none;
+}
+
+.form-validation-reserva.error p {
+  display: block;
+}
+
+.form-date {
+  display: flex;
+  width: 80%;
+  gap: 3em;
+  align-items: center;
+
+}
+
+
+.modal-input {
+  display: block;
+  padding: 1.2rem;
+  /* padding-left: 0.5rem; */
+  border: none;
+  height: 2rem;
+  width: 100%;
+  margin-bottom: 0.4rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  border: 1px solid var(--dark-brown);
+  /* margin-bottom: 0.8rem; */
+}
+
+
+input[type='date']:-webkit-datetime-edit {
+  color: rgb(41, 4, 111);
+}
+
+.modal-input::placeholder {
+  color: var(--dark-brown);
+  opacity: 0.6;
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .modal-content-left {
+    display: none;
+  }
+
+  .modal-content {
+    grid-template-columns: auto;
+    margin: 15% auto;
+    width: 70%;
+    height: 75%;
+  }
+
+  .modal-input-btn {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal-content {
+    margin: 30% auto;
+    width: 90%;
+    height: 80%;
+
+  }
+}

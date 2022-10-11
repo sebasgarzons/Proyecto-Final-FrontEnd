@@ -125,7 +125,7 @@
 }
 
 
-.popup form .contenedor-inputs input{
+.popup form .contenedor-inputs .input-adopt  {
     width: 100%;
     margin-bottom: 20px;
     height: 52px;
@@ -135,10 +135,12 @@
     border: 1.5px solid var(--dark-brown);
     color: var(--dark-brown);
     font-family: 'FuturaPTBook' ;
+    text-transform: none;
+    
     
 }
 
-.popup form .contenedor-inputs input:focus{
+.popup form .contenedor-inputs .input-adopt:focus{
     outline: unset;
     border: 2px solid var(--dark-brown);
     
@@ -169,6 +171,7 @@
 .popup form ::placeholder{
     color: var(--dark-brown);
     opacity: 0.6;
+    text-transform: none;
 }
 
 .mensajes{

@@ -32,3 +32,56 @@
 .button-viewmore {
   margin-top: 2rem;
 }
+
+
+/* botones del form reserva */
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 2rem;
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+.close-btn:hover{
+  color:  rgba(54, 21, 0, 0.6);
+  transition: 0.2s ease-out;
+
+}
+
+
+
+
+/* boton submit */
+
+.modal-input-btn {
+  padding: 0 20px;
+  margin-top: 2rem;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  color: var(--light-pink);
+  background-color: var(--dark-brown);
+  font-family: "Futura";
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 7px;
+  outline: 1px solid;
+  outline-color: rgba(54, 21, 0, 0.4);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.modal-input-btn:hover {
+  outline-color: rgba(54, 21, 0, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px var(--light-pink);
+}
+
+
+
+
+
+
