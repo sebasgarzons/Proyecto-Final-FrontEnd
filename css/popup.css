@@ -146,28 +146,6 @@
     
 }
 
-/* .button{
-    padding: 0 20px;
-    height: 40px;
-    line-height: 40px;
-    border: none;
-    color: var(--light-pink);
-    background-color: var(--dark-brown);
-    font-family: 'FuturaPTBook';
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 7px;
-    outline: 1px solid;
-    outline-color: rgba(54, 21, 0, 0.4);
-    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.button:hover{
-    outline-color: rgba(54, 21, 0, 0);
-    outline-offset: 80px;
-    text-shadow: 1px 1px 6px var(--light-pink);
-} */
-
 .popup form ::placeholder{
     color: var(--dark-brown);
     opacity: 0.6;

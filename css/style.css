@@ -403,26 +403,6 @@
   font-size: 1.2rem;
 }
 
-/* .button {
-  padding: 1.5em;
-  text-align: center;
-  background-color: var(--dark-brown);
-  color: var(--light);
-  cursor: pointer;
-  font-weight: 700;
-  border: none;
-  width: 40%;
-  border-radius: 7px;
-  outline: rgba(54, 21, 0, 0.4) solid 1px;
-  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-}
-
-.button:hover {
-  outline-color: rgba(54, 21, 0, 0);
-  outline-offset: 80px;
-  text-shadow: 1px 1px 6px var(--light-pink);
-} */
-
 .whatsapp__icon {
   display: block;
   position: fixed;
@@ -507,7 +487,7 @@
 
 .modal {
   position: fixed;
-  z-index: 1;
+  z-index: 11;
   left: 0;
   top: 0;
   width: 100%;
@@ -521,8 +501,7 @@
 .modal-content {
   background: var(--light);
   margin: 11% auto;
-  width: 60%;
-  /* box-shadow: 0 5px 8px 0 rgb(0, 0, 0 , 0.2); */
+  width: 60%;  
   position: relative;
   border-radius: 3px;
   min-height: 620px;
@@ -560,14 +539,14 @@
   height: 74%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+ 
   align-items: center;
 }
 
 .modal-form h1 {
   font-size: 36px;
   text-align: center;
-  /* width: 88%; */
+  
   margin-bottom: 1.5rem;
 }
 
@@ -580,10 +559,9 @@
 .form-validation-reserva p {
   font-size: 1rem;
   color: red;
-  /* position: absolute; */
+ 
   top: 1.8rem;
-  /* margin-top: 0.4rem;
-  margin-bottom: 0.3rem; */
+  
   display: none;
 }
 
@@ -609,15 +587,12 @@
   width: 100%;
   margin-bottom: 0.4rem;
   margin-top: 0.5rem;
-  text-transform: uppercase;
+  text-transform: none;
   border: 1px solid var(--dark-brown);
   /* margin-bottom: 0.8rem; */
 }
 
 
-input[type='date']:-webkit-datetime-edit {
-  color: rgb(41, 4, 111);
-}
 
 .modal-input::placeholder {
   color: var(--dark-brown);
