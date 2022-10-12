@@ -82,3 +82,28 @@
   height: 92rem;
   transition: all 0.5s ease-in-out 0s;
 }
+
+
+/* nav boton reserva */
+
+.btn-header {
+  position: relative;
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 17px;
+  font-size: 17px;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: Futura;
+  color: var(--dark-brown);
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  
+}
+
+.btn-header:focus {
+  outline: solid;
+}
