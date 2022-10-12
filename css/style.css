@@ -468,7 +468,8 @@ nav {
 }
 
 .form__container {
-  width: 77%;
+  width: 72%;
+  text-align: left;
   margin: auto;
 }
 
@@ -488,17 +489,23 @@ nav {
   margin-bottom: 1rem;
 }
 
+.form__label {
+  /* text-align: left; */
+  /* padding: 0 0em; */
+  font-size: 1.3rem;
+}
+
 .input-nws {
   padding: 1.2em 1.5em;
   border-radius: 7px;
   width: 100%;
   border: 1px solid var(--dark-brown);
-  margin: 1rem;
+  margin: 0.5rem 0 1rem 0;
 }
 
 .input-nws::placeholder {
-  color: var(--dark-brown);
-  text-transform: uppercase;
+  color: #3615008d;
+  
 }
 
 
