@@ -160,60 +160,6 @@ body {
 } */
 
 
-
-/* Animaciones */
-
-.popup.active{
-    opacity: 1;
-    transform: scale(1);
-}
-
-.popup.active img{
-    animation: entradaImagen .8s ease .5s forwards;
-}
-
-.popup.active h3{
-    animation: entradaTitulo .8s ease .5s forwards;
-}
-
-.popup.active .contenedor-inputs{
-    animation: entradaInputs 1s ease 1s forwards;
-}
-
-@keyframes entradaImagen{
-    from{
-        transform: translateY(-25px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes entradaTitulo{
-    from{
-        transform: translateY(25px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes entradaInputs{
-    from{
-        
-        opacity: 0;
-    }
-    to{
-        
-        opacity: 1;
-    }
-} */
-/* popup_cerrar */
-
 .slider_cat_display {
     object-fit: contain;
     width: 100%;
