@@ -414,21 +414,6 @@ nav {
   grid-area: span 2 / span 2 / auto / auto;
 }
 
-#load_more {
-  position: relative;
-  bottom: -30px;
-  left: 0px;
-  cursor: pointer;
-  transform: translate(0%, 50%);
-  text-align: center;
-  display: block;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.load_more_height_first {
-  height: 92rem;
-  transition: all 0.5s ease-in-out 0s;
-}
 
 .aboutus {
   color: var(--light-pink);
@@ -715,10 +700,6 @@ nav {
 
 
 }
-
-
-
-
 
 
 

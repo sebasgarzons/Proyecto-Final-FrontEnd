@@ -94,16 +94,13 @@
 }
 
 .parrafo__footer {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    font-size: 1rem;
+   
     font-family: 'FuturaPTBook';
     color: var(--light);
-    justify-content: center;
-    align-content: center;
+  
     background-color: #000;
     padding: 12px 0px;
+    text-align: center;
 }
 
 
@@ -119,3 +116,19 @@
 .container-box-footer > div {
     margin: 0 19px;
 }
+
+.footer__p {
+    text-align: center;
+    /* display: block; */
+}
+.autores {
+    /* display: inline-block; */
+    color: var(--light-pink);
+  }
+
+.autores:hover {
+    color: var(--details);
+}
+  
+  
+  
