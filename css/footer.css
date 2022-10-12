@@ -8,8 +8,7 @@
 }
 
 .logo__footer {
-    /* grid-column: 1; */
-    /* grid-row: 1/3; */
+  
     justify-self: center;
 }
 
@@ -18,10 +17,7 @@
 }
 
 .subtitulo__footer {
-    /* grid-column: 2; */
-    /* grid-row: 1; */
-    /* justify-self: center; */
-    /* align-self: center; */
+   
     font-size: 2rem;
     font-family: 'Olivia';
     color: var(--light-pink);
@@ -33,16 +29,7 @@
 }
 
 .iconos__footer {
-/*     grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
-    display: grid;
-    grid-template-columns: repeat(4, max-content);
-    gap: 10px;
-    justify-self: center;
-    align-self: center;
-    position: relative;
-    top: 25px; */
+
     display: flex;
     justify-content: center;
 }
@@ -119,10 +106,9 @@
 
 .footer__p {
     text-align: center;
-    /* display: block; */
 }
 .autores {
-    /* display: inline-block; */
+   
     color: var(--light-pink);
   }
 
