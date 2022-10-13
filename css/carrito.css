@@ -48,9 +48,6 @@ body {
     z-index: 1;
 }
 
-.contenedor-header .titulo h1 {
-    color: #361500;
-}
 
 .logo {
     grid-column: 1;
@@ -62,7 +59,7 @@ body {
     filter: hue-rotate(90deg);
 }
 
-.titulo {
+.header__title {
     grid-column: 2;
     grid-row: 1;
     justify-self: center;
@@ -72,11 +69,11 @@ body {
     color: var(--light-pink);
     position: relative;
     top: 31px;
+    color: #361500;   
+    justify-content: center;
+
 }
 
-.titulo h1 {
-    justify-content: center;
-}
 
 .carrito {
     grid-column: 3;
@@ -98,7 +95,7 @@ body {
     filter:drop-shadow(1px 1px 6px var(--dark-brown));
 }
 
-.parrafo-header {
+.carrito-texts {
     grid-column: 2;
     grid-row: 2;
     display: grid;
@@ -108,13 +105,11 @@ body {
     background-color: #fff5f5;
     padding: 12px 0px;
     margin: 12px 0px;
-}
-
-.parrafo-header h2 {
     font-size: 2rem;
     font-family: 'FuturaPTBook';
     font-weight: 600;
 }
+
 
 .table {
     color: var(--dark-brown);
@@ -187,55 +182,46 @@ body {
 /* FOOTER */
 
 .container-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
+    display: flex;
     width: 100%;
     background-color: var(--dark-brown);
-    align-items: center;
     padding: 24px 0px;
-}
-
-.logo__footer {
-    grid-column: 1;
-    grid-row: 1/3;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .logo__footer {
+  
     justify-self: center;
-}
-
-.logo__footer img:hover{
+  }
+  
+  .logo__footer img:hover{
     filter: hue-rotate(90deg);
-}
-
-.subtitulo__footer {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
+  }
+  
+  .subtitulo__footer {
+   
     font-size: 2rem;
     font-family: 'Olivia';
     color: var(--light-pink);
-    position: relative;
-    top: 31px;
-}
-
-.subtitulo__footer h3{
+  
+  }
+  
+  .subtitulo__footer h3{
     justify-content: center;
-}
-
-.iconos__footer {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
-    display: grid;
-    grid-template-columns: repeat(4, max-content);
-    gap: 10px;
-    justify-self: center;
-    align-self: center;
-    position: relative;
-    top: 25px;
-}
-
-.iconos__footer .icono_ftr a {
+  }
+  
+  .iconos__footer {
+  
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cont_iconos_footer{
+    display: flex;
+  }
+  
+  .iconos__footer .icono_ftr a {
     margin: 1.2em;
     width: 50px;
     height: 50px;
@@ -247,47 +233,69 @@ body {
     border-radius: 50px;
     border: 2px solid var(--light-pink);
     transition: all .8s;
-}
-
-.iconos__footer .instagram a:hover{
+  }
+  
+  .iconos__footer .instagram a:hover{
     color:  #e60073;
     border: 2px solid  #e60073;
     background-color: var(--light-pink);
     box-shadow:  0 0 20px var(--light);
-}
-
-.iconos__footer .whatsaap a:hover{
+  }
+  
+  .iconos__footer .whatsaap a:hover{
     color:  #43c253;
     border: 2px solid  #25d366;
     background-color: var(--light-pink);
     box-shadow:  0 0 20px var(--light);
-}
-
-.iconos__footer .twitter a:hover{
+  }
+  
+  .iconos__footer .twitter a:hover{
     color:  #1da1f2;
     border: 2px solid  #1da1f2;
     background-color: var(--light-pink);
     box-shadow:  0 0 20px var(--light);
-}
-
-.iconos__footer .facebook a:hover{
+  }
+  
+  .iconos__footer .facebook a:hover{
     color:  #1877f2;
     border: 2px solid  #1877f2;
     background-color: var(--light-pink);
     box-shadow:  0 0 20px var(--light);
-}
-
-.parrafo__footer {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    font-size: 1rem;
+  }
+  
+  .parrafo__footer {
+   
     font-family: 'FuturaPTBook';
     color: var(--light);
-    justify-content: center;
-    align-content: center;
+  
     background-color: #000;
     padding: 12px 0px;
-    margin: 0;
-}
-
+    text-align: center;
+  }
+  
+  
+  .container-box-footer{
+    display: grid;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .container-box-footer > div {
+    margin: 0 19px;
+  }
+  
+  .footer__p {
+    font-family: 'FuturaPTBook';
+    text-align: center;
+  }
+  .footer-text__autores {
+    color: var(--light-pink);
+  }
+  
+  .footer-text__autores:hover {
+    color: var(--details);
+  }
+  
