@@ -14,18 +14,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logos/gato-verde.ico">    
     <link rel="apple-touch-icon" href="img/logos/gato-verde.ico">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/custom.css">
+    
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/botones.css">
-
     <script defer src="js/custom.js"></script>
-
+    <script src="js/jquery.js"></script>   
+    <script defer src="js/popup.js"></script>
+        
     <script>
         (function (d) {
             var s = d.createElement("script");
@@ -39,25 +38,22 @@
 
 <body class="body">
 
-    <header id="header">
+    <header id="header" class="header">
 
-        <nav id="nav" class="nav1">
-            <div class="contenedor-nav">
+        <nav id="nav" class="nav1 nav">
+            <div class="contenedor-nav nav__contenedor">
 
-                <div class="logo">
-                    <a href="#header"><img src="img/logos/logo-dark.png"
+                <div class="logo nav__logo">
+                    <a href="#header"><img class="nav__img" src="img/logos/logo-dark.png"
                             alt="Ir a página principal" title="Ir a página principal"
                             width="100px" height="100px"></a>
                 </div>
 
-                <div class="enlaces" id="enlaces">
-                    <a href="#menu_container" id="enlace-menu" class="btn-header">Menú</a>
-                    <a href="#" id="enlace-gatitos" class="btn-header">Gatitos</a>
-
-                    <!-- <a href="#" id="enlace-reserva" class="btn-header">Reserva</a> -->
-                    <button href="#" id="reserva__button" class="btn-header">Reserva</button>
-
-                    <a href="#aboutus" id="enlace-sobre-nosotros" class="btn-header">Contacto</a>
+                <div class="enlaces nav__links" id="enlaces">
+                    <a href="#menu_container" id="enlace-menu" class="btn-header nav__link">Menú</a>
+                    <a href="#" id="enlace-gatitos" class="btn-header nav__link">Gatitos</a>
+                   <button  id="reserva__button" class="btn-header nav__link">Reserva</button>
+                    <a href="#aboutus" id="enlace-sobre-nosotros" class="btn-header nav__link">Contacto</a>
                 </div>
 
                 <div class=icono id="open">
@@ -78,30 +74,30 @@
             </div>
         </nav>
 
-        <div class="textos">
-            <h1>Aromas <br> y <br> Maullidos</h1>
+        <div class="textos header__text">
+            <h1 class="header__title">Aromas <br> y <br> Maullidos</h1>
         </div>
     </header>
 
     <main class="main">
 
         <section class="container intro">
-            <div class=" contenedor__intro">
-                <div class="imgs">
-                    <img class="img1" src="img/lugar/1.jpg" alt="">
+            <div class=" contenedor__intro  intro__container">
+                <div class="imgs intro__bg">
+                    <img class="img1 intro__img" src="img/lugar/1.jpg" alt="">
                 </div>
 
-                <div class="imgs">
-                    <img class="img2" src="img/lugar/2.jpg" alt="">
+                <div class="imgs intro__bg">
+                    <img class="img2 intro__img" src="img/lugar/2.jpg" alt="">
                 </div>
 
-                <div class="imgs">
-                    <img class="img3" src="img/lugar/4.jpg" alt="">
+                <div class="imgs intro__bg">
+                    <img class="img3 intro__img" src="img/lugar/4.jpg" alt="">
                 </div>
 
             </div>
-            <div class="parrafo__intro">
-                <p id="maquina-escribir4">
+            <div class="parrafo__intro intro__text">
+                <p id="maquina-escribir4" class="intro__paragraph">
                     En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los
                     gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de
                     gatitos adoptables, y degustar de nuestro menú.
@@ -111,17 +107,6 @@
 
         </section>
 
-        <!--     <div class="typewriter-effect">
-        <div class="text" id="typewriter-text"></div>
-      </div> -->
-
-        <!--       <div class="caja">
-        <p id="">
-          Los pollitos dicen pio pio pio cuando tienen hambre y cuando tienen frío.
-        </p>
-      </div> -->
-
-
         <div class="headers" id="menu_container">
             <h2 class="headers__title">Nuestro Menu</h2>
         </div>
@@ -129,39 +114,39 @@
 
         <section class="menu container">
 
-            <div class="menu__item item1">
+            <div class="menu__item item1  menu__item--1">
                 <img src="./img/menu/cafe.png" alt="" class="menu__img">
                 <h2 class="menu__title">Cafe de Especialidad</h2>
                 <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
                     voluptatibus accusamus molestiae cum facere magni minus.</p>
             </div>
 
-            <div class="menu__item item2">
+            <div class="menu__item item2  menu__item--2">
                 <img src="./img/menu/croissant.png" alt="" class="menu__img">
                 <h2 class="menu__title">Bakery</h2>
                 <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
                     voluptatibus accusamus molestiae cum facere magni minus.</p>
             </div>
 
-            <div class="menu__item item3">
+            <div class="menu__item item3  menu__item--3">
                 <img src="./img/menu/granos.png" alt="" class="menu__img">
                 <h2 class="menu__title">Vegan</h2>
                 <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
                     voluptatibus accusamus molestiae cum facere magni minus.</p>
             </div>
-            <div class="menu__item item4">
+            <div class="menu__item item4  menu__item--4">
                 <img src="./img/menu/takeaway.png" alt="" class="menu__img">
                 <h2 class="menu__title">Take Away</h2>
                 <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
                     voluptatibus accusamus molestiae cum facere magni minus.</p>
             </div>
-            <div class="menu__item item5">
+            <div class="menu__item item5  menu__item--5">
                 <img src="./img/menu/copa.png" alt="" class="menu__img">
                 <h2 class="menu__title">Postres</h2>
                 <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
                     voluptatibus accusamus molestiae cum facere magni minus.</p>
             </div>
-            <div class="menu__item item6">
+            <div class="menu__item item6  menu__item--6">
                 <img src="./img/menu/torta2.png" alt="" class="menu__img">
                 <h2 class="menu__title">Tortas</h2>
                 <p class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nemo
@@ -245,7 +230,7 @@
             </div>
 
             <button id="load_more" class="button button-viewmore">Load More</button>
-            <!-- <a id="load_more" class="button">Load More</a> -->
+            
             <!-- <a id="view_less">View Less</a> -->
         </section>
 
@@ -256,96 +241,119 @@
 
 
 
-        <section class="content">
-            <div class="slider_cats">
-                <div class="cont_box_slider_cat_display cont_show" id="slider_cat_1">
-                    <div class="box_slider_cat_display">
-                        <div class="slider_cat_text">
-                            <h2>Bigotes!</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
+        <section class="content adopcion">
+
+            <div class="slider_cats adopcion__container">
+
+
+                <div class="cont_box_slider_cat_display cont_show    adopcion__display" id="slider_cat_1">
+
+                    <div class="box_slider_cat_display card">
+
+                        <div class="slider_cat_text card__text">
+                            <h2 class="card__title">Bigotes!</h2>
+                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
                                 a
                                 labore
                                 sed
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
+                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
-                        <div class="slider_cat_display slider_reorder_cat">
-                            <img src="img/cat1.jpg">
+                        <div class="slider_cat_display slider_reorder_cat  card__cats">
+                            <img src="img/cat1.jpg" class="card__img">
                         </div>
                     </div>
                 </div>
-                <div class="cont_box_slider_cat_display" id="slider_cat_2">
-                    <div class="box_slider_cat_display">
-                        <div class="slider_cat_text">
-                            <h2>Bigotes!</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
+
+
+
+
+                <div class="cont_box_slider_cat_display adopcion__display" id="slider_cat_2">
+
+
+
+                    <div class="box_slider_cat_display card">
+
+                        <div class="slider_cat_text card__text">
+                            <h2 class="card__title">Bigotes!</h2>
+                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
                                 a
                                 labore
                                 sed
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
+                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
-                        <div class="slider_cat_display">
-                            <img src="img/cat2.jpg">
+                        <div class="slider_cat_display slider_reorder_cat  card__cats">
+                            <img src="img/cat2.jpg" class="card__img">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cont_box_slider_cat_display adopcion__display" id="slider_cat_3">
+                <div class="box_slider_cat_display card">
+
+                        <div class="slider_cat_text card__text">
+                            <h2 class="card__title">Bigotes!</h2>
+                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
+                                a
+                                labore
+                                sed
+                                non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
+                                blanditiis
+                                molestiae, reiciendis hic?</p>
+                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
+                        </div>
+                        <div class="slider_cat_display slider_reorder_cat  card__cats">
+                            <img src="img/cat3.jpg" class="card__img">
                         </div>
                     </div>
                 </div>
-                <div class="cont_box_slider_cat_display" id="slider_cat_3">
-                    <div class="box_slider_cat_display">
-                        <div class="slider_cat_text">
-                            <h2>Bigotes!</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
+
+
+                <div class="cont_box_slider_cat_display adopcion__display" id="slider_cat_4">
+                <div class="box_slider_cat_display card">
+
+                        <div class="slider_cat_text card__text">
+                            <h2 class="card__title">Bigotes!</h2>
+                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
                                 a
                                 labore
                                 sed
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
+                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
-                        <div class="slider_cat_display slider_reorder_cat">
-                            <img src="img/cat3.jpg">
+                        <div class="slider_cat_display slider_reorder_cat  card__cats">
+                            <img src="img/cat5.jpg" class="card__img">
                         </div>
                     </div>
                 </div>
-                <div class="cont_box_slider_cat_display" id="slider_cat_4">
-                    <div class="box_slider_cat_display">
-                        <div class="slider_cat_text">
-                            <h2>Bigotes!</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
+
+
+                <div class="cont_box_slider_cat_display adopcion__display" id="slider_cat_5">
+                     <div class="box_slider_cat_display card">
+
+                        <div class="slider_cat_text card__text">
+                            <h2 class="card__title">Bigotes!</h2>
+                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
                                 a
                                 labore
                                 sed
                                 non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
                                 blanditiis
                                 molestiae, reiciendis hic?</p>
-                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
+                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
-                        <div class="slider_cat_display">
-                            <img src="img/cat5.jpg">
+                        <div class="slider_cat_display slider_reorder_cat  card__cats">
+                            <img src="img/proxy.jpg" class="card__img">
                         </div>
-                    </div>
-                </div>
-                <div class="cont_box_slider_cat_display" id="slider_cat_5">
-                    <div class="box_slider_cat_display">
-                        <div class="slider_cat_text">
-                            <h2>Bigotes!</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, explicabo. Commodi
-                                a
-                                labore
-                                sed
-                                non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
-                                blanditiis
-                                molestiae, reiciendis hic?</p>
-                            <button class="button button-adopt" id="btn_slider">Adoptame</button>
-                        </div>
-                        <div class="slider_cat_display slider_reorder_cat">
-                            <img src="img/proxy.jpg">
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -354,56 +362,60 @@
         <!-- Popup -->
 
         <div class="overlay overlay_form" id="">
-            <div class="popup popup_form" id="">
-                <div class="btn-cerrar-popup"><i class="fas fa-times"></i></div>
-                <!-- <a href="" id="" class="btn-cerrar-popup"><i class="fas fa-times"></i></a> -->
+            <div class="popup popup_form    popup" id="">
+                <div class="btn-cerrar-popup   popup__cerrar"><i class="fas fa-times   popup__icon"></i></div>
+              
+                <img src="img/logos/logo-dark.png" alt="" width="80px" class="popup__logo">
+                <h3 class="popup__title">Formulario de Adopción</h3>
 
-                <img src="img/logos/logo-dark.png" alt="" width="80px">
-                <h3>Formulario de Adopción</h3>
+                <form class="form-adopcion" action="" id="form_adopt" novalidate>
 
-                <form action="" id="form_adopt" novalidate>
-                    <div class="contenedor-inputs">
-                        <input class="input-adopt" type="text" name="" id="nom_adopt" placeholder="Nombre">
-                        <input class="input-adopt" type="email" name="" id="eml_adopt" placeholder="nombre@correo.com">
-                        <input class="input-adopt" type="tel" name="" id="tel_adopt" placeholder="0123456789">
+
+                    <div class="contenedor-inputs  form-adopcion__container">
+
+                        <input class="input-adopt adopt__input" type="text" name="" id="nom_adopt" placeholder="Nombre">
+                        <input class="input-adopt adopt__input" type="email" name="" id="eml_adopt" placeholder="nombre@correo.com">
+                        <input class="input-adopt adopt__input" type="tel" name="" id="tel_adopt" placeholder="0123456789">
                     </div>
 
-                    <button type="submit" class="btn-submit button button-adopt">Enviar</button>
+                    <button type="submit" class="btn-submit button button-adopt  form-adopcion__button">Enviar</button>
 
-                    <div class="mensajes">
-                        <p class="advertencias" id="advertencias"></p>
-                        <p class="enviar" id="enviar"></p>
+                    <div class="mensajes form-adopcion__msg">
+                        <p class="advertencias form-adopcion__p" id="advertencias"></p>
+                        <p class="enviar form-adopcion__enviar" id="enviar"></p>
                     </div>
                 </form>
             </div>
         </div>
 
-        <section class="cont_slider_cats hidden_rgth">
-            <div class="box_slider_cats">
-                <ul id="listCats">
-                    <li class="list_cats_li" id="indx_cts_li_1">
-                        <div class="circle_cat">
-                            <img src="img/cat1.jpg" alt="">
+        <section class="cont_slider_cats hidden_rgth    slider-cats slider_cats--hidden
+        ">
+            <div class="box_slider_cats   slider-cats__container">
+
+                <ul id="listCats  list-cats">
+                    <li class="list_cats_li  list-cats__li" id="indx_cts_li_1">
+                        <div class="circle_cat   list-cats__circle">
+                            <img src="img/cat1.jpg" class="list-cats__img" alt="">
                         </div>
                     </li>
-                    <li class="list_cats_li" id="indx_cts_li_2">
-                        <div class="circle_cat">
-                            <img src="img/cat2.jpg" alt="">
+                    <li class="list_cats_li    list-cats__li" id="indx_cts_li_2">
+                        <div class="circle_cat       list-cats__circle">
+                            <img src="img/cat2.jpg" class="list-cats__img"  alt="">
                         </div>
                     </li>
-                    <li class="list_cats_li" id="indx_cts_li_3">
-                        <div class="circle_cat">
-                            <img src="img/cat3.jpg" alt="">
+                    <li class="list_cats_li   list-cats__li" id="indx_cts_li_3">
+                        <div class="circle_cat      list-cats__circle">
+                            <img src="img/cat3.jpg" class="list-cats__img"  alt="">
                         </div>
                     </li>
-                    <li class="list_cats_li" id="indx_cts_li_4">
-                        <div class="circle_cat">
-                            <img src="img/cat5.jpg" alt="">
+                    <li class="list_cats_li   list-cats__li" id="indx_cts_li_4">
+                        <div class="circle_cat     list-cats__circle">
+                            <img src="img/cat5.jpg" class="list-cats__img"  alt="">
                         </div>
                     </li>
-                    <li class="list_cats_li" id="indx_cts_li_5">
-                        <div class="circle_cat">
-                            <img src="img/proxy.jpg" alt="">
+                    <li class="list_cats_li   list-cats__li" id="indx_cts_li_5">
+                        <div class="circle_cat    list-cats__circle">
+                            <img src="img/proxy.jpg" class="list-cats__img"  alt="">
                         </div>
                     </li>
                 </ul>
@@ -434,7 +446,7 @@
             <div class="map">
 
                 <iframe class="map__iframe" frameborder="0" scrolling="no"
-                    src="https://maps.google.com/maps?width=437&amp;height=321&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    src="https://maps.google.com/maps?width=437&amp;height=321&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title="nuestra ubicacion en google maps">
 
                 </iframe>
 
@@ -476,32 +488,36 @@
 
 
     <!-- FOOTER -->
-    <footer class="container-footer">
-        <div class="container-box-footer">
-            <div class="logo__footer">
-                <a href="#header"><img src="img/logos/light_pink.png" alt="Ir a página principal" width="128px"></a>
+    <footer class="container-footer         footer">
+        <div class="container-box-footer         footer__container">
+            <div class="logo__footer   footer__logo">
+                <a href="#header"><img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal" width="128px"></a>
             </div>
 
-            <div class="subtitulo__footer">
+            <div class="subtitulo__footer      footer__title">
                 <h3>Aromas y Maullidos</h3>
             </div>
 
-            <div class="iconos__footer">
-                <div class="cont_iconos_footer">
-                    <div class="icono_ftr instagram">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="iconos__footer    footer-social">
+
+
+                <div class="cont_iconos_footer   footer-social__container">
+
+
+                    <div class="icono_ftr instagram    footer__ig">
+                        <a href="#" class="footer__link"><i class="fab fa-instagram"></i></a>
                     </div>
 
-                    <div class="icono_ftr whatsaap">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <div class="icono_ftr whatsaap   footer__whatsapp">
+                        <a href="#" class="footer__link"><i class="fab fa-whatsapp"></i></a>
                     </div>
 
-                    <div class="icono_ftr twitter">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    <div class="icono_ftr twitter    footer__twitter">
+                        <a href="#" class="footer__link"><i class="fab fa-twitter"></i></a>
                     </div>
 
-                    <div class="icono_ftr facebook">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <div class="icono_ftr facebook     footer__facebook">
+                        <a href="#" class="footer__link"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
@@ -509,19 +525,21 @@
 
     </footer>
     
-    <div class="parrafo__footer">
+    <div class="parrafo__footer    footer-text">
         
-        <p class="footer__p">Copyright &copy; 2022 Autores: 
-            <a href="" class="autores">Sebastian</a> - <a href="https://github.com/Janselin" class="autores">Mary</a> - <a href="" class="autores">Katherine</a>. 
+        <p class="footer__p   footer-text__p">Copyright &copy; 2022 Autores: 
+            <a href="" class="autores   footer-text__autores" title="Ir a github de Sebastián">Sebastian</a> - 
+            <a href="https://github.com/Janselin" class="autores   footer-text__autores" title="Ir a github de Mary">Mary</a> - 
+            <a href="" class="autores   footer-text__autores" title="Ir a github de Katherine">Katherine</a>. 
             Todos los derechos reservados.</p>
     </div>
 
 
 
 
-    <div class="loader_cont" id="loader_cont_id">
-        <div class="loader_box">
-            <span class="loader"></span>
+    <div class="loader_cont    loader" id="loader_cont_id">
+        <div class="loader_box        loader__box">
+            <span class="loader     loader__icon"></span>
         </div>
     </div>
 
@@ -595,10 +613,8 @@
 
 
  
-    <script defer src="js/reserva.js"></script>   
-    <script src="js/jquery.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-    <script src="js/popup.js"></script>
+   
+
   
 
 
