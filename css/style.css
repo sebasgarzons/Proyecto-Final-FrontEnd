@@ -655,14 +655,14 @@ header h1 {
     opacity: 0;
     transition: all 1s;
     filter: blur(5px);
-  transform: translateX(-100%);
+    transform: translateX(100%);
 }
 
 .hidden_lft {
     opacity: 0;
     transition: all 1s;
     filter: blur(5px);
-    transform: translateX(100%);
+    transform: translateX(-100%);
 }
 
 .show {
@@ -1303,7 +1303,7 @@ header h1 {
 
     .headers__title{
         line-height: 88px;
-        margin-bottom: -88px;
+        margin-bottom: -58px;
     }
 
     .menu{
@@ -1363,7 +1363,13 @@ header h1 {
         gap: 42px;
     }
 
+    .hidden_rgth {
+      transform: initial;
+    }
 
+    .hidden_lft {
+        transform: initial;
+    }
 
 
 
