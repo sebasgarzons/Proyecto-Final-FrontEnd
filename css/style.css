@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+font-family: 'Clicker Script', cursive;
+
 :root {
     --white: #ffffff;
     --black: #0000;
@@ -8,16 +12,13 @@
     --whatsapp: #43C253;
     font-size: 16px;
     font-family: Futura;
+
+    --titulos: 
 }
 
 @font-face {
     font-family: Futura;
     src: url("../fonts/FuturaPTBook.otf");
-}
-
-@font-face {
-    font-family: Olivia;
-    src: url("../fonts/Olivia.ttf");
 }
 
 * {
@@ -153,7 +154,7 @@ nav {
 }
 
 header h1 {
-    font-family: 'Olivia';
+    font-family: var(--titulos);
     color: var(--dark-brown);
     font-style: normal;
     font-size: 4rem;
