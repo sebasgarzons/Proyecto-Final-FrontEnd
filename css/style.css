@@ -1,6 +1,9 @@
 @font-face {
     font-family: "Clicker Script";
     src: url("fonts/ClickerScript-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -23,13 +26,15 @@
     --error: #ff0000;
     --titulos: "Clicker Script";
     --parrafos: "Futura PT Book";
+    font-size: 17px;
 }
 
 * {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    font-size: 16px;
+    
+
 }
 
 button {
@@ -964,6 +969,7 @@ header h1 {
     margin-bottom: 0.4rem;
     margin-top: 0.5rem;
     text-transform: none;
+    font-family: var(--parrafos);
     border: 1px solid var(--dark-brown);
 }
 

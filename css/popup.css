@@ -30,6 +30,7 @@
     transform: scale(0.7);
     opacity: 0;
     position: relative;
+    font-family: var(--parrafos);
 }
 
 .btn-cerrar-popup{
@@ -53,7 +54,7 @@
 
 .popup h3{
     font-size: 36px;
-    font-family: Futura;
+    
     opacity: 0;
     margin-bottom: 20px;
 }
@@ -63,7 +64,7 @@
 }
 
 
-.popup form .contenedor-inputs .input-adopt  {
+.input-adopt  {
     width: 100%;
     margin-bottom: 20px;
     height: 52px;
@@ -72,7 +73,7 @@
     text-align: center;
     border: 1.5px solid var(--dark-brown);
     color: var(--dark-brown);
-    font-family: Futura;
+    font-family: var(--parrafos);
     text-transform: none;
     
     
@@ -100,7 +101,7 @@
     text-align: left;
     color: red;
     padding-top: 20px;
-    font-family: Futura;
+    
     font-size: 19px;
 }
 
@@ -109,7 +110,7 @@
     text-align: left;
     color: var(--dark-brown);
     padding-top: 20px;
-    font-family: Futura;
+    font-family: var(--parrafos);
     font-weight: 600;
     font-size: 15px;
 }
