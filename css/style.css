@@ -1,7 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+/* TIPOGRAFÍAS */
 
-font-family: 'Clicker Script', cursive;
 
+@font-face {
+    font-family: 'Clicker Script';
+    src: url('fonts/ClickerScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('fonts/FuturaPT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* VARIABLES */
 :root {
     --white: #ffffff;
     --black: #0000;
@@ -10,21 +26,27 @@ font-family: 'Clicker Script', cursive;
     --light-pink: #FDD2BF;
     --details: #76BA99;
     --whatsapp: #43C253;
-    font-size: 16px;
-    font-family: Futura;
+    font-size: 16px;    
+   
 
-    --titulos: 
+    --titulos: 'Clicker Script';
+    --parrafos: 'Futura PT Book';
 }
 
-@font-face {
-    font-family: Futura;
-    src: url("../fonts/FuturaPTBook.otf");
-}
 
+
+/* RESETS */
 * {
     margin: 0px;
     padding: 0px;
-    list-style: none;
+    list-style: none;    
+    
+
+
+    
+    /*  sacar negrita:  
+    font-weight: 400; */
+    
 }
 
 button {
@@ -52,6 +74,7 @@ body {
     padding: 0px 0px 0px 0px;
     border: 1px solid;
     overflow-x: hidden;
+    font-family: var(--parrafos);
 }
 
 /* ================================================================= */
@@ -64,8 +87,7 @@ header {
     background-image: url('../img/header/header1.jpg');
     background-attachment: fixed;
     background-position: center -12px;
-    background-repeat: no-repeat;
-    font-family: Futura;
+    background-repeat: no-repeat;    
     background-size: cover;
     position: relative;
 }
@@ -229,7 +251,7 @@ header h1 {
 
 .parrafo__intro p {
     color: var(--dark-brown);
-    font-family: Futura;
+    
     font-size: 2.1rem;
     font-weight: 600;
     line-height: 62px;
@@ -237,13 +259,14 @@ header h1 {
 }
 
 .parrafo__intro p span {
-    font-family: Olivia;
+    font-family: var(--titulos);
 }
 
 /* ================================================================= */
 
 .headers__title {
-    font-family: Olivia;
+    font-family: var(--titulos);
+    
     font-size: 4rem;
     letter-spacing: 1px;
     color: var(--dark-brown);
@@ -259,7 +282,7 @@ header h1 {
     grid-template-rows: repeat(2, 1fr);
     color: var(--light);
     text-align: center;
-    font-family: Futura;
+    
     padding: 4.5em 28px;
     gap: 3em 6em;
     justify-content: center;
@@ -311,7 +334,7 @@ header h1 {
 }
 
 .menu__title {
-    font-family: Olivia;
+    font-family: var(--titulos);
     font-size: 2rem;
     color: var(--light);
     line-height: 44px;
@@ -321,7 +344,7 @@ header h1 {
 }
 
 .menu__description {
-    font-family: Futura;
+    
     padding: 1rem;
     text-align: center;
     line-height: 22px;
@@ -757,7 +780,7 @@ header h1 {
 }
 
 .aboutus__title {
-    font-family: Olivia;
+    font-family: var(--titulos);
     font-size: 2.6em;
     letter-spacing: 2px;
     margin-bottom: 0.5em;
@@ -803,7 +826,7 @@ header h1 {
 }
 
 .form__title {
-    font-family: Olivia;
+    font-family: var(--titulos);
     font-size: 2.6em;
     border-top: 1px solid black;
     padding-top: 1em;
@@ -899,7 +922,7 @@ header h1 {
 .subtitulo__footer {
 
     font-size: 2rem;
-    font-family: 'Olivia';
+    font-family: var(--titulos);
     color: var(--light-pink);
 
 }
@@ -962,7 +985,7 @@ header h1 {
 
 .parrafo__footer {
 
-    font-family: 'FuturaPTBook';
+    
     color: var(--light);
 
     background-color: #000;
@@ -985,7 +1008,7 @@ header h1 {
 }
 
 .footer__p {
-    font-family: Futura;
+   
     text-align: center;
 }
 
@@ -1226,11 +1249,10 @@ header h1 {
     position: relative;
     margin: 0px 8px;
     font-size: 17px;
-    font-weight: 300;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
-    font-family: 'Futura';
+   
     color: var(--dark-brown);
     border-bottom: 3px solid transparent;
     transition: color 0.3s ease-in-out;
