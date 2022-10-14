@@ -1,301 +1,299 @@
 :root {
 
-    /* paleta */
+  /* paleta */
 
-    --white: #ffffff;
-    --black: #0000;
-    --dark-brown: #361500;
-    --light: #FFEDED;
-    --light-pink: #FDD2BF;
-    --details: #76BA99;
-
-}
-
-@font-face {
-    font-family: 'Olivia';
-    src: url('../fonts/Olivia.ttf') format('truetype');
+  --white: #ffffff;
+  --black: #0000;
+  --dark-brown: #361500;
+  --light: #FFEDED;
+  --light-pink: #FDD2BF;
+  --details: #76BA99;
 
 }
 
 @font-face {
-    font-family: 'FuturaPTBook';
-    src: url('../fonts/FuturaPTBook.otf') format('truetype');
+  font-family: 'Olivia';
+  src: url('../fonts/Olivia.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: 'FuturaPTBook';
+  src: url('../fonts/FuturaPTBook.otf') format('truetype');
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #fff5f5;
+  background-color: #fff5f5;
 }
 
 /*Header*/
 
 .contenedor-header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
-    width: 100%;
-    background-color: rgba(253, 210, 191, 0.25);
-    align-items: center;
-    padding: 24px 0px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(5px);
-    z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  width: 100%;
+  background-color: rgba(253, 210, 191, 0.25);
+  align-items: center;
+  padding: 24px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px);
+  z-index: 1;
 }
 
 
 .logo {
-    grid-column: 1;
-    grid-row: 1/3;
-    justify-self: center;
+  grid-column: 1;
+  grid-row: 1/3;
+  justify-self: center;
 }
 
 .logo img:hover {
-    filter: hue-rotate(90deg);
+  filter: hue-rotate(90deg);
 }
 
 .header__title {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: center;
-    align-self: center;
-    font-size: 2rem;
-    font-family: 'Olivia';
-    color: var(--light-pink);
-    position: relative;
-    top: 31px;
-    color: #361500;   
-    justify-content: center;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+  font-family: 'Olivia';
+  color: var(--light-pink);
+  position: relative;
+  top: 31px;
+  color: #361500;
+  justify-content: center;
 
 }
 
 
 .carrito {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: end;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
 
-    justify-self: center;
-    align-self: center;
-    position: relative;
-    top: 25px;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  top: 25px;
 }
 
 .carrito a svg {
-    fill: var(--dark-brown);
+  fill: var(--dark-brown);
 }
 
 .carrito a svg:hover {
-    fill: var(--light-pink);
-    filter:drop-shadow(1px 1px 6px var(--dark-brown));
+  fill: var(--light-pink);
+  filter: drop-shadow(1px 1px 6px var(--dark-brown));
 }
 
 .carrito-texts {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    color: var(--dark-brown);
-    justify-content: center;
-    align-content: center;
-    background-color: #fff5f5;
-    padding: 12px 0px;
-    margin: 12px 0px;
-    font-size: 2rem;
-    font-family: 'FuturaPTBook';
-    font-weight: 600;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  color: var(--dark-brown);
+  justify-content: center;
+  align-content: center;
+  background-color: #fff5f5;
+  padding: 12px 0px;
+  margin: 12px 0px;
+  font-size: 2rem;
+  font-family: 'FuturaPTBook';
+  font-weight: 600;
 }
 
 
 .table {
-    color: var(--dark-brown);
+  color: var(--dark-brown);
 }
 
 .row {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
 }
 
 #items .btn {
-    background-color: var(--dark-brown);
-    color: var(--light-pink);
-    border-color: var(--light-pink);
+  background-color: var(--dark-brown);
+  color: var(--light-pink);
+  border-color: var(--light-pink);
 }
 
 
 #footer .btn {
-    background-color: var(--dark-brown);
-    color: var(--light-pink);
-    border-color: var(--light-pink);
+  background-color: var(--dark-brown);
+  color: var(--light-pink);
+  border-color: var(--light-pink);
 }
 
 .card-body {
-    background: rgba(253, 210, 191, 0.3);
-    backdrop-filter: blur(5px);
+  background: rgba(253, 210, 191, 0.3);
+  backdrop-filter: blur(5px);
 }
 
 .card-body h5 {
-    color: var(--dark-brown);
-    font-family: 'FuturaPTBook';
-    font-size: 1.5rem;
-    font-weight: 600;
+  color: var(--dark-brown);
+  font-family: 'FuturaPTBook';
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .card-body p {
-    color: #000
+  color: #000
 }
 
-.card-body .btn{
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0.5em 1.2em;
-    border-radius: 2px solid;
-    border-color: var(--light-pink);
-    position: relative;
-    background-color: var(--dark-brown);
-    color: var(--light-pink);
-    /* transform: scale(0);
+.card-body .btn {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  border-radius: 2px solid;
+  border-color: var(--light-pink);
+  position: relative;
+  background-color: var(--dark-brown);
+  color: var(--light-pink);
+  /* transform: scale(0);
     transition: all 0.3s; */
 }
 
 
 .card-body .btn:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 0px;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 1s ease;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 1s ease;
 }
 
 .card-body .btn:hover:before {
-    width: 100%;
+  width: 100%;
 }
 
 /* FOOTER */
 
 .container-footer {
-    display: flex;
-    width: 100%;
-    background-color: var(--dark-brown);
-    padding: 24px 0px;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  
-  .logo__footer {
-  
-    justify-self: center;
-  }
-  
-  .logo__footer img:hover{
-    filter: hue-rotate(90deg);
-  }
-  
-  .subtitulo__footer {
-   
-    font-size: 2rem;
-    font-family: 'Olivia';
-    color: var(--light-pink);
-  
-  }
-  
-  .subtitulo__footer h3{
-    justify-content: center;
-  }
-  
-  .iconos__footer {
-  
-    display: flex;
-    justify-content: center;
-  }
-  
-  .cont_iconos_footer{
-    display: flex;
-  }
-  
-  .iconos__footer .icono_ftr a {
-    margin: 1.2em;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    z-index: 10;
-    padding: 0.6em 0.7em;
-    color: var(--light-pink);
-    backdrop-filter: blur(15px);
-    border-radius: 50px;
-    border: 2px solid var(--light-pink);
-    transition: all .8s;
-  }
-  
-  .iconos__footer .instagram a:hover{
-    color:  #e60073;
-    border: 2px solid  #e60073;
-    background-color: var(--light-pink);
-    box-shadow:  0 0 20px var(--light);
-  }
-  
-  .iconos__footer .whatsaap a:hover{
-    color:  #43c253;
-    border: 2px solid  #25d366;
-    background-color: var(--light-pink);
-    box-shadow:  0 0 20px var(--light);
-  }
-  
-  .iconos__footer .twitter a:hover{
-    color:  #1da1f2;
-    border: 2px solid  #1da1f2;
-    background-color: var(--light-pink);
-    box-shadow:  0 0 20px var(--light);
-  }
-  
-  .iconos__footer .facebook a:hover{
-    color:  #1877f2;
-    border: 2px solid  #1877f2;
-    background-color: var(--light-pink);
-    box-shadow:  0 0 20px var(--light);
-  }
-  
-  .parrafo__footer {
-   
-    font-family: 'FuturaPTBook';
-    color: var(--light);
-  
-    background-color: #000;
-    padding: 12px 0px;
-    text-align: center;
-  }
-  
-  
-  .container-box-footer{
-    display: grid;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .container-box-footer > div {
-    margin: 0 19px;
-  }
-  
-  .footer__p {
-    font-family: 'FuturaPTBook';
-    text-align: center;
-  }
-  .footer-text__autores {
-    color: var(--light-pink);
-  }
-  
-  .footer-text__autores:hover {
-    color: var(--details);
-  }
-  
+  display: flex;
+  width: 100%;
+  background-color: var(--dark-brown);
+  padding: 24px 0px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo__footer {
+
+  justify-self: center;
+}
+
+.logo__footer img:hover {
+  filter: hue-rotate(90deg);
+}
+
+.subtitulo__footer {
+
+  font-size: 2rem;
+  font-family: 'Olivia';
+  color: var(--light-pink);
+
+}
+
+.subtitulo__footer h3 {
+  justify-content: center;
+}
+
+.iconos__footer {
+
+  display: flex;
+  justify-content: center;
+}
+
+.cont_iconos_footer {
+  display: flex;
+}
+
+.iconos__footer .icono_ftr a {
+  margin: 1.2em;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 10;
+  padding: 0.6em 0.7em;
+  color: var(--light-pink);
+  backdrop-filter: blur(15px);
+  border-radius: 50px;
+  border: 2px solid var(--light-pink);
+  transition: all .8s;
+}
+
+.iconos__footer .instagram a:hover {
+  color: #e60073;
+  border: 2px solid #e60073;
+  background-color: var(--light-pink);
+  box-shadow: 0 0 20px var(--light);
+}
+
+.iconos__footer .whatsaap a:hover {
+  color: #43c253;
+  border: 2px solid #25d366;
+  background-color: var(--light-pink);
+  box-shadow: 0 0 20px var(--light);
+}
+
+.iconos__footer .twitter a:hover {
+  color: #1da1f2;
+  border: 2px solid #1da1f2;
+  background-color: var(--light-pink);
+  box-shadow: 0 0 20px var(--light);
+}
+
+.iconos__footer .facebook a:hover {
+  color: #1877f2;
+  border: 2px solid #1877f2;
+  background-color: var(--light-pink);
+  box-shadow: 0 0 20px var(--light);
+}
+
+.parrafo__footer {
+
+  font-family: 'FuturaPTBook';
+  color: var(--light);
+
+  background-color: #000;
+  padding: 12px 0px;
+  text-align: center;
+}
+
+
+.container-box-footer {
+  display: grid;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-box-footer>div {
+  margin: 0 19px;
+}
+
+.footer__p {
+  font-family: 'FuturaPTBook';
+  text-align: center;
+}
+
+.footer-text__autores {
+  color: var(--light-pink);
+}
+
+.footer-text__autores:hover {
+  color: var(--details);
+}
