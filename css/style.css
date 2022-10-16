@@ -1135,6 +1135,12 @@ header h1 {
     .menu__item {
         justify-content: initial;
         grid-area: initial;
+        display: inline-block;
+        width: 49%;
+    }
+
+    .menu__title{
+        font-size: 1rem;
     }
 
     .load_more_height_first {
