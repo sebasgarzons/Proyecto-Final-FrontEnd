@@ -1291,7 +1291,7 @@ header h1 {
 }
 
 /* ================================================================= */
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:828px) {
 
     .carrito {
         display: none;
@@ -1461,7 +1461,7 @@ header h1 {
 
 @media only screen and (max-width:425px) {
     .main_mobile {
-        border: 2px solid;
+        
     }
 
     nav {
