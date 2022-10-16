@@ -47,7 +47,6 @@ body {
     position: relative;
     margin: 0px;
     padding: 0px;
-    border: 1px solid;
     overflow-x: hidden;
     font-family: var(--parrafos);
 }
