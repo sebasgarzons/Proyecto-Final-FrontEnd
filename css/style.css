@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "Clicker Script";
-    src: url("fonts/ClickerScript-Regular.woff") format("woff");
+    font-family: "Clicker-Script";
+    src: url("../fonts/ClickerScript-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Futura PT Book";
+    font-family: "Futura-PT-Book";
     src: url("../fonts/FuturaPT-Book.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -23,9 +23,9 @@
     --details: #76BA99;
     --whatsapp: #43C253;
     --error: #ff0000;
-    --titulos: "Clicker Script";
-    --parrafos: "Futura PT Book";
-    font-size: 17px;
+    --titulos: "Clicker-Script";
+    --parrafos: "Futura-PT-Book";
+    font-size: 16px;
 }
 
 * {
