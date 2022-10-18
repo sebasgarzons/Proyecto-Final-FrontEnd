@@ -42,6 +42,43 @@ jQuery(document).ready(function ($) {
 		$("#slider_cat_5").fadeIn();
 	});
 
+	$("#indx_cts_li_rspnsv_1").click(function () {
+		$(".cont_box_slider_cat_display").not("#slider_cat_1").fadeOut();
+		$("#slider_cat_1").fadeIn();
+	});
+
+	$("#indx_cts_li_rspnsv_2").click(function () {
+		$(".cont_box_slider_cat_display").not("#slider_cat_2").fadeOut();
+		$("#slider_cat_2").fadeIn();
+	});
+
+	$("#indx_cts_li_rspnsv_3").click(function () {
+		$(".cont_box_slider_cat_display").not("#slider_cat_3").fadeOut();
+		$("#slider_cat_3").fadeIn();
+	});
+
+	$("#indx_cts_li_rspnsv_4").click(function () {
+		$(".cont_box_slider_cat_display").not("#slider_cat_4").fadeOut();
+		$("#slider_cat_4").fadeIn();
+	});
+
+	$("#indx_cts_li_rspnsv_5").click(function () {
+		$(".cont_box_slider_cat_display").not("#slider_cat_5").fadeOut();
+		$("#slider_cat_5").fadeIn();
+	});
+
+
+
+
+
+
+	let loader = document.getElementById('loader_cont_id');
+	window.addEventListener('load', function () {
+		loader.style.display = 'none';
+	});
+
+
+
 	/* */
 
 	/* ---------------------------------------------------------------- */
@@ -111,11 +148,6 @@ $(".arrow_up").click(function () {
 
 });
 
-let loader = document.getElementById('loader_cont_id');
-window.addEventListener('load', function () {
-	loader.style.display = 'none';
-});
-
 /* ----------------------------------------------------------------------- */
 
 const observer_left = new IntersectionObserver((entries) => {
@@ -161,6 +193,7 @@ typeWriter.style.setProperty("--characters", text.length); */
 const maquina4 = document.getElementById('maquina-escribir4')
 
 const maquinaEscribir3 = (text = '',tiempo = 10, etiqueta = '') => {
+	console.log('Hola')
   let arrayCaracteres = text.split('')
   etiqueta.innerHTML = ''
   let i = 0
@@ -168,7 +201,7 @@ const maquinaEscribir3 = (text = '',tiempo = 10, etiqueta = '') => {
   let escribir = setInterval(function(){
     if (i === arrayCaracteres.length) {
       etiqueta.innerHTML = text.substring(0,j)
- 
+
       if (j === 0) {
         etiqueta.innerHTML = ''
         i = 0
@@ -182,4 +215,4 @@ const maquinaEscribir3 = (text = '',tiempo = 10, etiqueta = '') => {
 }
 
 
-maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4)
+maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
