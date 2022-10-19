@@ -394,6 +394,13 @@ header h1 {
     width: 100%;
 }
 
+.card-body > ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
 .box_slider_cats {
     width: 100%;
     height: 100%;

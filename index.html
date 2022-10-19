@@ -29,6 +29,7 @@
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script defer src="js/custom.js"></script>
     <script defer src="js/popup.js"></script>
+    <script defer src="js/card_landing.js"></script>
 
     <script>
         (function (d) {
@@ -367,15 +368,79 @@
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-                            <h2 class="card__title">Bigotes!</h2>
-                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium, explicabo. Commodi
-                                a
-                                labore
-                                sed
-                                non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
-                                blanditiis
-                                molestiae, reiciendis hic?</p>
+
+                        <!-- nuevo -->
+                        <div class="row" id="items"></div>
+                            <template id="template-card">
+                                        <div class="card-body">
+                                            <h5 id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p>Edad:</p>
+                                                    <p id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p>Sexo:</p>
+                                                    <p id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p>Color: </p>
+                                                    <p id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p>Esterilización:</p>
+                                                    <p id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p>Vacunas:</p>
+                                                    <p id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p>Discapacidad:</p>
+                                                    <p id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p>Estado Salud:</p>
+                                                    <p id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            </template>
+
+                            <!-- <div class="row" id="items-slider"></div>
+                            <h2 class="card__title" id="card__title"></h2>
+                            <template class="card__paragraph" id="card__paragraph">
+                                <ul>
+                            <li>
+                                <p>Edad:</p>
+                                <p id="edad-slider"></p>
+                            </li>
+                            <li>
+                                <p>Sexo:</p>
+                                <p id="sexo-slider"></p>
+                            </li>
+                            <li>
+                                <p>Color: </p>
+                                <p id="color-slider"></p>
+                            </li>
+                            <li>
+                                <p>Esterilización:</p>
+                                <p id="este-slider"></p>
+                            </li>
+                            <li>
+                                <p>Vacunas:</p>
+                                <p id="vacu-slider"></p>
+                            </li>
+                            <li>
+                                <p>Discapacidad:</p>
+                                <p id="dis-slider"></p>
+                            </li>
+                            <li>
+                                <p>Estado Salud:</p>
+                                <p id="salu-slider"></p>
+                            </li>
+                        </ul>
+                        </template> -->
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat  card__cats">
@@ -454,14 +519,7 @@
 
                         <div class="slider_cat_text card__text">
                             <h2 class="card__title">Bigotes!</h2>
-                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium, explicabo. Commodi
-                                a
-                                labore
-                                sed
-                                non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
-                                blanditiis
-                                molestiae, reiciendis hic?</p>
+                            <p class="card__paragraph"></p>
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat  card__cats">
