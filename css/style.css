@@ -251,7 +251,7 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    color: var(--light);
+    color: var(--light-pink);
     text-align: center;
     padding: 4.5em 28px;
     gap: 3em 6em;
@@ -285,7 +285,7 @@ header h1 {
 
 .menu__item {
     display: flex;
-    height: 100%;
+    /*height: 100%;*/
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -306,7 +306,7 @@ header h1 {
 .menu__title {
     font-family: var(--titulos);
     font-size: 3rem;
-    color: var(--light);
+    color: var(--light-pink);
     line-height: 44px;
     margin-top: 1em;
     text-align: center;
@@ -321,6 +321,7 @@ header h1 {
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.2rem;
+    font-family: var(--parrafos);
 }
 
 .cafes {
@@ -376,7 +377,7 @@ header h1 {
 }
 
 .content {
-    background-color: rgb(255, 255, 255);
+    background-color:transparent;
     border-radius: 10px;
     padding: 82px 0px;
     width: 100%;
@@ -391,6 +392,30 @@ header h1 {
     display: block;
     text-align: center;
     width: 100%;
+}
+
+.card-body .nombre-card-body{
+    font-size:3rem;
+    margin-bottom:30px;
+    font-family:'Futura-PT-Book';
+    color:var(--dark-brown);
+}
+
+.card-body  li .sub-nombre{
+    font-weight:600 ;
+    display:flex;
+    align-items: left;
+}
+
+.card-body > ul li{
+    display: flex;
+    flex-direction: row;
+    justify-items:center;
+    align-items: center;
+    gap: 20px;
+    font-size:1.5rem;
+    margin-top:5px;
+    color:var(--dark-brown)
 }
 
 .box_slider_cats {
@@ -502,6 +527,18 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.slider_cat_text .card__title{
+    font-family: var(--parrafos);
+    font-size: 2rem;
+    color: var(--dark-brown);
+    margin-bottom: 20px;
+}
+
+.slider_cat_text .card__paragraph{
+    font-family: var(--parrafos);
+    font-size: 1.7rem;
+    color: var(--dark-brown);
 }
 
 .slider_cat_text p {
@@ -942,6 +979,8 @@ header h1 {
     font-size: 36px;
     text-align: center;
     margin-bottom: 1.5rem;
+    color: var(--dark-brown);
+    font-family: var(--parrafos);
 }
 
 .form-validation-reserva {
@@ -967,7 +1006,19 @@ header h1 {
 }
 
 .modal-input {
-    display: block;
+
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 20px;
+    text-align: center;
+    border: 1.5px solid var(--dark-brown);
+    color: var(--dark-brown);
+    font-family: var(--parrafos);
+    text-transform: none;
+
+    /*display: block;
     padding: 1.2rem;
     height: 2rem;
     width: 100%;
@@ -975,7 +1026,7 @@ header h1 {
     margin-top: 0.5rem;
     text-transform: none;
     font-family: var(--parrafos);
-    border: 1px solid var(--dark-brown);
+    border: 1px solid var(--dark-brown);*/
 }
 
 .modal-input::placeholder {
@@ -1067,10 +1118,11 @@ header h1 {
     text-transform: none;
 }
 
-@media only screen and (max-width: 1200px) {
+/*PANTALLA 1280px*/
+@media only screen and (max-width: 1280px) {
     header h1 {
-        line-height: 68px;
-        font-size: 3rem;
+        line-height: 200px;
+        font-size: 9rem;
         left: 80%;
     }
 
@@ -1111,6 +1163,7 @@ header h1 {
     }
 }
 
+/*PANTALLA 828px*/
 /* ================================================================= */
 @media only screen and (max-width:828px) {
 
@@ -1118,8 +1171,17 @@ header h1 {
         display: none;
     }
 
+     header {
+        background-attachment: initial;
+        background-size: contain;
+        height: 60vh;
+        background-image: url(../img/header/header.webp);
+    }
+
     header h1 {
         left: 78%;
+        line-height: 100px;
+        font-size: 5rem;
     }
 
     .headers__title {
@@ -1133,6 +1195,8 @@ header h1 {
         gap: 3em 0;
     }
 
+   
+
     .menu__item {
         justify-content: initial;
         grid-area: initial;
@@ -1141,7 +1205,7 @@ header h1 {
     }
 
     .menu__title{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .cafes{
@@ -1273,6 +1337,8 @@ header h1 {
     }
 }
 
+    /*PANTALLA 425px*/
+
 @media only screen and (max-width: 425px) {
     .main_mobile {
         
@@ -1284,7 +1350,8 @@ header h1 {
     header {
         background-attachment: initial;
         background-size: cover;
-        height: 60vh;
+        height: 62vh;
+        background-image: url(../img/header/header.png);
     }
 
     header h1 {
@@ -1324,12 +1391,17 @@ header h1 {
     }
 
     .parrafo__intro p {
-        font-size: 1.3rem;
-        line-height: 41px;
+        font-size: 1.1rem;
+        line-height: 35px;
     }
 
     .menu {
-        display: table;
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+    }
+
+    .menu__title{
+        font-size: 2rem;
     }
 
     .menu__item {
@@ -1345,7 +1417,10 @@ header h1 {
     }
 
     .box_slider_cats_rspnsv {
-        margin-bottom: -88px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 70%;
+        /*margin-bottom: -88px;*/
     }
 
     .box_slider_cats_rspnsv ul li {
@@ -1353,9 +1428,23 @@ header h1 {
         margin: 22px 0px !important;
     }
 
-    .circle_cat {
+    .card__title{
+    margin-top:20px
     }
 
+    .button-adopt{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    /* .circle_cat {
+    } */
+
+    .actv {
+    transition: all 0.5s ease-in-out 0s;
+    transform: scale(1.1);
+    border: 4px solid rgb(253, 210, 191);
+    }
     .aboutus {
         display: block;
     }
@@ -1364,10 +1453,22 @@ header h1 {
         margin-bottom: 24px;
     }
 
-    .modal-content {
+     .modal-content {
         margin: 30% auto;
         width: 90%;
         height: 80%;
+    } 
+
+    .modal-form {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     }
 
 

@@ -1,0 +1,13 @@
+[ 
+    {
+        "id": 1,
+        "nombre": "Bigotes",
+        "edad": 7,
+        "sexo": "macho",
+        "color": "gris",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    }
+]
