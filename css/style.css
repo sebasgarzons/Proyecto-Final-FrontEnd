@@ -217,7 +217,7 @@ header h1 {
 
 .parrafo__intro p {
     color: var(--dark-brown);
-    font-size: 2.1rem;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 62px;
     animation: 4s steps(241) 1s 1 normal both running typing;
@@ -295,7 +295,7 @@ header h1 {
     transition: all 1s ease 0s;
     filter: brightness(100%);
     object-fit: contain;
-    height: 102px;
+    height: 6.3rem;
     width: auto;
 }
 
@@ -1144,6 +1144,10 @@ header h1 {
         font-size: 1rem;
     }
 
+    .cafes{
+        grid-template-columns: 1fr 1fr;
+    }
+
     .load_more_height_first {
         height: 236rem;
     }
@@ -1328,6 +1332,13 @@ header h1 {
         display: table;
     }
 
+    .menu__item {
+        justify-content: initial;
+        grid-area: initial;
+        display: block;
+        width: 100%;
+    }
+
     .box_slider_cats ul {
         display: table;
         margin: auto;
@@ -1358,4 +1369,6 @@ header h1 {
         width: 90%;
         height: 80%;
     }
+
+
 }
