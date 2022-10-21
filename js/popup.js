@@ -184,13 +184,9 @@ function checkRequired(inputArrm) {
 
 
 function mensaje () {
-    if (checkRequired([rName,rPhone,rDate,rTime])  == 2 || validateEmail(rEmail.value,rEmail) == 2 ) {
-        
-
-       
+    if (checkRequired([rName,rPhone,rDate,rTime])  == 2 || validateEmail(rEmail.value,rEmail) == 2 ) {  
 
 
-        
         setTimeout(function() {
             alert('mensaje enviado');  
         }, 100);     

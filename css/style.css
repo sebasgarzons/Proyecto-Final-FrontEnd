@@ -937,11 +937,11 @@ header h1 {
 
 .modal-content {
     background: var(--light);
-    margin: 11% auto;
+    margin: 5% auto;
     width: 60%;
     position: relative;
     border-radius: 3px;
-    min-height: 620px;
+    min-height: 598px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
