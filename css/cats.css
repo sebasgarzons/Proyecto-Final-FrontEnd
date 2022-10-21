@@ -62,10 +62,12 @@ p{
     transform-origin: 50% 50%;
     /* perspective: 3000px; */
     /* animation: spin 5s linear infinite; */
+    transform: rotateY(180deg);
+    
 }
 
 .container:hover{
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
 }
 
 .card{
@@ -107,19 +109,23 @@ p{
 
 .back{
     box-sizing: border-box;
-    border: 10px outset #fff;
+    /* border: 10px outset #fff; */
+    border: 1px solid #36150032;
     /* box-shadow: 0 0 10px 5px gold; */
-    box-shadow:
-    0 0 10px #0008 inset,
-    0 0 8px 2px var(--dark-brown);
-    color: #000000;
+    /* box-shadow: 0 0 10px #0008 inset, 0 0 8px 2px var(--dark-brown); */
+    color: var(--dark-brown);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
     display: flex;
     align-items: center;
+    font-size: 1.4rem;
+    background-color: var(--light);
+    background-color: #ffeded;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     justify-content: center;
-
+    text-align: left;
 }
 
 .title{
@@ -134,16 +140,28 @@ p{
     backface-visibility: hidden;
     background-color: transparent;
     background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
-    color:var(--dark-brown);
-    font-size:2rem;
+   
+    color: var(--light-pink);
+    font-size: 2.3rem;
     font-family: var(--parrafos);
     font-weight: 600;
-    background: rgba(253, 210, 191, 0.25);
+    background: #361500a3;
 }
 
 .title p{
     padding: 4px 0;
 }
+
+.cont_back_card ul li {
+    font-weight: 600;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.cont_back_card ul li span {
+    font-weight: initial;
+}
+
 
 @keyframes spin{
     from{
@@ -156,7 +174,11 @@ p{
 }
 
 .top{
+    text-align: center;
     padding: 0.8em 0;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    color: var(--dark-brown);
 }
 
 .color_filter{
@@ -164,8 +186,63 @@ p{
     align-items: center;
 }
 
-.color_list>li input{
+/* .color_list>li input{
     display: block;
+} */
+
+.aside {
+    color: var(--dark-brown);
+}
+
+
+.aside__title {
+
+font-size: 2.4rem;
+margin-bottom: 1rem;
+}
+
+.list__item {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+
+.filtro {
+    
+padding: 0.7rem;
+    
+font-size: 1.1rem;
+    
+display: block;
+    
+margin-top: 0.5rem;
+    
+border-radius: 12px;
+    
+border-color: var(--dark-brown);
+}
+
+.div__check{
+    margin-top: 0.5rem;
+
+}
+
+.checkp {
+    display: inline-block;
+}
+.checksex {
+    width: 22px;
+    padding: 0.5rem;
+    height: 22px;
+    margin-right: 12px;
+}
+.aside__button {
+    margin-top: 0.6rem;
+}
+
+.check__list {
+    display: flex;
+    align-items: center;
 }
 
 /* .cont_back_card{
@@ -213,7 +290,7 @@ p{
 
 .container:hover{
 	transform: rotateY(180deg);
-} */
+} 
 
 /* .card{
     position: absolute;
