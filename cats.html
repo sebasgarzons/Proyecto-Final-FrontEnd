@@ -1,1 +1,518 @@
-<H1>See Our Beloved Cats</H1>
+<!DOCTYPE>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Web App</title>
+    <link href="css/cats.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script defer src="js/card_landing.js"></script>
+
+</head>
+<html lang="en">
+
+<header>
+    <nav id="nav" class="nav1 nav">
+        <div class="contenedor-nav nav__contenedor">
+
+            <div class="logo nav__logo">
+                <a href="#header"><img class="nav__img" src="img/logos/logo-dark.png" alt="Ir a página principal"
+                        title="Ir a página principal" width="100px" height="100px"></a>
+            </div>
+
+            <div class="enlaces nav__links" id="enlaces">
+                <a href="#menu_container" id="enlace-menu" class="btn-header nav__link">Menú</a>
+                <a href="#" id="enlace-gatitos" class="btn-header nav__link">Gatitos</a>
+                <button id="reserva__button" class="btn-header nav__link">Reserva</button>
+                <a href="#aboutus" id="enlace-sobre-nosotros" class="btn-header nav__link">Contacto</a>
+            </div>
+
+            <div class=icono id="open">
+                <span>&#9776;</span>
+            </div>
+
+            <div class="carrito">
+                <a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px "
+                        viewBox="0 0 24 24">
+                        <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                        <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        <path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path>
+                        <path
+                            d="M10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14l-2.31 6h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17z">
+                        </path>
+                    </svg></a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="top grid">
+        <h2>Ven y Adopta un Compañero de por vida!</h2>
+    </div>
+    <div id="">
+
+    </div>
+    <div class="cont_cats grid">
+        <aside>
+            <h3>Filtrar por:</h3>
+            <ul class="color_list">
+                <li>
+                    <h3>Color:</h3>
+                    <input placeholder="Amarillo">
+                    <div class="color_filter">
+                        <input type="checkbox" title="amarillo">
+                        <p>Amarillo</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>Sexo</h3>
+                    <input placeholder="Macho">
+                </li>
+            </ul>
+            <button>Buscar</button>
+        </aside>
+        <div class="cont_cards" id="add_cats">
+<!--             <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat3.jpg">
+                        </div>
+                    </div>
+                    <div class="back card">
+                        <div class="cont_back_card">
+                            <ul>
+                                <li>Edad: 6</li>
+                                <li>Sexo:</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <p>Hola Oscuro</p>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat2.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+                        <div class="cont_back_card">
+                            <ul>
+                                <li>Edad: 6</li>
+                                <li>Sexo: <span class="sex_cat"></span></li>
+                                <li>edad: 6</li>
+                                <li>sexo: macho</li>
+                                <li>color: blanco</li>
+                                <li>esterilizado: si</li>
+                                <li>vacunado: si</li>
+                                <li>discapacidad: ninguna</li>
+                                <li>estado: buena</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat2.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+                        <div class="cont_back_card">
+                            <ul>
+                                <li>Edad: 6</li>
+                                <li>Sexo: <span class="sex_cat"></span></li>
+                                <li>edad: 6</li>
+                                <li>sexo: macho</li>
+                                <li>color: blanco</li>
+                                <li>esterilizado: si</li>
+                                <li>vacunado: si</li>
+                                <li>discapacidad: ninguna</li>
+                                <li>estado: buena</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat3.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat5.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/modal-cat.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/c">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat2.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat2.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat2.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat2.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat2.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat2.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_card">
+                <div class="container">
+                    <div class="front card">
+                        <div>
+                            <img src="img/cat2.jpg">
+                        </div>
+        
+                    </div>
+                    <div class="back card">
+            
+                    </div>
+                    <div class="title">
+                        <p>Hola</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+</html>
