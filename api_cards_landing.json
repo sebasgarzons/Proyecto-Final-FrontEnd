@@ -1,8 +1,253 @@
-[ 
-    {
+[{
         "id": 1,
-        "nombre": "Bigotes",
+        "foto": "img/catos/cat_1.jpg",
+        "nombre": "Bob",
         "edad": 7,
+        "sexo": "macho",
+        "color": "gris",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 2,
+        "foto": "img/catos/cat_2.jpg",
+        "nombre": "Mia",
+        "edad": 14,
+        "sexo": "hembra",
+        "color": "amarillo",
+        "esterilizado": "no",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 3,
+        "foto": "img/catos/cat_3.jpg",
+        "nombre": "Tigresa",
+        "edad": 3,
+        "sexo": "hembra",
+        "color": "amarillo",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 4,
+        "foto": "img/catos/cat_4.jpg",
+        "nombre": "Manchas",
+        "edad": 6,
+        "sexo": "macho",
+        "color": "blanco",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 5,
+        "foto": "img/catos/cat_5.jpg",
+        "nombre": "Geronimo",
+        "edad": 8,
+        "sexo": "macho",
+        "color": "negro",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 6,
+        "foto": "img/catos/cat_6.jpg",
+        "nombre": "Jack",
+        "edad": 11,
+        "sexo": "macho",
+        "color": "amarillo",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 7,
+        "foto": "img/catos/cat_7.jpg",
+        "nombre": "Suca",
+        "edad": 0,
+        "sexo": "Hembra",
+        "color": "amarillo",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 8,
+        "foto": "img/catos/cat_8.jpg",
+        "nombre": "Pelusita",
+        "edad": 2,
+        "sexo": "Hembra",
+        "color": "amarillo",
+        "esterilizado": "no",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 9,
+        "foto": "img/catos/cat_9.jpg",
+        "nombre": "Olivia",
+        "edad": 7,
+        "sexo": "Hembra",
+        "color": "blanco",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 10,
+        "foto": "img/catos/cat_10.jpg",
+        "nombre": "Felix",
+        "edad": 18,
+        "sexo": "macho",
+        "color": "café",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 11,
+        "foto": "img/catos/cat_11.jpg",
+        "nombre": "Figaro",
+        "edad": 15,
+        "sexo": "macho",
+        "color": "gris",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "motora",
+        "estado": "buena"
+    },
+
+    {
+        "id": 12,
+        "foto": "img/catos/cat_12.jpg",
+        "nombre": "Nini",
+        "edad": 21,
+        "sexo": "hembra",
+        "color": "blanco",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "visual",
+        "estado": "buena"
+    },
+
+    {
+        "id": 13,
+        "foto": "img/catos/cat_13.jpg",
+        "nombre": "Bunny",
+        "edad": 7,
+        "sexo": "hembra",
+        "color": "negro",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "temporal",
+        "estado": "Fractura"
+    },
+
+    {
+        "id": 14,
+        "foto": "img/catos/cat_14.jpg",
+        "nombre": "Julius",
+        "edad": 9,
+        "sexo": "macho",
+        "color": "blanco",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "desnutrición"
+    },
+
+    {
+        "id": 15,
+        "foto": "img/catos/cat_15.jpg",
+        "nombre": "Milo",
+        "edad": 8,
+        "sexo": "macho",
+        "color": "café",
+        "esterilizado": "no",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "desnutrición"
+    },
+
+    {
+        "id": 16,
+        "foto": "img/catos/cat_16.jpg",
+        "nombre": "Salem",
+        "edad": 3,
+        "sexo": "macho",
+        "color": "negro",
+        "esterilizado": "si",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "sarna"
+    },
+    {
+        "id": 17,
+        "foto": "img/catos/cat_17.jpg",
+        "nombre": "Ronie",
+        "edad": 1,
+        "sexo": "Hembra",
+        "color": "blanco",
+        "esterilizado": "no",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "sarna"
+    },
+    {
+        "id": 18,
+        "foto": "img/catos/cat_18.jpg",
+        "nombre": "Babe",
+        "edad": 0,
+        "sexo": "hembra",
+        "color": "gris",
+        "esterilizado": "no",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 19,
+        "foto": "img/catos/cat_19.jpg",
+        "nombre": "Gary",
+        "edad": 18,
+        "sexo": "macho",
+        "color": "naranja",
+        "esterilizado": "no",
+        "vacunado": "si",
+        "discapacidad": "ninguna",
+        "estado": "buena"
+    },
+
+    {
+        "id": 20,
+        "foto": "img/catos/cat_20.jpg",
+        "nombre": "Emperador",
+        "edad": 4,
         "sexo": "macho",
         "color": "gris",
         "esterilizado": "si",

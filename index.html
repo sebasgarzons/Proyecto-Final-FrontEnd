@@ -29,7 +29,7 @@
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script defer src="js/custom.js"></script>
     <script defer src="js/popup.js"></script>
-    <script defer src="js/card_landing.js"></script>
+    <script defer src="js/card_home.js"></script>
 
     <script>
         (function (d) {
@@ -360,70 +360,17 @@
 
         <section class="content adopcion">
 
-            <div class="slider_cats adopcion__container">
+            <div class="slider_cats adopcion__container" id="slider_cats_cont">
 
+<!-- 
 
-                <div class="cont_box_slider_cat_display cont_show    adopcion__display" id="slider_cat_1">
+                <div class="cont_box_slider_cat_display adopcion__display">
 
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-
-                        <!-- nuevo -->
-                        <div class="row" id="items"></div>
-                            <template id="template-card">
-                                        <div class="card-body">
-                                            <h5 class="nombre-card-body" id="nombre"></h5>
-                                            <ul>
-                                                <li>
-                                                    <p class="sub-nombre">Edad:</p>
-                                                    <p class="sub-resultado" id="edad"></p>
-                                                </li>
-                                                <li>
-                                                    <p class="sub-nombre">Sexo:</p>
-                                                    <p class="sub-resultado" id="sexo"></p>
-                                                </li>
-                                                <li>
-                                                    <p class="sub-nombre">Color: </p>
-                                                    <p class="sub-resultado" id="color"></p>
-                                                </li>
-                                                <li>
-                                                    <p class="sub-nombre">Esterilización:</p>
-                                                    <p class="sub-resultado" id="este"></p>
-                                                </li>
-                                                <li>
-                                                    <p class="sub-nombre">Vacunas:</p>
-                                                    <p class="sub-resultado" id="vacu"></p>
-                                                </li>
-                                                <li>
-                                                    <p class="sub-nombre">Discapacidad:</p>
-                                                    <p class="sub-resultado" id="dis"></p>
-                                                </li>
-                                                <li>
-                                                    <p class="sub-nombre">Salud:</p>
-                                                    <p class="sub-resultado" id="salu"></p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                            </template>
 
                             
-                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
-                        </div>
-                        <div class="slider_cat_display slider_reorder_cat  card__cats">
-                            <img src="img/cat1.jpg" class="card__img">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cont_box_slider_cat_display adopcion__display" id="slider_cat_2">
-
-                    <div class="box_slider_cat_display card">
-
-                        <div class="slider_cat_text card__text">
-
-                            <div class="row" id="items"></div>
-                            <template id="template-card">
                                         <div class="card-body">
                                             <h5 class="nombre-card-body" id="nombre"></h5>
                                             <ul>
@@ -457,7 +404,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                            </template>
+                            
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display  card__cats">
@@ -467,12 +414,11 @@
                     </div>
                 </div>
 
-                <div class="cont_box_slider_cat_display adopcion__display" id="slider_cat_3">
+                <div class="cont_box_slider_cat_display adopcion__display">
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-                            <div class="row" id="items"></div>
-                            <template id="template-card">
+                            
                                         <div class="card-body">
                                             <h5 class="nombre-card-body" id="nombre"></h5>
                                             <ul>
@@ -506,7 +452,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                            </template>
+                            
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat  card__cats">
@@ -515,12 +461,11 @@
                     </div>
                 </div>
 
-                <div class="cont_box_slider_cat_display adopcion__display" id="slider_cat_4">
+                <div class="cont_box_slider_cat_display adopcion__display">
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-                            <div class="row" id="items"></div>
-                            <template id="template-card">
+                            
                                         <div class="card-body">
                                             <h5 class="nombre-card-body" id="nombre"></h5>
                                             <ul>
@@ -554,7 +499,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                            </template>
+                            
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display  card__cats">
@@ -563,12 +508,11 @@
                     </div>
                 </div>
 
-                <div class="cont_box_slider_cat_display adopcion__display" id="slider_cat_5">
+                <div class="cont_box_slider_cat_display adopcion__display">
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-                            <div class="row" id="items"></div>
-                            <template id="template-card">
+                            
                                         <div class="card-body">
                                             <h5 class="nombre-card-body" id="nombre"></h5>
                                             <ul>
@@ -602,7 +546,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                            </template>
+                            
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat  card__cats">
@@ -610,40 +554,10 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
-        <!--POPUP ADOPCIÓN-->
-
-        <div class="overlay overlay_form" id="">
-            <div class="popup popup_form    popup" id="">
-                <div class="btn-cerrar-popup   popup__cerrar"><i class="fas fa-times   popup__icon"></i></div>
-
-                <img src="img/logos/logo-dark.png" alt="" width="80px" class="popup__logo">
-                <h3 class="popup__title">Formulario de Adopción</h3>
-
-                <form class="form-adopcion" action="" id="form_adopt" novalidate>
-
-
-                    <div class="contenedor-inputs  form-adopcion__container">
-
-                        <input class="input-adopt adopt__input" type="text" name="" id="nom_adopt" placeholder="Nombre">
-                        <input class="input-adopt adopt__input" type="email" name="" id="eml_adopt"
-                            placeholder="nombre@correo.com">
-                        <input class="input-adopt adopt__input" type="tel" name="" id="tel_adopt"
-                            placeholder="0123456789">
-                    </div>
-
-                    <button type="submit" class="btn-submit button button-adopt  form-adopcion__button">Enviar</button>
-
-                    <div class="mensajes form-adopcion__msg">
-                        <p class="advertencias form-adopcion__p" id="advertencias"></p>
-                        <p class="enviar form-adopcion__enviar" id="enviar"></p>
-                    </div>
-                </form>
-            </div>
-        </div>
 
         <!-- SLIDER GATITOS-->
 
@@ -651,64 +565,14 @@
         ">
             <div class="box_slider_cats   slider-cats__container">
 
-                <ul id="listCats  list-cats">
-                    <li class="list_cats_li  list-cats__li" id="indx_cts_li_1">
-                        <div class="circle_cat   list-cats__circle">
-                            <img src="img/cat1.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
-                    <li class="list_cats_li    list-cats__li" id="indx_cts_li_2">
-                        <div class="circle_cat       list-cats__circle">
-                            <img src="img/cat2.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
-                    <li class="list_cats_li   list-cats__li" id="indx_cts_li_3">
-                        <div class="circle_cat      list-cats__circle">
-                            <img src="img/cat3.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
-                    <li class="list_cats_li   list-cats__li" id="indx_cts_li_4">
-                        <div class="circle_cat     list-cats__circle">
-                            <img src="img/cat5.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
-                    <li class="list_cats_li   list-cats__li" id="indx_cts_li_5">
-                        <div class="circle_cat    list-cats__circle">
-                            <img src="img/proxy.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
+                <ul id="list_cats">
+
                 </ul>
             </div>
             <div class="box_slider_cats box_slider_cats_rspnsv   slider-cats__container">
 
-                <ul id="listCats  list-cats">
-                    <li class="list_cats_li  list-cats__li" id="indx_cts_li_rspnsv_1">
-                        <div class="circle_cat   list-cats__circle">
-                            <img src="img/cat1.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
-                    <li class="list_cats_li    list-cats__li" id="indx_cts_li_rspnsv_2">
-                        <div class="circle_cat       list-cats__circle">
-                            <img src="img/cat2.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="list_cats_li   list-cats__li" id="indx_cts_li_rspnsv_3">
-                        <div class="circle_cat      list-cats__circle">
-                            <img src="img/cat3.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
-                    <li class="list_cats_li   list-cats__li" id="indx_cts_li_rspnsv_4">
-                        <div class="circle_cat     list-cats__circle">
-                            <img src="img/cat5.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
-                    <li class="list_cats_li   list-cats__li" id="indx_cts_li_rspnsv_5">
-                        <div class="circle_cat    list-cats__circle">
-                            <img src="img/proxy.jpg" class="list-cats__img" alt="">
-                        </div>
-                    </li>
+                <ul id="list_cats_rspnsv">
+ 
                 </ul>
             </div>
         </section>
@@ -773,6 +637,38 @@
 
             </form>
         </section>
+
+        
+        <!--POPUP ADOPCIÓN-->
+
+        <div class="overlay overlay_form" id="">
+            <div class="popup popup_form    popup" id="">
+                <div class="btn-cerrar-popup   popup__cerrar"><i class="fas fa-times   popup__icon"></i></div>
+
+                <img src="img/logos/logo-dark.png" alt="" width="80px" class="popup__logo">
+                <h3 class="popup__title">Formulario de Adopción</h3>
+
+                <form class="form-adopcion" action="" id="form_adopt" novalidate>
+
+
+                    <div class="contenedor-inputs  form-adopcion__container">
+
+                        <input class="input-adopt adopt__input" type="text" name="" id="nom_adopt" placeholder="Nombre">
+                        <input class="input-adopt adopt__input" type="email" name="" id="eml_adopt"
+                            placeholder="nombre@correo.com">
+                        <input class="input-adopt adopt__input" type="tel" name="" id="tel_adopt"
+                            placeholder="0123456789">
+                    </div>
+
+                    <button type="submit" class="btn-submit button button-adopt  form-adopcion__button">Enviar</button>
+
+                    <div class="mensajes form-adopcion__msg">
+                        <p class="advertencias form-adopcion__p" id="advertencias"></p>
+                        <p class="enviar form-adopcion__enviar" id="enviar"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
 
 
         <!-- BOTON WHATSAPP -->

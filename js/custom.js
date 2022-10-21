@@ -12,67 +12,21 @@ jQuery(document).ready(function ($) {
 			console.log(test);
 		}); */
 
-//---FUNCIÓN SLIDER---//
+	//---FUNCIÓN SLIDER---//
+
+	
 
 	$(".products_txt ul li").click(function () {
 		$(".products_txt ul li").not(this).removeClass("products_txt_actv");
 		$(this).addClass("products_txt_actv");
 	});
 
-	$("#indx_cts_li_1").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_1").fadeOut();
-		$("#slider_cat_1").fadeIn();
-	});
-
-	$("#indx_cts_li_2").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_2").fadeOut();
-		$("#slider_cat_2").fadeIn();
-	});
-
-	$("#indx_cts_li_3").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_3").fadeOut();
-		$("#slider_cat_3").fadeIn();
-	});
-
-	$("#indx_cts_li_4").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_4").fadeOut();
-		$("#slider_cat_4").fadeIn();
-	});
-
-	$("#indx_cts_li_5").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_5").fadeOut();
-		$("#slider_cat_5").fadeIn();
-	});
-
-	$("#indx_cts_li_rspnsv_1").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_1").fadeOut();
-		$("#slider_cat_1").fadeIn();
-	});
-
-	$("#indx_cts_li_rspnsv_2").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_2").fadeOut();
-		$("#slider_cat_2").fadeIn();
-	});
-
-	$("#indx_cts_li_rspnsv_3").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_3").fadeOut();
-		$("#slider_cat_3").fadeIn();
-	});
-
-	$("#indx_cts_li_rspnsv_4").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_4").fadeOut();
-		$("#slider_cat_4").fadeIn();
-	});
-
-	$("#indx_cts_li_rspnsv_5").click(function () {
-		$(".cont_box_slider_cat_display").not("#slider_cat_5").fadeOut();
-		$("#slider_cat_5").fadeIn();
-	});
 
 
 
 
-//---LOADER---//
+
+	//---LOADER---//
 
 	let loader = document.getElementById('loader_cont_id');
 	window.addEventListener('load', function () {
@@ -86,14 +40,9 @@ jQuery(document).ready(function ($) {
 	/* ---------------------------------------------------------------- */
 
 
-//---EFECTO DE LOS GATITOS DEL SLIDER---//
+	//---EFECTO DE LOS GATITOS DEL SLIDER---//
 
-	$(".circle_cat").click(function () {
-		$(".circle_cat").not(this).removeClass("blur");
-		$(".circle_cat img").addClass("blur");
-		$(".circle_cat").not(this).removeClass("actv");
-		$(this).addClass("actv");
-	});
+
 
 });
 
@@ -115,11 +64,9 @@ $('#load_more').click(function () {
 	let load_more = document.getElementById('load_more').innerText;
 	console.log('El valor es: ' + load_more);
 
-	if (load_more === "Ver menos"){
+	if (load_more === "Ver menos") {
 		document.getElementById('load_more').innerText = 'Ver más ';
-	}
-	
-	else{
+	} else {
 		document.getElementById('load_more').innerText = 'Ver menos';
 	}
 
@@ -211,27 +158,31 @@ typeWriter.style.setProperty("--characters", text.length); */
 
 const maquina4 = document.getElementById('maquina-escribir4')
 
-const maquinaEscribir3 = (text = '',tiempo = 10, etiqueta = '') => {
+const maquinaEscribir3 = (text = '', tiempo = 10, etiqueta = '') => {
 	console.log('Hola')
-  let arrayCaracteres = text.split('')
-  etiqueta.innerHTML = ''
-  let i = 0
-  let j = text.length
-  let escribir = setInterval(function(){
-    if (i === arrayCaracteres.length) {
-      etiqueta.innerHTML = text.substring(0,j)
+	let arrayCaracteres = text.split('')
+	etiqueta.innerHTML = ''
+	let i = 0
+	let j = text.length
+	let escribir = setInterval(function () {
+		if (i === arrayCaracteres.length) {
+			etiqueta.innerHTML = text.substring(0, j)
 
-      if (j === 0) {
-        etiqueta.innerHTML = ''
-        i = 0
-        j = text.length
-      }
-    } else {
-      etiqueta.innerHTML += arrayCaracteres[i]
-      i++
-    }
-  }, tiempo)
+			if (j === 0) {
+				etiqueta.innerHTML = ''
+				i = 0
+				j = text.length
+			}
+		} else {
+			etiqueta.innerHTML += arrayCaracteres[i]
+			i++
+		}
+	}, tiempo)
 }
 
 
 maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
+
+
+
+
