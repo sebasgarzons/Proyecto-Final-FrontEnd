@@ -20,7 +20,7 @@ console.log(x) */
 }); */
 
 async function llamar_gatos() {
-    const response = await fetch("/api_cards_landing.json")
+    const response = await fetch("../api_cards_landing.json")
     const gatos = await response.json()
     dibujar_gatos(gatos);
 
