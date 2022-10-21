@@ -1,17 +1,30 @@
-<!DOCTYPE>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cats Web App</title>
-    <link href="css/cats.css" rel="stylesheet">
+    <meta name="description"
+        content="Una cafetería donde podrás pasar tiempo con gatitos, comer algo rico y adoptar uno de los mininos.">
+    <meta name="keywords"
+        content="cafetería,gatos,adopción de gatitos,café,postres,tortas,gatitos,adopción responsable">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Katty, Sebas & Mary">
+    <link rel="icon" href="img/logos/gato-verde.ico">
+    <link rel="apple-touch-icon" href="img/logos/gato-verde.ico">
+
+    
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/cats.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <script defer src="js/card_landing.js"></script>
+    <title>Página de adopción</title>
 
 </head>
-<html lang="en">
+
 
 <header>
     <nav id="nav" class="nav1 nav">
@@ -52,28 +65,78 @@
     <div class="top grid">
         <h2>Ven y Adopta un Compañero de por vida!</h2>
     </div>
-    <div id="">
 
-    </div>
+
+    <!-- <div id="">
+
+    </div> -->
+
+
     <div class="cont_cats grid">
-        <aside>
-            <h3>Filtrar por:</h3>
-            <ul class="color_list">
-                <li>
-                    <h3>Color:</h3>
-                    <input placeholder="Amarillo">
-                    <div class="color_filter">
-                        <input type="checkbox" title="amarillo">
-                        <p>Amarillo</p>
-                    </div>
+
+
+
+        <aside class="aside">
+            <h3 class="aside__title" >Filtrar por:</h3>
+
+            <ul class="color_list list">
+                <li class="list__item">
+                    <label class="list__label" for="color">Color:</label>
+                <select class="filtro" name="color" id="filtro_color">
+                    <option value="selector" id="filtro_selector">--Seleccione Color--</option>
+                    <option value="gris" id="filtro_color_gris">Gris</option>
+                    <option value="amarillo" id="filtro_color_amarillo">Amarillo</option>
+                    <option value="blanco" id="filtro_color_blanco">Blanco</option>
+                    <option value="negro" id="filtro_color_negro">Negro</option>
+                    <option value="cafe" id="filtro_color_cafe">Café</option>
+                    <option value="naranja" id="filtro_color_naranja">Naranja</option>
+                </select>
                 </li>
-                <li>
-                    <h3>Sexo</h3>
-                    <input placeholder="Macho">
+
+
+
+                <li class="list__item">
+                    <label  class="list__label"  for="checkbox">Sexo:</label>                 
+                      <div class="div__check">
+                          
+                            <div class="check__list">
+                                <input class="checksex" type="checkbox" title="macho" id="checkm">
+                                <label for="checkm"class="checkp">Macho</label>
+                                
+                            </div>
+
+                            <div class="check__list">
+                                <input class="checksex" type="checkbox" title="hembra" id="checkh">
+                               
+                                <label for="checkh"class="checkp">Hembra</label>
+                            </div>
+                      </div>
                 </li>
-            </ul>
-            <button>Buscar</button>
+
+
+                <li class="list__item">
+                    <label  class="list__label"  for="edad">Edad:</label>
+                <select class="filtro" name="edad" id="filtro_edad">
+                    <option value="selector" id="filtro_selector">--Seleccione Edad--</option>
+
+                    <option value="edad0-5" id="filtro_edad">De 0 a 5 años</option>
+                    <option value="edad6-10" id="filtro_edad">De 6 a 10 años</option>
+                    <option value="edad11-15" id="filtro_edad">De 11 a 15 años</option>
+                 
+                </select>
+                </li>
+
+           </ul>
+
+
+            <button class="button aside__button">Buscar</button>
         </aside>
+
+
+
+
+
+
         <div class="cont_cards" id="add_cats">
 <!--             <div class="box_card">
                 <div class="container">
@@ -551,4 +614,21 @@
         </div>
 
     </footer>
+<<<<<<< HEAD
 </html>
+=======
+    
+    <div class="parrafo__footer    footer-text">
+
+        <p class="footer__p   footer-text__p">Copyright &copy; 2022 Autores:
+            <a href="https://github.com/sebasgarzons" class="autores   footer-text__autores"
+                title="Ir a github de Sebastián">Sebastian</a> -
+            <a href="https://github.com/Janselin" class="autores   footer-text__autores"
+                title="Ir a github de Mary">Mary</a> -
+            <a href="https://github.com/kaymikatty" class="autores   footer-text__autores"
+                title="Ir a github de Katherine">Katherine</a>.
+            Todos los derechos reservados.</p>
+    </div>
+
+</html>
+>>>>>>> 41a3a203781a58599468dc9dd38d041de38780fd
