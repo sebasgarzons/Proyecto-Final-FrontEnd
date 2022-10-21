@@ -77,14 +77,14 @@ function dibujar_gatos(data) {
             <div class="back card">
                 <div class="cont_back_card">
                     <ul>
-                        <li>Nombre: <span>${data[i].nombre}</span></li>
-                        <li>Edad: <span class="sex_cat">${data[i].edad}</span></li>
-                        <li>Sexo: <span>${data[i].sexo}</span></li>
-                        <li>Color: <span>${data[i].color}</span></li>
-                        <li>Esterilizado: <span>${data[i].esterilizado}</span></li>
-                        <li>Vacunado: <span>${data[i].vacunado}</span></li>
-                        <li>Discapacidad: <span>${data[i].discapacidad}</span></li>
-                        <li>Estado: <span>${data[i].estado}</span></li>
+                        <li><p>Nombre:</p> <span>${data[i].nombre}</span></li>
+                        <li><p>Edad:</p> <span class="sex_cat">${data[i].edad}</span></li>
+                        <li><p>Sexo:</p> <span>${data[i].sexo}</span></li>
+                        <li><p>Color:</p> <span>${data[i].color}</span></li>
+                        <li><p>Esterilizado:</p> <span>${data[i].esterilizado}</span></li>
+                        <li><p>Vacunado:</p> <span>${data[i].vacunado}</span></li>
+                        <li><p>Discapacidad:</p> <span>${data[i].discapacidad}</span></li>
+                        <li><p>Estado:</p> <span>${data[i].estado}</span></li>
                     </ul>
                 </div>
             </div>
