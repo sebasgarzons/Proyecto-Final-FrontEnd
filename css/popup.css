@@ -59,7 +59,7 @@
     margin-bottom: 20px;
 }
 
-.popup form .contenedor-inputs{
+.contenedor-inputs{
     opacity: 0;
 }
 
@@ -79,13 +79,13 @@
     
 }
 
-.popup form .contenedor-inputs .input-adopt:focus{
+.input-adopt:focus{
     outline: unset;
     border: 2px solid var(--dark-brown);
     
 }
 
-.popup form ::placeholder{
+.popup form::placeholder{
     color: var(--dark-brown);
     opacity: 0.6;
     text-transform: none;
