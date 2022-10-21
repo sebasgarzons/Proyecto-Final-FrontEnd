@@ -3,7 +3,7 @@
 window.onload = llamar_gatosdos()
 
 async function llamar_gatosdos() {
-    const response = await fetch("../api_cards_landing.json")
+    const response = await fetch("api_cards_landing.json")
     const cats = await response.json()
     dibujar_slider(cats);
     dibujar_buttons_slider(cats)
