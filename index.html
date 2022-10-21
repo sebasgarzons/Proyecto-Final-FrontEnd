@@ -22,13 +22,14 @@
     <link rel="stylesheet" href="css/popup.css">
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
 
- 
+
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script defer src="js/custom.js"></script>
     <script defer src="js/popup.js"></script>
+    <script defer src="js/card_landing.js"></script>
 
     <script>
         (function (d) {
@@ -42,6 +43,8 @@
 </head>
 
 <body>
+
+    <!--HEADER - MENÚ-->
 
     <header id="header" class="header">
         <nav id="nav" class="nav1 nav">
@@ -82,10 +85,12 @@
 
 
     </header>
+
     <h1 class="header__title header__title_rspnsv">Aromas <br> y <br> Maullidos</h1>
-    <div class="hola">
-        
-    </div>
+    <div class="hola"></div>
+
+    <!-- INTRO-->
+
     <main class="main main_mobile">
 
         <section class="container intro">
@@ -110,13 +115,13 @@
                     gatitos adoptables, y degustar de nuestro menú.
                 </p>
             </div>
-
-
         </section>
+
+        <!-- MÉNU CAFÉ-->
 
         <div class="headers" id="menu_container">
             <h2 class="headers__title">Nuestro Menú</h2>
-            
+
         </div>
 
 
@@ -126,20 +131,22 @@
                 <div class="menu__item item1  menu__item--1">
                     <img src="./img/menu/cafe.png" alt="" class="menu__img">
                     <h2 class="menu__title">Cafe de Especialidad</h2>
-                    <p class="menu__description">Seleccionamos, tostamos, preparamos y servimos café de especialidad. Disfruta de todas nuestras variedades. Bebidas frías y calientes.</p>
+                    <p class="menu__description">Seleccionamos, tostamos, preparamos y servimos café de especialidad.
+                        Disfruta de todas nuestras variedades. Bebidas frías y calientes.</p>
                 </div>
 
                 <div class="menu__item item2  menu__item--2">
                     <img src="./img/menu/croissant.png" alt="" class="menu__img">
                     <h2 class="menu__title">Brunch</h2>
-                    <p class="menu__description">Una opción ideal que incluye distintas opciones dulces y saladas para dos personas.</p>
-                   
+                    <p class="menu__description">Una opción ideal que incluye distintas opciones dulces y saladas para
+                        dos personas.</p>
                 </div>
 
                 <div class="menu__item item3  menu__item--3">
                     <img src="./img/menu/granos.png" alt="" class="menu__img">
                     <h2 class="menu__title">Vegan</h2>
-                    <p class="menu__description">Encontrá nuestras deliciosas opciones veganas. Sano y natural. Sin crueldad animal.</p>
+                    <p class="menu__description">Encontrá nuestras deliciosas opciones veganas. Sano y natural. Sin
+                        crueldad animal.</p>
                 </div>
                 <div class="menu__item item4  menu__item--4">
                     <img src="./img/menu/takeaway.png" alt="" class="menu__img">
@@ -149,30 +156,27 @@
                 <div class="menu__item item5  menu__item--5">
                     <img src="./img/menu/copa.png" alt="" class="menu__img">
                     <h2 class="menu__title">Postres</h2>
-                    <p class="menu__description">Nuestra pastelería es de excelencia, con una presentación cuidada y pensada para deleitarte.</p>
+                    <p class="menu__description">Nuestra pastelería es de excelencia, con una presentación cuidada y
+                        pensada para deleitarte.</p>
                 </div>
                 <div class="menu__item item6  menu__item--6">
                     <img src="./img/menu/torta2.png" alt="" class="menu__img">
                     <h2 class="menu__title">Tortas</h2>
-                    <p class="menu__description">Las mejores tortas enteras para una ocación especial. Ricas, con sabores caseros, que confortan a quien la pruebe. </p>
+                    <p class="menu__description">Las mejores tortas enteras para una ocación especial. Ricas, con
+                        sabores caseros, que confortan a quien la pruebe. </p>
                 </div>
             </div>
 
         </section>
 
+        <!-- GALERIA DE IMAGENES-->
+
         <section class="container">
-
-
 
             <div class="cafes">
 
-
-
-                <figure class="cafes__item "
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item " data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
                     <img src="./img/comidas/cupcake.webp"
                         alt="Cupcake de chocolate con crema de maní y bombón de chocolate arriba" class="cafes__img"
@@ -180,15 +184,12 @@
                 </figure>
 
 
-                <figure class="cafes__item" 
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
 
-                    <img src="./img/comidas/cafe.jpg" data-aos="zoom-in-up" alt="Café en una taza negra con arte latte" class="cafes__img"
-                        loading="lazy" />
+                    <img src="./img/comidas/cafe.jpg" data-aos="zoom-in-up" alt="Café en una taza negra con arte latte"
+                        class="cafes__img" loading="lazy" />
                 </figure>
 
 
@@ -205,14 +206,11 @@
                 </figure>
 
 
-                <figure class="cafes__item"
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
-                    <img src="./img/comidas/cafe2.webp" alt="Taza de cafe color blanca con arte latte" class="cafes__img"
-                        loading="lazy" />
+                    <img src="./img/comidas/cafe2.webp" alt="Taza de cafe color blanca con arte latte"
+                        class="cafes__img" loading="lazy" />
                 </figure>
 
 
@@ -221,21 +219,16 @@
                 </figure>
 
 
-                <figure class="cafes__item cafes__item--big" data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="300"
-                data-aos-offset="0">
+                <figure class="cafes__item cafes__item--big" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                    data-aos-delay="300" data-aos-offset="0">
                     <img src="./img/comidas/cafes5.webp"
                         alt="Dos tazas de cafe con arte latte color blanca y roja. Porción de budin." class="cafes__img"
                         loading="lazy" />
                 </figure>
 
 
-                <figure class="cafes__item"
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
                     <img src="./img/comidas/pancake2.webp" alt="Dos torres de pancakes con frambruesas y arandanos."
                         class="cafes__img" loading="lazy" />
@@ -249,10 +242,8 @@
                 </figure>
 
 
-                <figure class="cafes__item cafes__item--big" data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="300"
-                data-aos-offset="0">
+                <figure class="cafes__item cafes__item--big" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                    data-aos-delay="300" data-aos-offset="0">
                     <img src="./img/comidas/brunch1.webp"
                         alt="Mesa con varios platos de waffles, huevos fritos,croissant, jugo de naranja,pancakes con salsa de frutos rojos y taza de café."
                         class="cafes__img" loading="lazy" />
@@ -260,11 +251,8 @@
 
 
 
-                <figure class="cafes__item" 
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
                     <img src="./img/comidas/redvelvet.webp"
                         alt="Cupcake de bizcochuelo rojo con crema de chocolate blanco y decoración en rojo"
@@ -272,11 +260,8 @@
                 </figure>
 
 
-                <figure class="cafes__item" 
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
                     <img src="./img/comidas/frappe-cookie.webp"
                         alt="Jarra de café frio con crema arriba, dos galletas y salsa de chocolate." class="cafes__img"
@@ -285,16 +270,14 @@
 
 
                 <figure class="cafes__item cafes__item--tall" data-aos="zoom-in">
-                    <img src="./img/comidas/avotoast.webp" alt="Tostadas con aguacate pisado y ensalada de hojas verdes."
-                        class="cafes__img" loading="lazy" />
+                    <img src="./img/comidas/avotoast.webp"
+                        alt="Tostadas con aguacate pisado y ensalada de hojas verdes." class="cafes__img"
+                        loading="lazy" />
                 </figure>
 
 
-                <figure class="cafes__item" 
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
                     <img src="./img/comidas/french-toast.webp"
                         alt="Tostadas francesas con rodajas de banana y arandanos." class="cafes__img" loading="lazy" />
@@ -308,11 +291,8 @@
                 </figure>
 
 
-                <figure class="cafes__item" 
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
                     <img src="./img/comidas/frappe.webp"
                         alt="Café frío de chocolate con crema y salsa de chocolate sobre un plato blanco."
@@ -325,22 +305,16 @@
                         class="cafes__img" loading="lazy" />
                 </figure>
 
-                <figure class="cafes__item" 
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
                     <img src="./img/comidas/brunch3.webp"
                         alt="Brunch sobre una mesa rosa con tostadas, huevos, ensalada de hojas verdes, café con leche, jugo de naranja."
                         class="cafes__img" loading="lazy" />
                 </figure>
 
-                <figure class="cafes__item" 
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
                     <img src="./img/comidas/pancake.webp" alt="Pancakes con arandanos y frutillas." class="cafes__img"
                         loading="lazy" />
@@ -353,11 +327,8 @@
                 </figure>
 
 
-                <figure class="cafes__item" 
-                data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="130"
-                data-aos-offset="0">
+                <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
+                    data-aos-offset="0">
 
                     <img src="./img/comidas/cafes4.webp"
                         alt="Una mano sosteniendo una taza de cafe cuando vierte leche sobre ella creando arte latte."
@@ -366,22 +337,26 @@
 
             </div>
 
-            <button id="load_more" class="button button-viewmore">Load More</button>
+            <!-- BOTÓN DE GALERIA DE IMAGENES-->
 
-            <!-- <a id="view_less">View Less</a> -->
+            <button id="load_more" class="button button-viewmore">Ver más</button>
+
+            <!-- <a id="view_less">Ver menos</a> -->
         </section>
-        
+
 
         <!-- .............................................................. -->
         <div class="headers" id="menu_container">
             <h2 class="headers__title">Gatitos en adopción</h2>
             <p class="headers__p">
-                Como amantes de los gatos, nuestra meta es facilitar la adopción responsable de aquellos que están de inquilinos en nuestra cafetería y andan necesitando una familia. En Aromas y Maullidos podrás conocerlos, pasar un rato con ellos y, si conectas con alguno, adoptarlo. <br>
+                Como amantes de los gatos, nuestra meta es facilitar la adopción responsable de aquellos que están de
+                inquilinos en nuestra cafetería y andan necesitando una familia. En Aromas y Maullidos podrás
+                conocerlos, pasar un rato con ellos y, si conectas con alguno, adoptarlo. <br>
                 Todos los michis están preparados para darse en adopción: Solo necesitan un hogar y mucho amor.
             </p>
         </div>
 
-
+        <!-- SECCIÓN GATITOS EN ADOPCIÓN-->
 
         <section class="content adopcion">
 
@@ -393,15 +368,46 @@
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-                            <h2 class="card__title">Bigotes!</h2>
-                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium, explicabo. Commodi
-                                a
-                                labore
-                                sed
-                                non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
-                                blanditiis
-                                molestiae, reiciendis hic?</p>
+
+                        <!-- nuevo -->
+                        <div class="row" id="items"></div>
+                            <template id="template-card">
+                                        <div class="card-body">
+                                            <h5 class="nombre-card-body" id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p class="sub-nombre">Edad:</p>
+                                                    <p class="sub-resultado" id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Sexo:</p>
+                                                    <p class="sub-resultado" id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Color: </p>
+                                                    <p class="sub-resultado" id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Esterilización:</p>
+                                                    <p class="sub-resultado" id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Vacunas:</p>
+                                                    <p class="sub-resultado" id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Discapacidad:</p>
+                                                    <p class="sub-resultado" id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Salud:</p>
+                                                    <p class="sub-resultado" id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            </template>
+
+                            
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat  card__cats">
@@ -415,15 +421,43 @@
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-                            <h2 class="card__title">Bigotes!</h2>
-                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium, explicabo. Commodi
-                                a
-                                labore
-                                sed
-                                non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
-                                blanditiis
-                                molestiae, reiciendis hic?</p>
+
+                            <div class="row" id="items"></div>
+                            <template id="template-card">
+                                        <div class="card-body">
+                                            <h5 class="nombre-card-body" id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p class="sub-nombre">Edad:</p>
+                                                    <p class="sub-resultado" id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Sexo:</p>
+                                                    <p class="sub-resultado" id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Color: </p>
+                                                    <p class="sub-resultado" id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Esterilización:</p>
+                                                    <p class="sub-resultado" id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Vacunas:</p>
+                                                    <p class="sub-resultado" id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Discapacidad:</p>
+                                                    <p class="sub-resultado" id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Salud:</p>
+                                                    <p class="sub-resultado" id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            </template>
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display  card__cats">
@@ -437,15 +471,42 @@
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-                            <h2 class="card__title">Bigotes!</h2>
-                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium, explicabo. Commodi
-                                a
-                                labore
-                                sed
-                                non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
-                                blanditiis
-                                molestiae, reiciendis hic?</p>
+                            <div class="row" id="items"></div>
+                            <template id="template-card">
+                                        <div class="card-body">
+                                            <h5 class="nombre-card-body" id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p class="sub-nombre">Edad:</p>
+                                                    <p class="sub-resultado" id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Sexo:</p>
+                                                    <p class="sub-resultado" id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Color: </p>
+                                                    <p class="sub-resultado" id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Esterilización:</p>
+                                                    <p class="sub-resultado" id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Vacunas:</p>
+                                                    <p class="sub-resultado" id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Discapacidad:</p>
+                                                    <p class="sub-resultado" id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Salud:</p>
+                                                    <p class="sub-resultado" id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            </template>
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat  card__cats">
@@ -458,15 +519,42 @@
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-                            <h2 class="card__title">Bigotes!</h2>
-                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium, explicabo. Commodi
-                                a
-                                labore
-                                sed
-                                non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
-                                blanditiis
-                                molestiae, reiciendis hic?</p>
+                            <div class="row" id="items"></div>
+                            <template id="template-card">
+                                        <div class="card-body">
+                                            <h5 class="nombre-card-body" id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p class="sub-nombre">Edad:</p>
+                                                    <p class="sub-resultado" id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Sexo:</p>
+                                                    <p class="sub-resultado" id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Color: </p>
+                                                    <p class="sub-resultado" id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Esterilización:</p>
+                                                    <p class="sub-resultado" id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Vacunas:</p>
+                                                    <p class="sub-resultado" id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Discapacidad:</p>
+                                                    <p class="sub-resultado" id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Salud:</p>
+                                                    <p class="sub-resultado" id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            </template>
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display  card__cats">
@@ -479,15 +567,42 @@
                     <div class="box_slider_cat_display card">
 
                         <div class="slider_cat_text card__text">
-                            <h2 class="card__title">Bigotes!</h2>
-                            <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Accusantium, explicabo. Commodi
-                                a
-                                labore
-                                sed
-                                non cumque nemo soluta nobis consequatur quas assumenda aliquid est pariatur repellendus
-                                blanditiis
-                                molestiae, reiciendis hic?</p>
+                            <div class="row" id="items"></div>
+                            <template id="template-card">
+                                        <div class="card-body">
+                                            <h5 class="nombre-card-body" id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p class="sub-nombre">Edad:</p>
+                                                    <p class="sub-resultado" id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Sexo:</p>
+                                                    <p class="sub-resultado" id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Color: </p>
+                                                    <p class="sub-resultado" id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Esterilización:</p>
+                                                    <p class="sub-resultado" id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Vacunas:</p>
+                                                    <p class="sub-resultado" id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Discapacidad:</p>
+                                                    <p class="sub-resultado" id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Salud:</p>
+                                                    <p class="sub-resultado" id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            </template>
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display slider_reorder_cat  card__cats">
@@ -499,7 +614,7 @@
             </div>
         </section>
 
-        <!-- Popup -->
+        <!--POPUP ADOPCIÓN-->
 
         <div class="overlay overlay_form" id="">
             <div class="popup popup_form    popup" id="">
@@ -529,6 +644,8 @@
                 </form>
             </div>
         </div>
+
+        <!-- SLIDER GATITOS-->
 
         <section class="cont_slider_cats hidden_rgth    slider-cats slider_cats--hidden
         ">
@@ -596,6 +713,8 @@
             </div>
         </section>
 
+        <!-- SECCIÓN ABOUT US-->
+
         <section class="aboutus container" id="aboutus">
 
             <div class="aboutus__contact">
@@ -620,12 +739,10 @@
             <div class="map">
 
                 <iframe class="map__iframe" frameborder="0" scrolling="no"
-                src="https://maps.google.com/maps?q=Magnetic%20Springs&t=&z=13&ie=UTF8&iwloc=&output=embed" title="nuestra ubicacion en google maps">
+                    src="https://maps.google.com/maps?q=Magnetic%20Springs&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    title="nuestra ubicacion en google maps">
 
-                </iframe>                      
-                     
-
-
+                </iframe>
 
             </div>
 
@@ -641,12 +758,12 @@
 
                     <label for="form__name" class="form__label">Nombre</label>
                     <input type="text" class="form__name input-nws input--error" id="form__name" name="name"
-                        placeholder="Katty" required>
+                        placeholder="Nombre" required>
 
 
                     <label for="form__email" class="form__label">Email</label>
                     <input type="email" class="form__email input-nws input--error" id="form__email"
-                        placeholder="katty@correo.com" name="email" required>
+                        placeholder="nombre@correo.com" name="email" required>
 
                 </div>
 
@@ -685,11 +802,13 @@
 
 
                     <div class="icono_ftr instagram    footer__ig">
-                        <a href="#" class="footer__link" title="Ir a nuestro perfil de instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__link" title="Ir a nuestro perfil de instagram"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
 
                     <div class="icono_ftr whatsaap   footer__whatsapp">
-                        <a href="#" class="footer__link" title="Escribenos por whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="footer__link" title="Escribenos por whatsapp"><i
+                                class="fab fa-whatsapp"></i></a>
                     </div>
 
                     <div class="icono_ftr twitter    footer__twitter">
@@ -697,7 +816,8 @@
                     </div>
 
                     <div class="icono_ftr facebook     footer__facebook">
-                        <a href="#" class="footer__link" title="Ir a nuestra página de Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer__link" title="Ir a nuestra página de Facebook"><i
+                                class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
@@ -708,15 +828,17 @@
     <div class="parrafo__footer    footer-text">
 
         <p class="footer__p   footer-text__p">Copyright &copy; 2022 Autores:
-            <a href="https://github.com/sebasgarzons" class="autores   footer-text__autores" title="Ir a github de Sebastián">Sebastian</a> -
+            <a href="https://github.com/sebasgarzons" class="autores   footer-text__autores"
+                title="Ir a github de Sebastián">Sebastian</a> -
             <a href="https://github.com/Janselin" class="autores   footer-text__autores"
                 title="Ir a github de Mary">Mary</a> -
-            <a href="https://github.com/kaymikatty" class="autores   footer-text__autores" title="Ir a github de Katherine">Katherine</a>.
+            <a href="https://github.com/kaymikatty" class="autores   footer-text__autores"
+                title="Ir a github de Katherine">Katherine</a>.
             Todos los derechos reservados.</p>
     </div>
 
 
-
+    <!-- LOADER-->
 
     <div class="loader_cont" id="loader_cont_id">
         <div class="loader_box        loader__box">
@@ -796,13 +918,13 @@
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   
-   
-   <script>
+
+
+    <script>
         AOS.init({
-         duration: 1000,
- });
-       </script>
+            duration: 1000,
+        });
+    </script>
 </body>
 
 </html>

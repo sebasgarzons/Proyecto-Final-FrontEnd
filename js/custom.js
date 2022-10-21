@@ -12,6 +12,8 @@ jQuery(document).ready(function ($) {
 			console.log(test);
 		}); */
 
+//---FUNCIÓN SLIDER---//
+
 	$(".products_txt ul li").click(function () {
 		$(".products_txt ul li").not(this).removeClass("products_txt_actv");
 		$(this).addClass("products_txt_actv");
@@ -70,7 +72,7 @@ jQuery(document).ready(function ($) {
 
 
 
-
+//---LOADER---//
 
 	let loader = document.getElementById('loader_cont_id');
 	window.addEventListener('load', function () {
@@ -82,6 +84,9 @@ jQuery(document).ready(function ($) {
 	/* */
 
 	/* ---------------------------------------------------------------- */
+
+
+//---EFECTO DE LOS GATITOS DEL SLIDER---//
 
 	$(".circle_cat").click(function () {
 		$(".circle_cat").not(this).removeClass("blur");
@@ -103,20 +108,29 @@ jQuery(document).ready(function ($) {
     });
 }); */
 
+//---FUNCIÓN DEL BOTÓN DE LA GALERIA DE IMAGENES---//
 
 $('#load_more').click(function () {
 	$('.cafes').toggleClass('load_more_height_first');
 	let load_more = document.getElementById('load_more').innerText;
 	console.log('El valor es: ' + load_more);
 
-	switch (load_more) {
-		case "Load More":
-			document.getElementById('load_more').innerText = 'View Less';
-			break;
-		case "View Less":
-			document.getElementById('load_more').innerText = 'Load More';
-			break;
+	if (load_more === "Ver menos"){
+		document.getElementById('load_more').innerText = 'Ver más ';
 	}
+	
+	else{
+		document.getElementById('load_more').innerText = 'Ver menos';
+	}
+
+	/*switch (load_more) {
+		case "Ver más":
+			document.getElementById('load_more').innerText = 'Ver menos ';
+			break;
+		case "Ver menos":
+			document.getElementById('load_more').innerText = 'Ver más';
+			break;
+	}*/
 
 	/* 	if (load_more = 'Load More') {
 			console.log('Entré aquí');
@@ -140,6 +154,8 @@ $('#load_more').click(function () {
 
 /* ----------------------------------------------------------------------- */
 
+//---FUNCIÓN DE FLECHA PARA QUE LA PAGINA VUELVA AL INICIO---//
+
 $(".arrow_up").click(function () {
 
 	$("body, html").animate({
@@ -149,6 +165,8 @@ $(".arrow_up").click(function () {
 });
 
 /* ----------------------------------------------------------------------- */
+
+//---EFECTO DEL SLIDER DE PARA QUE APRAREZACAN DEDE LA IZQUIERDA---//
 
 const observer_left = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
@@ -182,6 +200,7 @@ const observer_right = new IntersectionObserver((entries) => {
 const hiddenElements_right = document.querySelectorAll('.hidden_lft');
 hiddenElements_right.forEach((el) => observer_right.observe(el));
 
+//---FUNCIÓN EFECTO DE INTRO---//
 
 /* const typeWriter = document.getElementById("typewriter-text");
 const text = "En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.";
