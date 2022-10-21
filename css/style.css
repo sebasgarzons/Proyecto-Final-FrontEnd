@@ -69,6 +69,7 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 4px;
     backdrop-filter: blur(5px);
     z-index: 1;
+    top: 0px;
 }
 
 .nav1 {
