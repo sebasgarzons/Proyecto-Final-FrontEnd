@@ -1,4 +1,4 @@
-<h1 align="center"> -----☕ Aromas y Maullidos ☕  ----- </h1>
+<h1 align="center"> -----☕ Aromas y Maullidos ☕----- </h1>
 <p align="center"><img src="https://i.imgur.com/qfLQzq8.png" title="source: imgur.com" align="center"/></p>
 
 <h2 align="center">Proyecto final - Bootcamp Frontend de Código Facilito. </h2>
