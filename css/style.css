@@ -528,6 +528,8 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--light);
+    border-radius: 0px 25px 25px 0px;
 }
 .slider_cat_text .card__title{
     font-family: var(--parrafos);
@@ -556,8 +558,8 @@ header h1 {
 .slider_cat_display img {
     height: 100%;
     width: 100%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 
 .slider_reorder_cat {
@@ -565,8 +567,8 @@ header h1 {
 }
 
 .slider_reorder_cat img {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .cat_section_index {
