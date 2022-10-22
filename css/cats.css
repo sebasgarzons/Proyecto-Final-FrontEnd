@@ -68,7 +68,22 @@ p{
 
 .container:hover{
     /* transform: rotateY(180deg); */
+
+
 }
+
+.container::before {
+    content: '';
+    background-image: url(../img/logos/logo-dark.png);
+    background-size: cover;
+    top: 0%;
+    left: -4%;
+    transform: translate(-50%, 0%);
+    opacity: 0.75;
+    width: 40px;
+    height: 40px;
+}
+
 
 .card{
     background: #fff;
@@ -121,11 +136,19 @@ p{
     align-items: center;
     font-size: 1.4rem;
     background-color: var(--light);
-    background-color: #ffeded;
-    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    justify-content: center;
     text-align: left;
+    justify-content: center;
+
+
+    /* background-color: rgba(0, 0, 0,0.5); */
+    /* opacity: 0.3; */
+    /* background-image: url("../img/logos/logo-dark.png");
+    background-position: center;
+    
+    background-size: 44%;
+    
+    
+    background-repeat: no-repeat; */
 }
 
 .title{
@@ -156,6 +179,7 @@ p{
     font-weight: 600;
     display: flex;
     gap: 1.3rem;
+    justify-content: space-between;
 }
 
 .cont_back_card ul li span {
