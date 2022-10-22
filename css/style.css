@@ -218,7 +218,7 @@ header h1 {
 
 .parrafo__intro p {
     color: var(--dark-brown);
-    font-size: 1.4rem;
+    font-size: 2.2rem;
     font-weight: 600;
     line-height: 62px;
     animation: 4s steps(241) 1s 1 normal both running typing;

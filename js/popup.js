@@ -1,16 +1,18 @@
-var boton = document.getElementsByClassName('button-adopt'),
+let boton = document.getElementsByClassName('button-adopt'),
     overlay = document.getElementById('overlay'),
     popup = document.getElementById('popup'),
     cerrar = document.getElementById('btn-cerrar-popup');
 
+/*     jQuery(document).ready(function ($) { */
 
-$(".button-adopt").click(function() {
+/*     }); */
+$(document).on('click', "#btn_slider", function() {
     console.log('click');
-	$(".overlay_form").addClass("active_form_overlay");
+    $(".overlay_form").addClass("active_form_overlay");
     console.log('click_overlay');
-	$(".popup_form").addClass("active_form");
-
+    $(".popup_form").addClass("active_form");
 });
+
 
 $(".btn-cerrar-popup").click( e=> {
     e.preventDefault();
