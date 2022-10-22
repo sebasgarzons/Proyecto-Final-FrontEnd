@@ -12,7 +12,7 @@
 📌Objetivo:
 Realizar una landing page que integre una Webapp.
 
-🎨Tecnologías que se utilizó:
+🎨Tecnologías y buenas prácticas que se utilizaron:
 - HTML Semántico.
 - Puro CSS.
 - Grid.
@@ -22,6 +22,8 @@ Realizar una landing page que integre una Webapp.
 - Jquery.
 - CDN de diferentes librerías.
 - APIs.
+- Accesibilidad.
+- SEO.
 
 
 
