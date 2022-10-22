@@ -60,7 +60,7 @@ function dibujar_slider(data){
                 <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
             </div>
             <div class="slider_cat_display slider_reorder_cat  card__cats">
-                <img src="${cat.foto}" class="card__img">
+                <img alt="gatito en adopción de color ${cat.color}" src="${cat.foto}" class="card__img">
             </div>
         </div>
     </div>`
@@ -81,13 +81,13 @@ function dibujar_buttons_slider(data){
     data.slice(0, 5).forEach((cat, index)  => {
         cats_html += `<li class="list_cats_li  list-cats__li" id="indx_cts_li_${index+1}">
         <div class="circle_cat   list-cats__circle">
-            <img src="${cat.foto}" class="list-cats__img" alt="">
+            <img src="${cat.foto}" class="list-cats__img" alt="gatito en adopción de color ${cat.color}">
         </div>
     </li>`
 
         cats_responsive_html += `<li class="list_cats_li  list-cats__li" id="indx_cts_li_rspnsv_${index+1}">
         <div class="circle_cat   list-cats__circle">
-            <img src="${cat.foto}" class="list-cats__img" alt="">
+            <img src="${cat.foto}" class="list-cats__img" alt="gatito en adopción de color ${cat.color}">
         </div>
     </li>`
 
