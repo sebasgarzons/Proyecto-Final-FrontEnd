@@ -70,7 +70,7 @@ function dibujar_gatos(data) {
         <div class="container">
             <div class="front card">
                 <div>
-                    <img src="${data[i].foto}">
+                    <img src="${data[i].foto}" alt="gatito en adopción de color ${data[i].color}">
                 </div>
     
             </div>
@@ -157,7 +157,7 @@ function dibujar_gatos(data) {
                 <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
             </div>
             <div class="slider_cat_display card__cats">
-                <img src="${data[i].foto}" class="card__img">
+                <img src="${data[i].foto}" class="card__img" alt="gatito en adopción de color ${data[i].color}" >
             </div>
         </div>
     </div>
