@@ -1142,13 +1142,13 @@ header h1 {
         height: 118rem;
     }
 
-    .box_slider_cats {
+    /* .box_slider_cats {
         display: none;
-    }
+    } */
 
-    .box_slider_cats_rspnsv {
+    /* .box_slider_cats_rspnsv {
         display: block;
-    }
+    } */
 
     .box_slider_cats_rspnsv > ul {
         display: grid;
