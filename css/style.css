@@ -322,7 +322,7 @@ header h1 {
     flex-direction: column;
     justify-content: space-around;
     font-size: 1.2rem;
-    font-family: var(--parrafos);
+    /* font-family: var(--parrafos); */
 }
 
 .cafes {
@@ -395,12 +395,15 @@ header h1 {
     width: 100%;
 }
 
-.card-body .nombre-card-body{
+.nombre-card-body{
     font-size:3rem;
     margin-bottom:30px;
-    font-family:'Futura-PT-Book';
+    /* font-family: var(--parrafos); */
     color:var(--dark-brown);
 }
+
+
+
 
 .card-body  li .sub-nombre{
     font-weight:600 ;
@@ -520,33 +523,39 @@ header h1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    border-radius: 25px;
+    /* position: absolute; */
+    box-shadow: 5px 5px 30px 7px rgba(253, 210, 191, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.2);
 }
 
 .slider_cat_text {
+    padding: 0.9rem 0;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     background-color: var(--light);
     border-radius: 0px 25px 25px 0px;
 }
 .slider_cat_text .card__title{
-    font-family: var(--parrafos);
+    /* font-family: var(--parrafos); */
     font-size: 2rem;
     color: var(--dark-brown);
     margin-bottom: 20px;
 }
 
 .slider_cat_text .card__paragraph{
-    font-family: var(--parrafos);
+    /* font-family: var(--parrafos); */
     font-size: 1.7rem;
     color: var(--dark-brown);
 }
 
+
 .slider_cat_text p {
     width: 90%;
     margin: 0px;
+    text-align: right;
 }
 
 .slider_cat_display {
@@ -983,7 +992,7 @@ header h1 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: var(--dark-brown);
-    font-family: var(--parrafos);
+    
 }
 
 .form-validation-reserva {
@@ -1018,7 +1027,7 @@ header h1 {
     text-align: center;
     border: 1.5px solid var(--dark-brown);
     color: var(--dark-brown);
-    font-family: var(--parrafos);
+   /* font-family: var(--parrafos); */
     text-transform: none;
 
     /*display: block;
@@ -1038,7 +1047,7 @@ header h1 {
 }
 
 .button {
-    font-family: var(--parrafos);
+    /* font-family: var(--parrafos); */
     text-align: center;
     background-color: var(--dark-brown);
     color: var(--light);
