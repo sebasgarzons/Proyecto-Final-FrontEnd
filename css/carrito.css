@@ -87,8 +87,8 @@ p {
 
 .car_carrito{
   position: fixed;
-  right: 5vh;
-  top: 5vh;
+  right: 2vh;
+  top: 14vh;
   cursor: pointer;
 }
 
@@ -163,9 +163,9 @@ p {
   color: var(--dark-brown);
   justify-content: center;
   align-content: center;
-  background-color: #fff5f5;
+  /* background-color: #fff5f5; */
   padding: 12px 0px;
-  margin: 12px 0px;
+  margin: 25px 0px;
   font-size: 2rem;
   font-family: var(--parrafos);
   font-weight: 600;
@@ -174,6 +174,7 @@ p {
 
 .table {
   color: var(--dark-brown);
+  font-weight: 600;
 }
 
 .row {
@@ -395,7 +396,9 @@ p {
 .cont_car {
   padding: 28px;
   border-radius: 12px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background: rgba(253, 210, 191, 0.6);
+  backdrop-filter: blur(5px);
   /* width: 70%; */
   max-width: 800px;
   right: -100%;
@@ -409,6 +412,13 @@ p {
   border-bottom-right-radius: 0px;
   transition: all 1.5s ease-in-out;
   min-height: 85vh;
+}
+
+.cont_car .cont_titulo{
+  /* top:10px; */
+  margin-top: 2rem;
+  color:var(--dark-brown);
+  font-size: 2rem;
 }
 
 .cont_car_shw{
@@ -426,6 +436,14 @@ p {
   cursor: pointer;
   font-weight: 800;
   font-size: 1.2rem;
+  color: var(--dark-brown);
+  transition: .4s ease all;
+  cursor: pointer;
+   
+}
+
+.close_car:hover{
+  color:  rgba(54, 21, 0, 0.6);
 }
 
 #cards {
@@ -455,8 +473,8 @@ p {
   position: fixed;
   right: 0px;
   top: 0px;
-  background: #000;
-  color: #fff;
+  background:var(--dark-brown);
+  color: var(--light-pink);
   display: none;
   padding: 2rem 3rem;
   border-bottom-left-radius: 25px;
@@ -481,7 +499,7 @@ p {
 .cont_car table tbody tr {
   text-align: center;
   border-collapse: collapse;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--light-pink);
   padding: 12px 0;
 }
 
@@ -502,17 +520,20 @@ p {
 }
 
 #footer .pay_button{
-  background-color: transparent;
+  background-color:var(--light-pink);
   color: var(--dark-brown);
-  border: 1px solid var(--dark-brown);
+  border: 2px solid var(--dark-brown);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
 #footer .pay_button:hover{
-  background-color: var(--light-pink);
-  color: var(--dark-brown);
-  border: 1px solid transparent;
+  outline-color: rgba(54, 21, 0, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px var(--light-pink);
+  background-color:   var(--dark-brown);
+  color:var(--light-pink);
+  border: 2px solid var(--light-pink);
 }
 
 
@@ -530,7 +551,7 @@ p {
 
 @media only screen and (max-width: 1280px) {
   header h1 {
-    line-height: 200px;
+    /* line-height: 200px; */
     font-size: 9rem;
     left: 80%;
   }
