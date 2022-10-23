@@ -145,7 +145,8 @@ nav {
     border-radius: 50px;
     overflow: hidden;
     transition: 0.5s;
-    background: rgb(54 21 0 / 52%);
+    /* background: rgb(54 21 0 / 52%); */
+    background: rgba(253, 210, 191, 0.25);
     box-shadow: rgb(0 0 0 / 5%) 0px 4px 4px;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(5px);
@@ -223,6 +224,7 @@ nav {
     /* background: #ffffff; */
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    /* vertical-align: middle; */
 }
 
 .nav_rspnsv ul li:hover{
@@ -266,14 +268,16 @@ nav {
     display: flex;
     text-decoration: none;
     color: #ffffff;
-    align-items: center;
+    /* vertical-align: middle; */
     cursor: pointer;
-    justify-content: flex-start;
+    align-items: center;
 }
 
 .nav_rspnsv ul li:hover:not(:first-child) a{
     color: #365fa1;
 }
+
+a#enlace-menu_mbl {}
 
 .nav_rspnsv ul li a .icon{
     position: relative;
@@ -303,7 +307,7 @@ nav {
     padding: 0 10px;
     text-align: start;
     white-space: nowrap;
-    color: var(--light);
+    color: var(--dark-brown);
     font-size: 1.4rem;
 }
 
