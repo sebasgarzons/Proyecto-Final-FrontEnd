@@ -26,7 +26,8 @@ Realizar una landing page que integre una Webapp.
 - SEO.
 
 
-
+⚙ El proyecto no necesita de ninguna instrucción especial para ejecutarlo.
+Solo conexión a internet y un navegador.
 
 <h3> -----  🍰 Live Demo 🍰----- </h3>
 
