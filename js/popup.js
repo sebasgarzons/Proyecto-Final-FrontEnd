@@ -93,16 +93,18 @@ $(".btn-submit").click(function() {
 
 const rmodal = document.getElementById('email-modal');
 const openbtn = document.getElementById('reserva__button');
+const openbtnmbl = document.getElementById('reserva__button_mbl');
 const closebtn = document.querySelector('.close-btn');
 
 // ABRIR Y CERRAR EL MODAL
 
 openbtn.addEventListener('click', () => {
     rmodal.style.display = 'block';
-    
-
 });
 
+openbtnmbl.addEventListener('click', () => {
+    rmodal.style.display = 'block';
+});
 
 closebtn.addEventListener('click', () => {
     rmodal.style.display = 'none';  
