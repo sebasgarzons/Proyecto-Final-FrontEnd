@@ -37,6 +37,9 @@ header {
   all: unset;
 }
 
+.carrito_main {
+  all: unset;
+}
 .header h1 {
   /* display: flex; */
 }
