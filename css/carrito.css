@@ -40,14 +40,12 @@ header {
 .carrito_main {
   all: unset;
 }
-.header h1 {
-  /* display: flex; */
-}
 
 nav>div {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 body {
@@ -78,7 +76,13 @@ p {
   align-items: center;
   /* display: flex; */
   justify-content: space-evenly;
-  grid-template-rows: initial;
+  grid-template-rows: initial; 
+
+
+  
+  background: rgba(253, 210, 191, 0.25);
+  box-shadow: rgb(0 0 0 / 5%) 0px 4px 4px;
+  backdrop-filter: blur(5px);
 }
 
 .car_carrito{
