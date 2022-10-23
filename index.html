@@ -49,23 +49,23 @@
     <header id="header" class="header">
         <nav id="nav" class="nav1 nav">
             <div class="contenedor-nav nav__contenedor">
-
+    
                 <div class="logo nav__logo">
                     <a href="#header"><img class="nav__img" src="img/logos/logo-dark.png" alt="Ir a página principal"
                             title="Ir a página principal" width="100px" height="100px"></a>
                 </div>
-
+    
                 <div class="enlaces nav__links" id="enlaces">
-                    <a href="#menu_container" id="enlace-menu" class="btn-header nav__link">Menú</a>
+                    <a id="enlace-menu" class="btn-header nav__link">Menú</a>
                     <a href="cats.html" id="enlace-gatitos" class="btn-header nav__link">Gatitos</a>
                     <button id="reserva__button" class="btn-header nav__link">Reserva</button>
-                    <a href="#aboutus" id="enlace-sobre-nosotros" class="btn-header nav__link">Contacto</a>
+                    <a id="enlace-sobre-nosotros" class="btn-header nav__link">Contacto</a>
                 </div>
-
-                <div class=icono id="open">
-                    <span>&#9776;</span>
+    
+                <div class="icono">
+                    <div class="toggle"></div>
                 </div>
-
+    
                 <div class="carrito">
                     <a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px "
                             viewBox="0 0 24 24">
@@ -79,15 +79,61 @@
                 </div>
             </div>
         </nav>
-
-
+        <nav class="nav_rspnsv" id="nav_respnsv">
+            <ul>
+                <li>
+                    <a>
+                        <span class="icon"><img src="img/reserva.svg"></span>
+                        <span class="title">Aromas & Maullidos</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="enlace-menu_mbl">
+                        <span class="icon"><img src="img/menu.svg"></span>
+                        <span class="title">Menú</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cats.html">
+                        <span class="icon"><img src="img/adopcion3.svg"></span>
+                        <span class="title">Gatitos</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="reserva__button_mbl">
+                        <span class="icon"><img src="img/adopcion2.svg"></span>
+                        <span class="title">Reserva</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="enlace-sobre-nosotros_mbl">
+                        <span class="icon"><img src="img/contacto2.svg"></span>
+                        <span class="title">Contacto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="carrito.html">
+                        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px " viewBox="0 0 24 24">
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                            <path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path>
+                            <path d="M10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14l-2.31 6h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17z">
+                            </path>
+                        </svg></span>
+                        <span class="title">Carrito</span>
+                    </a>
+                </li>
+    
+            </ul>
+            
+        </nav>
+    
         <h1 class="header__title">Aromas <br> y <br> Maullidos</h1>
-
-
+    
+    
     </header>
 
     <h1 class="header__title header__title_rspnsv">Aromas <br> y <br> Maullidos</h1>
-    <div class="hola"></div>
 
     <!-- INTRO-->
 
@@ -408,7 +454,7 @@
                             <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
                         </div>
                         <div class="slider_cat_display  card__cats">
-                            <img src="img/cat2.jpg" class="card__img">
+                            <img   src="img/cat2.jpg" class="card__img">
                         </div>
 
                     </div>
@@ -556,26 +602,26 @@
                     </div>
                 </div> -->
             </div>
+            <!-- SLIDER GATITOS-->
+    
+            <aside class="cont_slider_cats hidden_rgth    slider-cats slider_cats--hidden
+            ">
+                <div class="box_slider_cats   slider-cats__container">
+    
+                    <ul id="list_cats">
+    
+                    </ul>
+                </div>
+                <div class="box_slider_cats box_slider_cats_rspnsv   slider-cats__container">
+    
+                    <ul id="list_cats_rspnsv">
+     
+                    </ul>
+                </div>
+            </aside>
         </section>
 
 
-        <!-- SLIDER GATITOS-->
-
-        <section class="cont_slider_cats hidden_rgth    slider-cats slider_cats--hidden
-        ">
-            <div class="box_slider_cats   slider-cats__container">
-
-                <ul id="list_cats">
-
-                </ul>
-            </div>
-            <div class="box_slider_cats box_slider_cats_rspnsv   slider-cats__container">
-
-                <ul id="list_cats_rspnsv">
- 
-                </ul>
-            </div>
-        </section>
 
         <!-- SECCIÓN ABOUT US-->
 
@@ -611,7 +657,7 @@
             </div>
 
 
-            <form class="form" action="https://formspree.io/f/myyvjevb" method="POST">
+            <form class="form" action="https://formspree.io/f/xlevwyzj" method="POST">
 
 
                 <h4 class="form__title"> Nuestro newsletter</h4>
@@ -673,9 +719,9 @@
 
         <!-- BOTON WHATSAPP -->
 
-        <!--         <a href="https://api.whatsapp.com/send?phone=34111223344" class="whatsapp__icon"
+                <a href="https://api.whatsapp.com/send?phone=34111223344" class="whatsapp__icon"
             alt="Comunicate con nosotros vía whatsapp" target="_blank" title="Comunicate con nosotros vía whatsapp"></a>
-        <i class='bx bx-up-arrow-alt arrow_up'></i> -->
+        <!-- <i class='bx bx-up-arrow-alt arrow_up'></i> -->
     </main>
 
 
@@ -685,8 +731,7 @@
 
         <div class="container-box-footer         footer__container">
             <div class="logo__footer   footer__logo">
-                <a href="#header"><img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal"
-                        width="128px"></a>
+                <a href="#header"><img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal"width="128px"></a>
             </div>
 
             <div class="subtitulo__footer      footer__title">

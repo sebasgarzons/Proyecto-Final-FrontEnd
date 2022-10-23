@@ -137,6 +137,171 @@ nav {
     filter: drop-shadow(1px 1px 6px var(--dark-brown));
 }
 
+.nav_rspnsv{
+    position: fixed;
+    inset: 15vh;
+    width: 68px;
+    border-left: 10px solid rgba(54, 21, 0, 0.0);
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.5s;
+    background: rgba(54, 21, 0, 0.3);
+    box-shadow: rgb(0 0 0 / 5%) 0px 4px 4px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+    left: -100%;
+    display: none;
+}
+
+.hamb_active_nav{
+    width: 300px;
+    border-radius: 20px;
+    left: 0%;
+}
+
+.hamb_active{
+
+}
+
+.toggle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(54, 21, 0, 0.1);
+}
+
+.toggle::before{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background: #361500;
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+.toggle::after{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background: #361500;
+    transform: translateY(5px);
+    transition: 1s;
+}
+
+.hamb_active:before{
+    transform: translateY(0px) rotate(-405deg);
+}
+
+.hamb_active:after{
+    transform: translateY(0px) rotate(225deg);
+}
+
+.nav_rspnsv ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav_rspnsv ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    /* background: #ffffff; */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.nav_rspnsv ul li:hover{
+    background: #ffffff;
+    color: #222;
+}
+
+.nav_rspnsv ul li:nth-child(1){
+    top: 20px;
+    margin-bottom: 40px;
+    background: none;
+}
+
+.nav_rspnsv ul li:not(:first-child):hover::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 7.5px 7.5px 0 7.5px #fff;
+}
+
+.nav_rspnsv ul li:not(:first-child):hover::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 7.5px -7.5px 0 7.5px #fff;
+}
+
+.nav_rspnsv ul li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+}
+
+.nav_rspnsv ul li:hover:not(:first-child) a{
+    color: #365fa1;
+}
+
+.nav_rspnsv ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    text-align: center;
+}
+
+.nav_rspnsv ul li a .icon img{
+    object-fit: contain;
+    height: 43px;
+    width: auto;
+}
+
+.nav_rspnsv ul li a .icon ion-icon{
+    font-size: 1.75em;
+}
+
+.nav_rspnsv ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    text-align: start;
+    white-space: nowrap;
+    color: #FDD2BF;
+}
+
 .textos {
     justify-content: flex-end;
     color: rgb(255, 255, 255);
@@ -385,8 +550,8 @@ header h1 {
 }
 
 .slider_cats {
-    height: 450px;
-    min-height: 450px;
+    height: 148ex;
+    min-height: 148ex;
 }
 
 .cont_slider_cats {
@@ -427,6 +592,7 @@ header h1 {
     height: 100%;
     padding: 22px 0px;
     position: relative;
+    contain: content;
 }
 
 .box_slider_cats::before {
@@ -457,8 +623,10 @@ header h1 {
 
 .box_slider_cats ul li {
     list-style: none;
-    padding: 22px;
+    /* padding: 22px; */
     transition: all 0.5s linear 0s;
+    width: 100%;
+    height: 100%;
 }
 
 .box_slider_cats ul li:hover {
@@ -793,8 +961,8 @@ header h1 {
 .whatsapp__icon {
     display: block;
     position: fixed;
-    left: 94%;
-    top: 75%;
+    right: 5%;
+    bottom: 5%;
     background-image: url("../img/icons/whatsapp.svg");
     background-color: var(--whatsapp);
     background-repeat: no-repeat;
@@ -1134,8 +1302,8 @@ header h1 {
 @media only screen and (max-width: 1280px) {
     header h1 {
         line-height: 200px;
-        font-size: 9rem;
-        left: 80%;
+        font-size: 6em;
+        left: 77%;
     }
 
     .load_more_height_first {
@@ -1149,6 +1317,12 @@ header h1 {
     /* .box_slider_cats_rspnsv {
         display: block;
     } */
+
+    
+    .circle_cat{
+        width: 108px;
+        height: 108px;
+    }
 
     .box_slider_cats_rspnsv > ul {
         display: grid;
@@ -1213,7 +1387,6 @@ header h1 {
         justify-content: initial;
         grid-area: initial;
         display: inline-block;
-        width: 49%;
     }
 
     .menu__title{
@@ -1228,13 +1401,17 @@ header h1 {
         height: 236rem;
     }
 
+    .slider_cats{
+        height: 268ex;
+    }
+
     .box_slider_cat_display {
         grid-template-columns: 1fr;
     }
 
     .box_slider_cats ul {
-        display: flex;
-        flex-direction: row;
+/*         display: flex;
+        flex-direction: column; */
     }
 
     .box_slider_cats_rspnsv ul:nth-of-type(1) {
@@ -1307,6 +1484,10 @@ header h1 {
     .icono {
         display: inline-block;
         cursor: pointer;
+    }
+
+    .nav_rspnsv{
+        display: block;
     }
 
     .carrito a svg {
@@ -1432,6 +1613,10 @@ header h1 {
         grid-area: initial;
         display: block;
         width: 100%;
+    }
+
+    .slider_cats {
+        height: 158ex;
     }
 
     .slider_reorder_cat img {

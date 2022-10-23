@@ -88,6 +88,7 @@ p {
 .car_carrito{
   color: var(--dark-brown);
   font-weight: 800;
+  z-index: 1;
 }
 
 .car_carrito svg{
@@ -565,6 +566,14 @@ p {
     margin: 24px auto;
     text-align: center;
     line-height: 64px;
+  }
+
+  #cards{
+    grid-template-columns: 1fr;
+  }
+
+  .cont_car{
+    right: -120%;
   }
 
 

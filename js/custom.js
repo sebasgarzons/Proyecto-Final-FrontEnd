@@ -21,7 +21,15 @@ jQuery(document).ready(function ($) {
 		$(this).addClass("products_txt_actv");
 	});
 
-
+	let nav = document.getElementById('nav_respnsv');
+	let toggle = document.querySelector('.toggle');
+	
+	
+	toggle.onclick = function(){
+		console.log('entré')
+		nav.classList.toggle('hamb_active_nav');
+		$('.toggle').toggleClass('hamb_active');
+	}
 
 
 
@@ -37,6 +45,32 @@ jQuery(document).ready(function ($) {
 
 	/* */
 
+
+	$("#enlace-menu").click(function () {
+		$("body, html").animate({
+			scrollTop: $("#menu_container").offset().top - 140
+		}, 800);
+	});
+
+	$("#enlace-sobre-nosotros").click(function () {
+		$("body, html").animate({
+			scrollTop: $("#aboutus").offset().top - 140
+		}, 800);
+	});
+
+	$("#enlace-menu_mbl").click(function () {
+		$("body, html").animate({
+			scrollTop: $("#menu_container").offset().top - 140
+		}, 800);
+		$("#nav_respnsv").removeClass('hamb_active_nav');
+	});
+
+	$("#enlace-sobre-nosotros_mbl").click(function () {
+		$("body, html").animate({
+			scrollTop: $("#aboutus").offset().top - 140
+		}, 800);
+		$("#nav_respnsv").removeClass('hamb_active_nav')
+	});
 	/* ---------------------------------------------------------------- */
 
 
@@ -64,20 +98,20 @@ $('#load_more').click(function () {
 	let load_more = document.getElementById('load_more').innerText;
 	console.log('El valor es: ' + load_more);
 
-	if (load_more === "Ver menos") {
-		document.getElementById('load_more').innerText = 'Ver más ';
+	if (load_more === "Ver Menos") {
+		document.getElementById('load_more').innerText = 'Ver Más ';
 	} else {
-		document.getElementById('load_more').innerText = 'Ver menos';
+		document.getElementById('load_more').innerText = 'Ver Menos';
 	}
 
-	/*switch (load_more) {
-		case "Ver más":
-			document.getElementById('load_more').innerText = 'Ver menos ';
+/* 	switch (load_more) {
+		case "Ver Más":
+			document.getElementById('load_more').innerText = 'Ver Menos';
 			break;
-		case "Ver menos":
-			document.getElementById('load_more').innerText = 'Ver más';
+		case "Ver Menos":
+			document.getElementById('load_more').innerText = 'Ver Más';
 			break;
-	}*/
+	} */
 
 	/* 	if (load_more = 'Load More') {
 			console.log('Entré aquí');
@@ -111,6 +145,8 @@ $(".arrow_up").click(function () {
 
 });
 
+
+
 /* ----------------------------------------------------------------------- */
 
 //---EFECTO DEL SLIDER DE PARA QUE APRAREZACAN DEDE LA IZQUIERDA---//
@@ -130,6 +166,8 @@ const observer_left = new IntersectionObserver((entries) => {
 
 const hiddenElements_left = document.querySelectorAll('.hidden_rgth');
 hiddenElements_left.forEach((el) => observer_left.observe(el));
+
+//---EFECTO DEL SLIDER DE PARA QUE APRAREZACAN DEDE LA Derecha---//
 
 const observer_right = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
