@@ -35,3 +35,4 @@ Solo conexión a internet y un navegador.
 
 <h3> ----- 🐈 Documentación 🐈  ----- </h3>
 
+[Aromas y Maullidos](/Aromas%20y%20Maullidos-%20Documentacion.pdf)
