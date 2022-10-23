@@ -145,24 +145,21 @@ nav {
     border-radius: 50px;
     overflow: hidden;
     transition: 0.5s;
-    background: rgba(54, 21, 0, 0.3);
+    background: rgb(54 21 0 / 52%);
     box-shadow: rgb(0 0 0 / 5%) 0px 4px 4px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
     -o-backdrop-filter: blur(5px);
     left: -100%;
     display: none;
+    z-index: 13;
 }
 
 .hamb_active_nav{
     width: 300px;
     border-radius: 20px;
     left: 0%;
-}
-
-.hamb_active{
-
 }
 
 .toggle{
@@ -270,6 +267,8 @@ nav {
     text-decoration: none;
     color: #ffffff;
     align-items: center;
+    cursor: pointer;
+    justify-content: flex-start;
 }
 
 .nav_rspnsv ul li:hover:not(:first-child) a{
@@ -293,13 +292,19 @@ nav {
     font-size: 1.75em;
 }
 
+.nav_respnsv_title {
+    text-align: center;
+    margin: auto;
+}
+
 .nav_rspnsv ul li a .title{
     position: relative;
     display: block;
     padding: 0 10px;
     text-align: start;
     white-space: nowrap;
-    color: #FDD2BF;
+    color: var(--light);
+    font-size: 1.4rem;
 }
 
 .textos {
