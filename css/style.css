@@ -293,8 +293,8 @@ nav {
 }
 
 .nav_respnsv_title {
-    text-align: center;
-    margin: auto;
+    /* text-align: center;
+    margin: auto; */
 }
 
 .nav_rspnsv ul li a .title{
