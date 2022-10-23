@@ -103,7 +103,6 @@ p {
 }
 
 
-.logo {}
 
 .logo img:hover {
   filter: hue-rotate(90deg);
