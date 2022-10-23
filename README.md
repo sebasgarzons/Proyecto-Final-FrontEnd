@@ -35,3 +35,4 @@ Solo conexión a internet y un navegador.
 
 <h3> ----- 🐈 Documentación 🐈  ----- </h3>
 
+[Aromas y Maullidos - Documentación](https://github.com/sebasgarzons/Proyecto-Final-FrontEnd/blob/main/Aromas-y-Maullidos-Documentacion.pdf)
