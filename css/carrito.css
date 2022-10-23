@@ -544,6 +544,12 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .car_carrito {
+    z-index: 10;  
+
+    text-shadow: #e0e0e0 1px 1px 0, -1px -4px 5px rgba(255,237,237,0);
+  }
+
   .container-box-footer {
     display: flex;
     flex-direction: column;
@@ -555,7 +561,7 @@ p {
 
 /*PANTALLA 425px*/
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 525px) {
 
   .header__title_rspnsv {
     font-family: var(--titulos);

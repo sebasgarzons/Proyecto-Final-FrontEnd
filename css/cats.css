@@ -346,7 +346,7 @@ p {
     text-align: center;
     /* padding: 0.8em 0; */
     margin-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: var(--titulos);
     color: var(--dark-brown);
 }
