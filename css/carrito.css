@@ -175,6 +175,7 @@ p {
 .table {
   color: var(--dark-brown);
   font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .row {
@@ -189,6 +190,16 @@ p {
   border-color: var(--light-pink);
   padding: 2px 11px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+#items .btn:hover{
+  outline-color: rgba(54, 21, 0, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px var(--light-pink);
+  background-color:   var(--dark-brown);
+  color:var(--light-pink);
+  
 }
 
 
@@ -199,6 +210,15 @@ p {
   padding: 6px 12px;
   border-radius: 10px;
   text-transform: capitalize;
+  cursor: pointer;
+}
+
+#footer .btn:hover{
+  outline-color: rgba(54, 21, 0, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px var(--light-pink);
+  background-color:   var(--dark-brown);
+  color:var(--light-pink);
 }
 
 .card-body {
@@ -494,6 +514,8 @@ p {
 
 .cont_car table thead tr{
   font-style: italic;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
 }
 
 .cont_car table tbody tr {
