@@ -5,60 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Una cafetería donde podrás pasar tiempo con gatitos, comer algo rico y adoptar uno de los mininos.">
+    <meta name="keywords"
+        content="cafetería,gatos,adopción de gatitos,café,postres,tortas,gatitos,adopción responsable">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Katty, Sebas & Mary">
     <link rel="icon" href="img/logos/gato-verde.ico">
     <link rel="apple-touch-icon" href="img/logos/gato-verde.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/carrito.css">    
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/carrito.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
     <title>Tienda</title>
+
 </head>
 
-<body class="body">
 
-    <header class="contenedor-header   header" id="header">
 
+<header class="contenedor-header   header" id="header">
+    <nav>
         <div class="logo      header__logo">
-            <a href="index.html"  class="header__link"><img src="img/logos/logo-dark.png" alt="" width="100px" class="header__logo"></a>
+            <a href="index.html" class="header__link"><img src="img/logos/logo-dark.png" alt="" width="100px"
+                    class="header__logo"></a>
         </div>
 
-        
-            <h1 class="header__title" >Aromas y Maullidos</h1>
-        
 
-        <div class="carrito">
-            <a href="index.html" class="carrito__link"><svg class="carrito__logo" xmlns="http://www.w3.org/2000/svg" width="44" height="34" viewBox="0 0 24 24"
-                    >
+        <h1 class="header__title">Aromas y Maullidos</h1>
+
+
+        <div class="go_home">
+            <a href="index.html" class="carrito__link"><svg class="carrito__logo" xmlns="http://www.w3.org/2000/svg"
+                    width="44" height="34" viewBox="0 0 24 24">
                     <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
                 </svg></a>
         </div>
-    </header>
 
-   
+    </nav>
+</header>
+
+<body class="body">
+    <figure class="car_carrito">
+    <span href="carrito.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px " viewBox="0 0 24 24">
+            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+            <path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path>
+            <path
+                d="M10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14l-2.31 6h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17z">
+            </path>
+        </svg>Ver Carrito</span>
+    </figure>
+    <div class="cont_car_html">
         <h2 class="carrito-texts">Nuestros Productos</h2>
-    
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Item</th>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Acción</th>
-                <th scope="col">Total</th>
-            </tr>
-        </thead>
-        <tbody id="items"></tbody>
-        <tfoot>
-            <tr id="footer">
-                <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-            </tr>
-        </tfoot>
-    </table>
-    <div class="row" id="cards">
+        <div class="cont_car">
+            <div>
+                <p class="close_car">X</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Item</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Acción</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items"></tbody>
+                    <tfoot>
+                        <tr id="footer">
+                            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
 
-    </div>
+        <div class="row" id="cards">
+
+        </div>
     </div>
 
     <template id="template-footer">
@@ -67,6 +99,9 @@
         <td>
             <button class="btn btn-danger btn-sm" id="vaciar-carrito">
                 vaciar todo
+            </button>
+            <button class="btn pay_button">
+                Pagar
             </button>
         </td>
         <td class="font-weight-bold">$ <span>5000</span></td>
@@ -90,23 +125,36 @@
     </template>
 
     <template id="template-card">
-        <div class="col-12 mb-2 col-md-4">
+        <div class="">
             <div class="card">
                 <img src="" alt="" class="card-img-top">
                 <div class="card-body">
-                    <h5>Titulo</h5>
-                    <p>precio</p>
-                    <button class="btn btn-dark">Comprar</button>
+                    <div class="cont_prec_car">
+                        <h5>Titulo</h5>
+                        <p>precio</p>
+                    </div>
+                    <button class="btn btn-dark btn_car">Comprar</button>
                 </div>
             </div>
         </div>
     </template>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="container-footer         footer">
+    <div class="cont_alert_car">
+        <h4>¡Producto agregado al carrito éxitosamente!</h4>
+    </div>
+
+</body>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="container-footer         footer">
+
         <div class="container-box-footer         footer__container">
             <div class="logo__footer   footer__logo">
-                <a href="#header"><img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal" width="128px"></a>
+                <a href="#header"><img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal"
+                        width="128px"></a>
             </div>
 
             <div class="subtitulo__footer      footer__title">
@@ -120,39 +168,42 @@
 
 
                     <div class="icono_ftr instagram    footer__ig">
-                        <a href="#" class="footer__link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__link" title="Ir a nuestro perfil de instagram"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
 
                     <div class="icono_ftr whatsaap   footer__whatsapp">
-                        <a href="#" class="footer__link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="footer__link" title="Escribenos por whatsapp"><i
+                                class="fab fa-whatsapp"></i></a>
                     </div>
 
                     <div class="icono_ftr twitter    footer__twitter">
-                        <a href="#" class="footer__link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__link" title="Ir a nuestro Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
 
                     <div class="icono_ftr facebook     footer__facebook">
-                        <a href="#" class="footer__link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer__link" title="Ir a nuestra página de Facebook"><i
+                                class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-
-    </footer>
-    
-
+    </div>
     <div class="parrafo__footer    footer-text">
 
         <p class="footer__p   footer-text__p">Copyright &copy; 2022 Autores:
-            <a href="https://github.com/sebasgarzons" class="autores   footer-text__autores" title="Ir a github de Sebastián">Sebastian</a> -
+            <a href="https://github.com/sebasgarzons" class="autores   footer-text__autores"
+                title="Ir a github de Sebastian">Sebastian</a> -
             <a href="https://github.com/Janselin" class="autores   footer-text__autores"
                 title="Ir a github de Mary">Mary</a> -
-            <a href="https://github.com/kaymikatty" class="autores   footer-text__autores" title="Ir a github de Katherine">Katherine</a>.
+            <a href="https://github.com/kaymikatty" class="autores   footer-text__autores"
+                title="Ir a github de Katherine">Katherine</a>.
             Todos los derechos reservados.</p>
     </div>
+</footer>
 
 
-    <script src="js/carrito.js"></script>
+<script src="js/carrito.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
         carrito = JSON.parse(localStorage.getItem('carrito'))
         pintarCarrito()
     }
+
+    $(".pay_button").click(function () {
+        alert('Compra Éxitosa');
+        location.assign('index.html');
+    });
 })
 
 cards.addEventListener('click', e => {
@@ -62,6 +67,8 @@ const addCArrito = e => {
     //console.log(e.target.classList.contains('btn-dark'))
 
     if (e.target.classList.contains('btn-dark')) {
+        console.log('click');
+        show_add_car();
         setCarrito(e.target.parentElement)
     }
     e.stopPropagation() //para que se detengan el evento
@@ -133,8 +140,8 @@ const pintarFooter = () => {
     }) => acc + cantidad * precio, 0)
     //console.log(nCantidad, nPrecio)
 
-    templateFooter.querySelectorAll('td')[0].textContent = nCantidad
-    templateFooter.querySelector('span').textContent = nPrecio
+    templateFooter.querySelectorAll('td')[0].textContent = nCantidad.toFixed(2)
+    templateFooter.querySelector('span').textContent = nPrecio.toFixed(2)
 
     const clone = templateFooter.cloneNode(true)
     fragment.appendChild(clone)
@@ -177,3 +184,17 @@ const btnAction = e => {
     }
     e.stopPropagation()
 }
+
+function show_add_car(){
+
+    $(".cont_alert_car").fadeIn();
+    setTimeout(function (){
+        $('.cont_alert_car').fadeOut();
+    }, 1500);
+
+}
+
+$(".car_carrito, .close_car").click(function () {
+    $(".cont_car").toggleClass("cont_car_shw");
+});
+
