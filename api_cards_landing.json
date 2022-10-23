@@ -1,6 +1,6 @@
 [{
         "id": 1,
-        "foto": "img/catos/cat_1.jpg",
+        "foto": "img/catos/cat_1.webp",
         "nombre": "Bob",
         "edad": 7,
         "sexo": "macho",
@@ -13,7 +13,7 @@
 
     {
         "id": 2,
-        "foto": "img/catos/cat_2.jpg",
+        "foto": "img/catos/cat_2.webp",
         "nombre": "Mia",
         "edad": 1,
         "sexo": "hembra",
@@ -26,7 +26,7 @@
 
     {
         "id": 3,
-        "foto": "img/catos/cat_3.jpg",
+        "foto": "img/catos/cat_3.webp",
         "nombre": "Tigresa",
         "edad": 3,
         "sexo": "hembra",
@@ -39,7 +39,7 @@
 
     {
         "id": 4,
-        "foto": "img/catos/cat_4.jpg",
+        "foto": "img/catos/cat_4.webp",
         "nombre": "Manchas",
         "edad": 6,
         "sexo": "macho",
@@ -52,7 +52,7 @@
 
     {
         "id": 5,
-        "foto": "img/catos/cat_5.jpg",
+        "foto": "img/catos/cat_5.webp",
         "nombre": "Geronimo",
         "edad": 8,
         "sexo": "macho",
@@ -65,7 +65,7 @@
 
     {
         "id": 6,
-        "foto": "img/catos/cat_6.jpg",
+        "foto": "img/catos/cat_6.webp",
         "nombre": "Jack",
         "edad": 5,
         "sexo": "macho",
@@ -78,7 +78,7 @@
 
     {
         "id": 7,
-        "foto": "img/catos/cat_7.jpg",
+        "foto": "img/catos/cat_7.webp",
         "nombre": "Suca",
         "edad": 0,
         "sexo": "Hembra",
@@ -91,7 +91,7 @@
 
     {
         "id": 8,
-        "foto": "img/catos/cat_8.jpg",
+        "foto": "img/catos/cat_8.webp",
         "nombre": "Pelusita",
         "edad": 2,
         "sexo": "Hembra",
@@ -104,7 +104,7 @@
 
     {
         "id": 9,
-        "foto": "img/catos/cat_9.jpg",
+        "foto": "img/catos/cat_9.webp",
         "nombre": "Olivia",
         "edad": 7,
         "sexo": "Hembra",
@@ -117,7 +117,7 @@
 
     {
         "id": 10,
-        "foto": "img/catos/cat_10.jpg",
+        "foto": "img/catos/cat_10.webp",
         "nombre": "Felix",
         "edad": 10,
         "sexo": "macho",
@@ -130,7 +130,7 @@
 
     {
         "id": 11,
-        "foto": "img/catos/cat_11.jpg",
+        "foto": "img/catos/cat_11.webp",
         "nombre": "Figaro",
         "edad": 15,
         "sexo": "macho",
@@ -143,7 +143,7 @@
 
     {
         "id": 12,
-        "foto": "img/catos/cat_12.jpg",
+        "foto": "img/catos/cat_12.webp",
         "nombre": "Nini",
         "edad": 7,
         "sexo": "hembra",
@@ -156,7 +156,7 @@
 
     {
         "id": 13,
-        "foto": "img/catos/cat_13.jpg",
+        "foto": "img/catos/cat_13.webp",
         "nombre": "Bunny",
         "edad": 7,
         "sexo": "hembra",
@@ -169,7 +169,7 @@
 
     {
         "id": 14,
-        "foto": "img/catos/cat_14.jpg",
+        "foto": "img/catos/cat_14.webp",
         "nombre": "Julius",
         "edad": 9,
         "sexo": "macho",
@@ -182,7 +182,7 @@
 
     {
         "id": 15,
-        "foto": "img/catos/cat_15.jpg",
+        "foto": "img/catos/cat_15.webp",
         "nombre": "Milo",
         "edad": 8,
         "sexo": "macho",
@@ -195,7 +195,7 @@
 
     {
         "id": 16,
-        "foto": "img/catos/cat_16.jpg",
+        "foto": "img/catos/cat_16.webp",
         "nombre": "Salem",
         "edad": 3,
         "sexo": "macho",
@@ -207,7 +207,7 @@
     },
     {
         "id": 17,
-        "foto": "img/catos/cat_17.jpg",
+        "foto": "img/catos/cat_17.webp",
         "nombre": "Ronie",
         "edad": 1,
         "sexo": "Hembra",
@@ -219,7 +219,7 @@
     },
     {
         "id": 18,
-        "foto": "img/catos/cat_18.jpg",
+        "foto": "img/catos/cat_18.webp",
         "nombre": "Babe",
         "edad": 0,
         "sexo": "hembra",
@@ -232,7 +232,7 @@
 
     {
         "id": 19,
-        "foto": "img/catos/cat_19.jpg",
+        "foto": "img/catos/cat_19.webp",
         "nombre": "Gary",
         "edad": 1,
         "sexo": "macho",
@@ -245,7 +245,7 @@
 
     {
         "id": 20,
-        "foto": "img/catos/cat_20.jpg",
+        "foto": "img/catos/cat_20.webp",
         "nombre": "Emperador",
         "edad": 4,
         "sexo": "macho",
