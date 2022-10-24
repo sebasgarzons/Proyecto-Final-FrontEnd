@@ -215,6 +215,8 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    font-size: 6rem;
+    font-weight: 600;
 }
 
 .nav_rspnsv ul li{
@@ -284,16 +286,19 @@ a#enlace-menu_mbl {}
     display: block;
     min-width: 60px;
     text-align: center;
+    fill: #361500;
 }
 
 .nav_rspnsv ul li a .icon img{
     object-fit: contain;
     height: 43px;
     width: auto;
+
 }
 
 .nav_rspnsv ul li a .icon ion-icon{
     font-size: 1.75em;
+     
 }
 
 .nav_respnsv_title {
@@ -308,7 +313,7 @@ a#enlace-menu_mbl {}
     text-align: start;
     white-space: nowrap;
     color: var(--dark-brown);
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 .textos {
@@ -1371,7 +1376,7 @@ header h1 {
      header {
         background-attachment: initial;
         background-size: contain;
-        height: 60vh;
+        height: 37vh;
         background-image: url(../img/header/header.webp);
     }
 
@@ -1379,6 +1384,23 @@ header h1 {
         left: 78%;
         line-height: 100px;
         font-size: 5rem;
+        top: 54%;
+    }
+
+    .intro {
+    position: relative;
+    padding: 2vh 0px;
+    }
+
+    .main {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    position: relative;
+    width: 88%;
+    max-width: 1600px;
     }
 
     .headers__title {
