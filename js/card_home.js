@@ -27,7 +27,7 @@ function dibujar_slider(data){
                                 <ul>
                                     <li>
                                         <p class="sub-nombre">Edad:</p>
-                                        <p class="sub-resultado" id="edad">${cat.edad}</p>
+                                        <p class="sub-resultado" id="edad">${cat.edad} Años</p>
                                     </li>
                                     <li>
                                         <p class="sub-nombre">Sexo:</p>
@@ -68,6 +68,14 @@ function dibujar_slider(data){
     cats_container.innerHTML = cats_html;
     $(".slider_cats>div:nth-of-type(1)").addClass('cont_show');
     })
+
+    reorder_slider_cats_home()
+}
+
+function reorder_slider_cats_home(){
+	console.log('Entré a reordenar')
+	$('.slider_cats>div:nth-of-type(2)>div>div:nth-of-type(2)').removeClass('slider_reorder_cat');
+	$('.slider_cats>div:nth-of-type(4)>div>div:nth-of-type(2)').removeClass('slider_reorder_cat');
 }
 
 function dibujar_buttons_slider(data){

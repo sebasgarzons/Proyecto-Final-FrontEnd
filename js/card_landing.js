@@ -57,6 +57,14 @@ function check_age(gatos){
         console.log('Entré a Age')
         let x = document.getElementById('add_cats');
 
+        // Fail, pero no entiendo poruq eno funca la lógica
+/*         if (age_min_value <= age_max_value ){
+            console.log('El valor min es ' + age_min_value + ' y El valor max es ' + age_max_value)
+            x.innerHTML = '';
+            dibujar_gatos(gatos.filter((cat) => cat.edad>=age_min_value && cat.edad <= age_max_value))
+        }else if(age_max_value < age_min_value){
+            alert('Haz seleccionado los valores al revés, ningún Gato es mayor a ' + age_min_value + ' Y menor a ' + age_max_value)
+        } */
         console.log('El valor min es ' + age_min_value + ' y El valor max es ' + age_max_value)
         x.innerHTML = '';
         dibujar_gatos(gatos.filter((cat) => cat.edad>=age_min_value && cat.edad <= age_max_value))
@@ -189,7 +197,7 @@ function dibujar_gatos(data) {
                 <div class="cont_back_card">
                     <ul>
                         <li><p>Nombre:</p> <span>${data[i].nombre}</span></li>
-                        <li><p>Edad:</p> <span class="sex_cat">${data[i].edad}</span></li>
+                        <li><p>Edad:</p> <span class="sex_cat">${data[i].edad} Años</span></li>
                         <li><p>Sexo:</p> <span>${data[i].sexo}</span></li>
                         <li><p>Color:</p> <span>${data[i].color}</span></li>
                         <li><p>Esterilizado:</p> <span>${data[i].esterilizado}</span></li>

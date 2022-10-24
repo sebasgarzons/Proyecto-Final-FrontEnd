@@ -300,18 +300,23 @@ nav {
 
 #enlace-menu_mbl {}
 
-.nav_rspnsv ul li a .icon{
+/* .nav_rspnsv ul li a .icon{
     position: relative;
     display: block;
     min-width: 60px;
     text-align: center;
     fill: #361500;
-}
+} */
 
-.nav_rspnsv ul li a .icon img{
+.nav_rspnsv ul li a img, .nav_rspnsv ul li a svg{
     object-fit: contain;
     height: 43px;
     width: auto;
+    position: relative;
+    display: block;
+    min-width: 60px;
+    text-align: center;
+    fill: #361500;
 
 }
 
@@ -642,6 +647,10 @@ header h1 {
     font-size:1.5rem;
     margin-top:5px;
     color:var(--dark-brown)
+}
+
+.sub-resultado{
+    text-transform: capitalize;
 }
 
 .box_slider_cats {
@@ -1448,7 +1457,6 @@ header h1 {
     color: var(--dark-brown);
     letter-spacing: 1px;
     text-align: center;
-    height: 8vh;
 }
 
     .headers__title {
@@ -1487,7 +1495,6 @@ header h1 {
     background-color: transparent;
     border-radius: 10px;
     padding: 0px 0px;
-    margin-top: 55%;
     width: 100%;
     }
 
@@ -1523,8 +1530,45 @@ header h1 {
     }
 
     .box_slider_cats ul {
-/*         display: flex;
-        flex-direction: column; */
+        gap: 18px;
+        flex-direction: column;
+        position: relative;
+        height: 28vh;
+    }
+
+    .box_slider_cats ul li{
+        list-style: none;
+        transition: all 0.5s linear 0s;
+        width: 102px;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .box_slider_cats ul li:nth-of-type(1){
+        left: 25%;
+    }
+
+    .box_slider_cats ul li:nth-of-type(2){
+        left: 40%;
+        top: 100%;
+    }
+
+    .box_slider_cats ul li:nth-of-type(3){
+        top: 100%;
+        right: 10%;
+        left: initial;
+    }
+
+    .box_slider_cats ul li:nth-of-type(4){
+        right: 0%;
+        left: initial;
+    }
+
+    .box_slider_cats ul li:nth-of-type(5){
+        top: 10%;
     }
 
     .box_slider_cats_rspnsv ul:nth-of-type(1) {
@@ -1664,6 +1708,7 @@ header h1 {
         background-size: cover;
         height: 62vh;
         background-image: url(../img/header/header.png);
+        background-position: 0px -60px;
     }
 
     header h1 {

@@ -79,7 +79,7 @@ jQuery(document).ready(function ($) {
 
 	//---EFECTO DE LOS GATITOS DEL SLIDER---//
 
-
+	reorder_slider_cats_home()
 
 });
 
@@ -239,6 +239,11 @@ function introwrite(){
 }
 maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
 
+
+/* function reorder_slider_cats_home(){
+	console.log('Entré a reordenar')
+	$('slider_cats>div:nth-of-type(1)').addClass('.slider_reorder_catssss');
+} */
 /* maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
  */
 
