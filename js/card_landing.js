@@ -90,10 +90,9 @@ function check_color(gatos){
         // Why this dont work!?
         // $('#add_cats').innerHTML = '';
         x.innerHTML = ''
-        console.log('Manolo')
 
         dibujar_gatos(gatos.filter((cat) => cat.color === color_value));
-        color.value = '';
+        /* color.value = ''; */
 
         /* 
             Por qué no funciona con jQuery?????????
