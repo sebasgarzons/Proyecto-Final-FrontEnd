@@ -74,6 +74,10 @@ jQuery(document).ready(function ($) {
 		}, 800);
 		$("#nav_respnsv").removeClass('hamb_active_nav')
 	});
+
+	$("#reserva__button_mbl").click(function () {
+		$("#nav_respnsv").removeClass('hamb_active_nav')
+	});
 	/* ---------------------------------------------------------------- */
 
 

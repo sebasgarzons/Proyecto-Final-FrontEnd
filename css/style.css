@@ -687,8 +687,9 @@ header h1 {
     z-index: 10;
     position: relative;
     padding: 0px;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 5rem), 1fr));
     transition: all 0.5s ease-in-out 0s;
+    gap: 1rem 4rem;
 }
 
 .box_slider_cats ul li {
@@ -1796,8 +1797,8 @@ header h1 {
     }
 
     .box_slider_cats ul {
-        display: table;
-        margin: auto;
+/*         display: table;
+        margin: auto; */
     }
 
     .box_slider_cats {
