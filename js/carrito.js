@@ -131,7 +131,7 @@ const pintarFooter = () => {
         return
     }
 
-    const nCantidad = Object.values(carrito).reduce((acc, {
+const nCantidad = Object.values(carrito).reduce((acc, {
         cantidad
     }) => acc + cantidad, 0)
     const nPrecio = Object.values(carrito).reduce((acc, {
@@ -197,4 +197,3 @@ function show_add_car(){
 $(".car_carrito, .close_car").click(function () {
     $(".cont_car").toggleClass("cont_car_shw");
 });
-
