@@ -1403,9 +1403,17 @@ header h1 {
     max-width: 1600px;
     }
 
+    .headers {
+    color: var(--dark-brown);
+    letter-spacing: 1px;
+    text-align: center;
+    height: 8vh;
+}
+
     .headers__title {
-        line-height: 88px;
+        line-height: 0px;
         /* margin-bottom: -1px; */
+        margin: 3rem 0 2rem 0;
     }
 
     .menu {
@@ -1434,9 +1442,40 @@ header h1 {
         height: 236rem;
     }
 
-    .slider_cats{
-        height: 268ex;
+    .content {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 0px 0px;
+    margin-top: 55%;
+    width: 100%;
     }
+
+    
+    .button-adopt {
+    /* margin: auto; */
+    margin-top: 3rem;
+    }
+
+
+    .slider_reorder_cat img {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 0;
+    }
+
+    .slider_cat_text {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 25px;
+}
+
+    .slider_cats{
+        height: 295ex;
+    }
+
+
 
     .box_slider_cat_display {
         grid-template-columns: 1fr;
