@@ -23,6 +23,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script defer src="js/card_landing.js"></script>
+    <script defer src="js/requests.js"></script>
     <title>Página de adopción</title>
 
 </head>
@@ -47,16 +48,16 @@
 </header>
 
 <body>
-    <div class="top grid">
+    <section class="top grid">
         <h2>Ven y Adopta un Compañero de por vida!</h2>
-    </div>
+    </section>
 
 
     <!-- <div id="">
     </div> -->
 
 
-    <div class="cont_cats grid">
+    <section class="cont_cats grid">
 
 
 
@@ -565,7 +566,8 @@
                 </div>
             </div> -->
         </div>
-    </div>
+    </section>
+
     <div class="overlay overlay_form" id="">
         <div class="popup popup_form    popup" id="">
             <div class="btn-cerrar-popup   popup__cerrar"><i class="fas fa-times   popup__icon"></i></div>
@@ -594,6 +596,14 @@
             </form>
         </div>
     </div>
+    <section class="grid cont_cats_adopted">
+        <h2>Los que ya encontraron Hogar:</h2>
+        <div class="box_cats_adopted">
+            <div id="cats_adopted">
+                
+            </div>
+        </div>
+    </section>
 </body>
 <footer>
     <div class="container-footer         footer">

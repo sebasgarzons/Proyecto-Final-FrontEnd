@@ -241,3 +241,7 @@ maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonit
 
 /* maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
  */
+
+
+
+/* ------------------------------ */

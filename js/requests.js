@@ -1,7 +1,7 @@
 var URL_cats = 'https://api.thecatapi.com/v1/images/search'
 var api_key = 'live_nQaV2rAWiMpU642YGwytDwMDv6t48OAUVs1PklfDv92T8r2weL68u0jcBAYFLL4y'
 
-buildTable()
+buildTable2(50)
 
 async function get_cats_request(limit) {
     return new Promise((resolve) => {
@@ -29,7 +29,7 @@ async function get_cats(limit) {
     return array
 }
 
-async function buildTable(limit, id) {
+/* async function buildTable(limit, id) {
     if (limit === undefined) {
         limit = 5
     }
@@ -48,7 +48,7 @@ async function buildTable(limit, id) {
         table_data.innerHTML += row;
         index_li = index_li + 1;
     }
-}
+} */
 
 async function buildTable2(limit, id) {
     if (limit === undefined) {
@@ -56,7 +56,7 @@ async function buildTable2(limit, id) {
     }
     console.log('entro en tabla 2')
     data = await get_cats(limit)
-    let table_data = document.getElementById(id);
+    let table_data = document.getElementById('cats_adopted');
 
     for (let i = 0; i < data.length; i++) {
         let row = `<div>

@@ -19,6 +19,10 @@ console.log(x) */
 /*     dibujar_gatos()
 }); */
 
+
+var URL_cats = 'https://api.thecatapi.com/v1/images/search'
+var api_key = 'live_nQaV2rAWiMpU642YGwytDwMDv6t48OAUVs1PklfDv92T8r2weL68u0jcBAYFLL4y'
+
 let age_min_value;
 let age_max_value;
 
@@ -28,9 +32,9 @@ async function llamar_gatos() {
     dibujar_gatos(gatos);
 
         check_age(gatos);
-        let sex_draw = check_sex(gatos);
+        /* let sex_draw =  */check_sex(gatos);
         check_color(gatos);
-
+        
 
 /*         $('#filter_cat').click(function () {
             console.log('Entré a Draw')
@@ -45,6 +49,8 @@ async function llamar_gatos() {
     /* dibujar_gatos(gatos.filter((cat) => cat.color === 'amarillo')); */
 
 }
+
+
 
 function check_age(gatos){
     $('#filter_cat_age').click(function () {
@@ -318,8 +324,12 @@ window.onload = llamar_gatos();
 
 
 
+/* window.onload = test() */
 
-
+function test(){
+    console.log('HOLA ya cargué')
+    buildTable2()
+}
 
 
 
