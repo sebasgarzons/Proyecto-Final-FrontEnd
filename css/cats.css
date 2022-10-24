@@ -364,6 +364,11 @@ p {
     align-items: center;
 }
 
+.carrito__logo{
+    display: none;
+    fill:var(--dark-brown)
+}
+
 /* .color_list>li input{
   display: block;
 } */
@@ -371,6 +376,7 @@ p {
 .filtro__title {
     font-size: 2.4rem;
     margin-bottom: 1rem;
+    color: var(--dark-brown);
 }
 
 .filtro__title__rspnsv{
@@ -407,6 +413,7 @@ p {
 
 .list__label {
     font-weight: 600;
+    color: var(--dark-brown);
 }
 
 .filtro {
@@ -427,6 +434,7 @@ p {
 .checkp {
     display: inline-block;
     font-size: 1.2rem;
+    color:var(--dark-brown)
 }
 
 .checksex {
@@ -450,6 +458,7 @@ p {
 
 .list__item:nth-of-type(3)>div>div p{
     font-size: 1.2rem;
+    color: var(--dark-brown);
 }
 
 /* .container{
@@ -655,6 +664,10 @@ transform: rotateY(180deg);
     grid-template-columns: repeat(2, 1fr);
   } */
 
+  .carrito__logo{
+    display: block;
+  }
+
     .cont_cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -714,6 +727,11 @@ transform: rotateY(180deg);
         text-align: center;
         line-height: 64px;
     }
+
+    .carrito__logo{
+    display: block;
+    
+}
 
     .cont_cards {
         grid-template-columns: 1fr;
