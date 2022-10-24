@@ -326,6 +326,8 @@ p {
 
 .cont_back_card ul {
     font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
 }
 
 .cont_back_card ul li {
@@ -338,6 +340,10 @@ p {
 .cont_back_card ul li span {
     font-weight: initial;
     text-transform: capitalize;
+}
+
+.btn_cats_adopt_me{
+    margin-top: 16px;
 }
 
 @keyframes spin {

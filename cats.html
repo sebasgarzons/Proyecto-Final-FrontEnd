@@ -16,6 +16,7 @@
 
 
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
     <link href="css/cats.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -563,6 +564,34 @@
                     </div>
                 </div>
             </div> -->
+        </div>
+    </div>
+    <div class="overlay overlay_form" id="">
+        <div class="popup popup_form    popup" id="">
+            <div class="btn-cerrar-popup   popup__cerrar"><i class="fas fa-times   popup__icon"></i></div>
+
+            <img src="img/logos/logo-dark.png" alt="" width="80px" class="popup__logo">
+            <h3 class="popup__title">Formulario de Adopción</h3>
+
+            <form class="form-adopcion" action="" id="form_adopt" novalidate>
+
+
+                <div class="contenedor-inputs  form-adopcion__container">
+
+                    <input class="input-adopt adopt__input" type="text" name="" id="nom_adopt" placeholder="Nombre">
+                    <input class="input-adopt adopt__input" type="email" name="" id="eml_adopt"
+                        placeholder="nombre@correo.com">
+                    <input class="input-adopt adopt__input" type="tel" name="" id="tel_adopt"
+                        placeholder="0123456789">
+                </div>
+
+                <button type="submit" class="btn-submit button button-adopt  form-adopcion__button">Enviar</button>
+
+                <div class="mensajes form-adopcion__msg">
+                    <p class="advertencias form-adopcion__p" id="advertencias"></p>
+                    <p class="enviar form-adopcion__enviar" id="enviar"></p>
+                </div>
+            </form>
         </div>
     </div>
 </body>

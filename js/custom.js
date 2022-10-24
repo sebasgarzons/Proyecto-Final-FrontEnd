@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
 
 	//---FUNCIÓN SLIDER---//
 
-	
+
 
 	$(".products_txt ul li").click(function () {
 		$(".products_txt ul li").not(this).removeClass("products_txt_actv");
@@ -23,9 +23,9 @@ jQuery(document).ready(function ($) {
 
 	let nav = document.getElementById('nav_respnsv');
 	let toggle = document.querySelector('.toggle');
-	
-	
-	toggle.onclick = function(){
+
+
+	toggle.onclick = function () {
 		console.log('entré')
 		nav.classList.toggle('hamb_active_nav');
 		$('.toggle').toggleClass('hamb_active');
@@ -104,14 +104,14 @@ $('#load_more').click(function () {
 		document.getElementById('load_more').innerText = 'Ver Menos';
 	}
 
-/* 	switch (load_more) {
-		case "Ver Más":
-			document.getElementById('load_more').innerText = 'Ver Menos';
-			break;
-		case "Ver Menos":
-			document.getElementById('load_more').innerText = 'Ver Más';
-			break;
-	} */
+	/* 	switch (load_more) {
+			case "Ver Más":
+				document.getElementById('load_more').innerText = 'Ver Menos';
+				break;
+			case "Ver Menos":
+				document.getElementById('load_more').innerText = 'Ver Más';
+				break;
+		} */
 
 	/* 	if (load_more = 'Load More') {
 			console.log('Entré aquí');
@@ -218,9 +218,13 @@ const maquinaEscribir3 = (text = '', tiempo = 10, etiqueta = '') => {
 	}, tiempo)
 }
 
+/* $(".contenedor__intro").mouseenter(function () {
+	console.log('Mouse entró');
+	maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
+}); */
+
+/* setTimeout(function() {
+	maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
+}, 4000) */
 
 maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
-
-
-
-

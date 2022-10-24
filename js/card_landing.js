@@ -197,6 +197,7 @@ function dibujar_gatos(data) {
                         <li><p>Vacunado:</p> <span>${data[i].vacunado}</span></li>
                         <li><p>Discapacidad:</p> <span>${data[i].discapacidad}</span></li>
                         <li><p>Estado:</p> <span>${data[i].estado}</span></li>
+                        <button class="button btn_cats_adopt_me" onclick="adopt_me()">¡Adóptame!</button>
                     </ul>
                 </div>
             </div>
@@ -220,6 +221,26 @@ function dibujar_gatos(data) {
         }); */
 
 }
+
+function adopt_me(){
+    
+    console.log('click');
+    $(".overlay_form").addClass("active_form_overlay");
+    console.log('click_overlay');
+    $(".popup_form").addClass("active_form");
+    
+
+}
+
+$(".btn-cerrar-popup").click( e=> {
+    e.preventDefault();
+    console.log('click');
+	$(".overlay_form").removeClass("active_form_overlay");
+    console.log('click_overlay');
+	$(".popup_form").removeClass("active_form");
+
+});
+
 
 /* function dibujar_gatos_home(data) {
     console.log('Entré a dibujar en el home')

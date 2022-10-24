@@ -13,7 +13,6 @@ $(document).on('click', "#btn_slider", function() {
     $(".popup_form").addClass("active_form");
 });
 
-
 $(".btn-cerrar-popup").click( e=> {
     e.preventDefault();
     console.log('click');

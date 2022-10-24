@@ -92,6 +92,25 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1600px;
+    position: relative;
+}
+
+.cont_cat_header{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 88px;
+    width: auto;
+}
+
+.cat_header{
+    background: url(../img/cat_header1.webp);
+    background-position: 0 0;
+    height: 88px;
+    width: 169px;
+    animation: 
+        cat_run 1s steps(8) infinite,
+        move 3s linear alternate infinite;
 }
 
 .btn-header::before {
@@ -279,7 +298,7 @@ nav {
     color: #365fa1;
 }
 
-a#enlace-menu_mbl {}
+#enlace-menu_mbl {}
 
 .nav_rspnsv ul li a .icon{
     position: relative;
@@ -356,6 +375,35 @@ header h1 {
 .container {
     width: 100%;
 }
+
+@keyframes cat_run {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -1384px 0;
+    }
+}
+
+@keyframes move{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        background-color: #fff;
+    }
+    12%{
+        
+    }
+    90%{
+    }
+    100%{
+        transform: translateX(800px);
+
+    }
+}
+
+
 
 .intro {
     position: relative;
