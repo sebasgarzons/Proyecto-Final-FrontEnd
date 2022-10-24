@@ -109,8 +109,8 @@ nav {
     height: 88px;
     width: 169px;
     animation: 
-        cat_run 1s steps(8) infinite,
-        move 3s linear alternate infinite;
+        cat_run 1s steps(8) infinite, 
+        move 8s linear infinite;
 }
 
 .btn-header::before {
@@ -387,18 +387,10 @@ header h1 {
 
 @keyframes move{
     0%{
-        transform: translateX(0);
-    }
-    10%{
-        background-color: #fff;
-    }
-    12%{
-        
-    }
-    90%{
+        transform: translateX(-120%);
     }
     100%{
-        transform: translateX(800px);
+        transform: translateX(860%);
 
     }
 }
@@ -613,6 +605,10 @@ header h1 {
     width: 100%;
 }
 
+.cont_slider_cats_box{
+    position: relative;
+}
+
 .slider_cats {
     height: 148ex;
     min-height: 148ex;
@@ -630,9 +626,6 @@ header h1 {
     /* font-family: var(--parrafos); */
     color:var(--dark-brown);
 }
-
-
-
 
 .card-body  li .sub-nombre{
     font-weight:600 ;
@@ -908,7 +901,7 @@ header h1 {
     opacity: 0;
     transition: all 1s ease 0s;
     filter: blur(5px);
-    transform: translateX(100%);
+    transform: initial;
 }
 
 .hidden_lft {
