@@ -64,12 +64,10 @@ function check_sex(gatos){
         let x = document.getElementById('add_cats');
 
         if ($('input[name=sex_m]').is(':checked')) {
-            alert('Hola');
             x.innerHTML = ''
             dibujar_gatos(gatos.filter((cat) => cat.sexo === 'macho'));
             return('macho');
         } else if ($('input[name=sex_h]').is(':checked')) {
-            alert('Hola');
             x.innerHTML = ''
             dibujar_gatos(gatos.filter((cat) => cat.sexo === 'hembra'));
         } else {
@@ -113,10 +111,8 @@ function check_sex_m() {
 
     if ($('#checkm').is(':checked')) {
         $('#checkh').attr('disabled', true)
-        alert('H des')
     } else {
         $('#checkh').attr('disabled', false)
-        alert('H hab')
     }
 }
 
@@ -124,10 +120,8 @@ function check_sex_h() {
 
     if ($('#checkh').is(':checked')) {
         $('#checkm').attr('disabled', true)
-        alert('M des')
     } else {
         $('#checkm').attr('disabled', false)
-        alert('M hab')
     }
 
 }
