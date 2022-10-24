@@ -17,11 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
         pintarCarrito()
     }
 
-    $(".pay_button").click(function () {
+    /*$(".pay_button").click(function () {
         alert('Compra Éxitosa');
         location.assign('index.html');
-    });
+    });*/
 })
+
+function pay_car(){
+    alert('Compra Éxitosa');
+    location.assign('index.html');
+}
 
 cards.addEventListener('click', e => {
     addCArrito(e)
@@ -131,7 +136,7 @@ const pintarFooter = () => {
         return
     }
 
-    const nCantidad = Object.values(carrito).reduce((acc, {
+const nCantidad = Object.values(carrito).reduce((acc, {
         cantidad
     }) => acc + cantidad, 0)
     const nPrecio = Object.values(carrito).reduce((acc, {
@@ -197,4 +202,3 @@ function show_add_car(){
 $(".car_carrito, .close_car").click(function () {
     $(".cont_car").toggleClass("cont_car_shw");
 });
-
