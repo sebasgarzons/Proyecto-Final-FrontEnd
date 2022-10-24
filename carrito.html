@@ -28,7 +28,7 @@
 </head>
 
 
-
+<body class="body">
 <header class="contenedor-header   header" id="header">
     <nav>
         <div class="logo      header__logo">
@@ -50,102 +50,108 @@
     </nav>
 </header>
 
-<body class="body">
-    <figure class="car_carrito">
-    <span href="carrito.html">
-        <svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px " viewBox="0 0 24 24">
-            <circle cx="10.5" cy="19.5" r="1.5"></circle>
-            <circle cx="17.5" cy="19.5" r="1.5"></circle>
-            <path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path>
-            <path
-                d="M10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14l-2.31 6h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17z">
-            </path>
-        </svg>Ver Carrito</span>
-    </figure>
-    <div class="cont_car_html">
-        <h2 class="carrito-texts">Nuestros Productos</h2>
-
-        <div class="cont_car">
-            <div>
-                <p class="close_car">X</p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Item</th>
-                            <th scope="col">Cantidad</th>
-                            <th scope="col">Acción</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody id="items"></tbody>
-                    <tfoot>
-                        <tr id="footer">
-                            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
-        </div>
-
-        <div class="row" id="cards">
-
-        </div>
-    </div>
-
-    <template id="template-footer">
-        <th scope="row" colspan="2">Total productos</th>
-        <td>10</td>
-        <td>
-            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-                vaciar todo
-            </button>
-            <button class="btn pay_button">
-                Pagar
-            </button>
-        </td>
-        <td class="font-weight-bold">$ <span>5000</span></td>
-    </template>
-
-    <template id="template-carrito">
-        <tr>
-            <th scope="row">id</th>
-            <td>Café</td>
-            <td>1</td>
-            <td>
-                <button class="btn btn-info btn-sm">
-                    +
-                </button>
-                <button class="btn btn-danger btn-sm">
-                    -
-                </button>
-            </td>
-            <td>$ <span>500</span></td>
-        </tr>
-    </template>
-
-    <template id="template-card">
-        <div class="">
-            <div class="card">
-                <img src="" alt="" class="card-img-top">
-                <div class="card-body">
-                    <div class="cont_prec_car">
-                        <h5>Titulo</h5>
-                        <p>precio</p>
-                    </div>
-                    <button class="btn btn-dark btn_car">Comprar</button>
+<main class="carrito_main">
+    
+        <figure class="car_carrito">
+        <span href="carrito.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px " viewBox="0 0 24 24">
+                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                <path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path>
+                <path
+                    d="M10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14l-2.31 6h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17z">
+                </path>
+            </svg>Ver Pedido</span>
+        </figure>
+        <div class="cont_car_html">
+            <h2 class="carrito-texts">Nuestros Productos</h2>
+    
+            <div class="cont_car">
+                <div>
+                    <h3 class="cont_titulo">Tú Pedido</h3>
+                    <p class="fas fa-times close_car"></p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Acción</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="items"></tbody>
+                        <tfoot>
+                            <tr id="footer">
+                                <th scope="row" colspan="5">Vacío - comienza a pedir!</th>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
             </div>
+    
+            <div class="row" id="cards">
+    
+            </div>
         </div>
-    </template>
-    </div>
+    
+        <template id="template-footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                    vaciar todo
+                </button>
+                <button class="btn pay_button">
+                    Pagar
+                </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+        </template>
+    
+        <template id="template-carrito">
+            <tr>
+                <th scope="row">id</th>
+                <td>Café</td>
+                <td>1</td>
+                <td>
+                    <button class="btn btn-info btn-sm">
+                        +
+                    </button>
+                    <button class="btn btn-danger btn-sm">
+                        -
+                    </button>
+                </td>
+                <td>$ <span>500</span></td>
+            </tr>
+        </template>
+    
+        <template id="template-card">
+            <div class="">
+                <div class="card">
+                    <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <div class="cont_prec_car">
+                            <h5>Titulo</h5>
+                            <p>precio</p>
+                        </div>
+                        <button class="btn btn-dark btn_car">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+        </div>
+    
+        <div class="cont_alert_car">
+            <h4>¡Producto agregado éxitosamente!</h4>
+        </div>
+</main>
 
-    <div class="cont_alert_car">
-        <h4>¡Producto agregado al carrito éxitosamente!</h4>
-    </div>
 
+  <!-- BOTON WHATSAPP -->
 
-
+  <a href="https://api.whatsapp.com/send?phone=34111223344" class="whatsapp__icon"
+  alt="Comunicate con nosotros vía whatsapp" target="_blank" title="Comunicate con nosotros vía whatsapp"></a>
 
 <!-- FOOTER -->
 <footer>
