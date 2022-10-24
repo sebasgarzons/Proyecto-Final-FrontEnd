@@ -16,11 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         carrito = JSON.parse(localStorage.getItem('carrito'))
         pintarCarrito()
     }
-
-    /*$(".pay_button").click(function () {
-        alert('Compra Éxitosa');
-        location.assign('index.html');
-    });*/
 })
 
 function pay_car(){

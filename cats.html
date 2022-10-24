@@ -14,12 +14,13 @@
     <link rel="icon" href="img/logos/gato-verde.ico">
     <link rel="apple-touch-icon" href="img/logos/gato-verde.ico">
 
-    
+
     <link href="css/style.css" rel="stylesheet">
     <link href="css/cats.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script defer src="js/card_landing.js"></script>
     <title>Página de adopción</title>
 
@@ -29,14 +30,15 @@
 <header class="contenedor-header   header" id="header">
     <nav>
         <div class="logo      header__logo">
-            <a href="index.html"  class="header__link"><img src="img/logos/logo-dark.png" alt="" width="100px" class="header__logo"></a>
+            <a href="index.html" class="header__link"><img src="img/logos/logo-dark.png" alt="" width="100px"
+                    class="header__logo"></a>
         </div>
         <div>
-            <h1 class="header__title" >Aromas y Maullidos</h1>
+            <h1 class="header__title">Aromas y Maullidos</h1>
         </div>
         <div class="go_home">
-            <a href="index.html" class="carrito__link"><svg class="carrito__logo" xmlns="http://www.w3.org/2000/svg" width="44" height="34" viewBox="0 0 24 24"
-                    >
+            <a href="index.html" class="carrito__link"><svg class="carrito__logo" xmlns="http://www.w3.org/2000/svg"
+                    width="44" height="34" viewBox="0 0 24 24">
                     <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
                 </svg></a>
         </div>
@@ -58,59 +60,68 @@
 
 
         <div class="container__filtro">
-            <h3 class="filtro__title" >Filtrar por:</h3>
+            <h3 class="filtro__title">Filtrar por:</h3>
+            <h3 class="filtro__title filtro__title__rspnsv">Filtrar por: (Click Aquí)</h3>
+            <div class="color_list color_list_rspnsv">
+                <span class="close_filters"><svg class="carrito__logo" xmlns="http://www.w3.org/2000/svg"
+                    width="44" height="34" viewBox="0 0 24 24">
+                    <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
+                </svg></span>
+                <ul class="list">
 
-            <ul class="color_list list">
-                <li class="list__item">
-                    <label class="list__label" for="color">Color:</label>
-                    <select class="filtro" name="color" id="filtro_color">
-                    <option value="selector" id="filtro_selector">--Seleccione Color--</option>
-                    <option value="gris" id="filtro_color_gris">Gris</option>
-                    <option value="amarillo" id="filtro_color_amarillo">Amarillo</option>
-                    <option value="blanco" id="filtro_color_blanco">Blanco</option>
-                    <option value="negro" id="filtro_color_negro">Negro</option>
-                    <option value="cafe" id="filtro_color_cafe">Café</option>
-                    <option value="naranja" id="filtro_color_naranja">Naranja</option>
-                </select>
-                </li>
-
-
-
-                <li class="list__item">
-                    <label  class="list__label"  for="checkbox">Sexo:</label>                 
-                      <div class="div__check">
-                          
-                            <div class="check__list">
-                                <input class="checksex" type="checkbox" title="macho" id="checkm">
-                                <label for="checkm"class="checkp">Macho</label>
-                                
+                    <li class="list__item">
+                        <div>
+                            <label class="list__label" for="color">Color:</label>
+                            <select id="filtro_color" name="color" class="filtro">
+                                <option value="gris" id="filtro_color_gris">Gris</option>
+                                <option value="amarillo" id="filtro_color_amarillo">Amarillo</option>
+                                <option value="blanco" id="filtro_color_blanco">Blanco</option>
+                                <option value="negro" id="filtro_color_negro">Negro</option>
+                                <option value="cafe" id="filtro_color_cafe">Cafe</option>
+                                <option value="naranja" id="filtro_color_naranja">Naranja</option>
+                            </select>
+                        </div>
+                        <button class="button filtro__button" id="filter_cat_color">Buscar por Color</button>
+                    </li>
+                    <li class="list__item">
+                        <div>
+                            <label class="list__label" for="checkbox">Sexo:</label>
+                            <div class="div__check">
+                                <div class="check__list">
+                                    <input class="checksex checksexm" type="checkbox" title="macho" id="checkm"
+                                        name="sex_m" onchange="check_sex_m()">
+                                    <label for="checkm" class="checkp">Macho</label>
+                                </div>
+                                <div class="check__list">
+                                    <input class="checksex" type="checkbox" title="hembra" id="checkh" name="sex_h"
+                                        onchange="check_sex_h()">
+                                    <label for="checkh" class="checkp">Hembra</label>
+                                </div>
                             </div>
-
-                            <div class="check__list">
-                                <input class="checksex" type="checkbox" title="hembra" id="checkh">
-                               
-                                <label for="checkh"class="checkp">Hembra</label>
+                        </div>
+                        <button class="button filtro__button" id="filter_cat_sex">Buscar por Sexo</button>
+                    </li>
+                    <li class="list__item">
+                        <div>
+                            <label class="list__label" for="edad">Edad:</label>
+                            <div>
+                                <input type="range" id="filtro_edad_range_min" min="0" max="15"
+                                    onchange="getvaluerange()">
+                                <p>Mayor que <span id="min_edad"></span></p>
                             </div>
-                      </div>
-                </li>
+                            <div>
+                                <input type="range" id="filtro_edad_range_max" min="0" max="15"
+                                    onchange="getvaluerange()">
+                                <p>Menor que <span id="max_edad"></span></p>
+                            </div>
+                        </div>
+                        <button class="button filtro__button" id="filter_cat_age">Buscar por Edad</button>
+                    </li>
+                </ul>
+            </div>
 
 
-                <li class="list__item">
-                    <label  class="list__label"  for="edad">Edad:</label>
-                    <select class="filtro" name="edad" id="filtro_edad">
-                    <option value="selector" id="filtro_selector">--Seleccione Edad--</option>
-
-                    <option value="edad0-5" id="filtro_edad">De 0 a 5 años</option>
-                    <option value="edad6-10" id="filtro_edad">De 6 a 10 años</option>
-                    <option value="edad11-15" id="filtro_edad">De 11 a 15 años</option>
-                 
-                </select>
-                </li>
-
-           </ul>
-
-
-            <button class="button filtro__button">Buscar</button>
+            <!-- <button class="button filtro__button" id="filter_cat">Buscar</button> -->
         </div>
 
 
@@ -119,7 +130,7 @@
 
 
         <div class="cont_cards" id="add_cats">
-<!--             <div class="box_card">
+            <!--             <div class="box_card">
                 <div class="container">
                     <div class="front card">
                         <div>
@@ -558,55 +569,55 @@
 <footer>
     <div class="container-footer         footer">
 
-    <div class="container-box-footer         footer__container">
-        <div class="logo__footer   footer__logo">
-            <a href="#header"><img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal"
-                    width="128px"></a>
-        </div>
+        <div class="container-box-footer         footer__container">
+            <div class="logo__footer   footer__logo">
+                <a href="#header"><img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal"
+                        width="128px"></a>
+            </div>
 
-        <div class="subtitulo__footer      footer__title">
-            <h3>Aromas y Maullidos</h3>
-        </div>
+            <div class="subtitulo__footer      footer__title">
+                <h3>Aromas y Maullidos</h3>
+            </div>
 
-        <div class="iconos__footer    footer-social">
-
-
-            <div class="cont_iconos_footer   footer-social__container">
+            <div class="iconos__footer    footer-social">
 
 
-                <div class="icono_ftr instagram    footer__ig">
-                    <a href="#" class="footer__link" title="Ir a nuestro perfil de instagram"><i
-                            class="fab fa-instagram"></i></a>
-                </div>
+                <div class="cont_iconos_footer   footer-social__container">
 
-                <div class="icono_ftr whatsaap   footer__whatsapp">
-                    <a href="#" class="footer__link" title="Escribenos por whatsapp"><i
-                            class="fab fa-whatsapp"></i></a>
-                </div>
 
-                <div class="icono_ftr twitter    footer__twitter">
-                    <a href="#" class="footer__link" title="Ir a nuestro Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
+                    <div class="icono_ftr instagram    footer__ig">
+                        <a href="#" class="footer__link" title="Ir a nuestro perfil de instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
 
-                <div class="icono_ftr facebook     footer__facebook">
-                    <a href="#" class="footer__link" title="Ir a nuestra página de Facebook"><i
-                            class="fab fa-facebook"></i></a>
+                    <div class="icono_ftr whatsaap   footer__whatsapp">
+                        <a href="#" class="footer__link" title="Escribenos por whatsapp"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <div class="icono_ftr twitter    footer__twitter">
+                        <a href="#" class="footer__link" title="Ir a nuestro Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+                    <div class="icono_ftr facebook     footer__facebook">
+                        <a href="#" class="footer__link" title="Ir a nuestra página de Facebook"><i
+                                class="fab fa-facebook"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="parrafo__footer    footer-text">
+    <div class="parrafo__footer    footer-text">
 
-    <p class="footer__p   footer-text__p">Copyright &copy; 2022 Autores:
-        <a href="https://github.com/sebasgarzons" class="autores   footer-text__autores"
-            title="Ir a github de Sebastián">Sebastian</a> -
-        <a href="https://github.com/Janselin" class="autores   footer-text__autores"
-            title="Ir a github de Mary">Mary</a> -
-        <a href="https://github.com/kaymikatty" class="autores   footer-text__autores"
-            title="Ir a github de Katherine">Katherine</a>.
-        Todos los derechos reservados.</p>
-</div>
+        <p class="footer__p   footer-text__p">Copyright &copy; 2022 Autores:
+            <a href="https://github.com/sebasgarzons" class="autores   footer-text__autores"
+                title="Ir a github de Sebastián">Sebastian</a> -
+            <a href="https://github.com/Janselin" class="autores   footer-text__autores"
+                title="Ir a github de Mary">Mary</a> -
+            <a href="https://github.com/kaymikatty" class="autores   footer-text__autores"
+                title="Ir a github de Katherine">Katherine</a>.
+            Todos los derechos reservados.</p>
+    </div>
 </footer>
 
 </html>
