@@ -19,10 +19,23 @@ console.log(x) */
 /*     dibujar_gatos()
 }); */
 
+let age_min_value;
+let age_max_value;
+
 async function llamar_gatos() {
     const response = await fetch('api_cards_landing.json')
     const gatos = await response.json()
-    dibujar_gatos(gatos); 
+    dibujar_gatos(gatos);
+
+        check_age(gatos);
+        let sex_draw = check_sex(gatos);
+        check_color(gatos);
+
+
+/*         $('#filter_cat').click(function () {
+            console.log('Entré a Draw')
+            console.log('Hola ' + sex_draw)
+        }); */
 
     /* dibujar_gatos(gatos.filter((cat) => cat.edad>5 && cat.edad <10)); */
 
@@ -33,46 +46,145 @@ async function llamar_gatos() {
 
 }
 
+function check_age(gatos){
+    $('#filter_cat_age').click(function () {
+        console.log('Entré a Age')
+        let x = document.getElementById('add_cats');
+
+        console.log('El valor min es ' + age_min_value + ' y El valor max es ' + age_max_value)
+        x.innerHTML = '';
+        dibujar_gatos(gatos.filter((cat) => cat.edad>=age_min_value && cat.edad <= age_max_value))
+
+    });
+}
+
+function check_sex(gatos){
+    $('#filter_cat_sex').click(function () {
+        console.log('Entré a sex')
+        let x = document.getElementById('add_cats');
+
+        if ($('input[name=sex_m]').is(':checked')) {
+            alert('Hola');
+            x.innerHTML = ''
+            dibujar_gatos(gatos.filter((cat) => cat.sexo === 'macho'));
+            return('macho');
+        } else if ($('input[name=sex_h]').is(':checked')) {
+            alert('Hola');
+            x.innerHTML = ''
+            dibujar_gatos(gatos.filter((cat) => cat.sexo === 'hembra'));
+        } else {
+            x.innerHTML = ''
+            dibujar_gatos(gatos.filter((cat) => cat.sexo === 'macho' || cat.sexo === 'hembra'));
+        }
+
+    });
+}
+
+function check_color(gatos){
+    $('#filter_cat_color').click(function () {
+        let x = document.getElementById('add_cats');
+        /*         let y = $('add_cats');
+                y.innerHTML = ''; */
+        let color_value = document.getElementById('filtro_color').value;
+        let color = document.getElementById('filtro_color');
 
 
-/* function buil_card(data){
-    let cont_cats = document.getElementById('add_cats');
+        // Why this dont work!?
+        // $('#add_cats').innerHTML = '';
+        x.innerHTML = ''
+        console.log('Manolo')
 
-    for (i = 0; i < data.length; i++) {
-        let box_new = `
-        <ul>
-        <li>Edad: <span></span></li>
-        <li>Sexo: <span class="sex_cat"></span></li>
-        <li>edad: 6</li>
-        <li>sexo: macho</li>
-        <li>color: blanco</li>
-        <li>esterilizado: si</li>
-        <li>vacunado: si</li>
-        <li>discapacidad: ninguna</li>
-        <li>estado: buena</li>
-    </ul>
-        `
-        
+        dibujar_gatos(gatos.filter((cat) => cat.color === color_value));
+        color.value = '';
+
+        /* 
+            Por qué no funciona con jQuery?????????
+            let color_value = $('#filtro_color').value;
+            console.log(color_value); */
+    });
+}
+
+function check_sex_m() {
+    /* $('#checkh').attr('disabled', false) */
+
+    /* 
+        $('#checkh').attr('disabled', true)
+        alert('Hola'); */
+
+    if ($('#checkm').is(':checked')) {
+        $('#checkh').attr('disabled', true)
+        alert('H des')
+    } else {
+        $('#checkh').attr('disabled', false)
+        alert('H hab')
+    }
+}
+
+function check_sex_h() {
+
+    if ($('#checkh').is(':checked')) {
+        $('#checkm').attr('disabled', true)
+        alert('M des')
+    } else {
+        $('#checkm').attr('disabled', false)
+        alert('M hab')
     }
 
+}
+
+
+function rotate_container() {
+    $('.container').toggleClass('container_rotate')
+}
+
+function getvaluerange() {
+    console.log('Hola')
+    age_min = $('#filtro_edad_range_min').val()
+    age_max = $('#filtro_edad_range_max').val()
+    let min_edad_cat = document.getElementById('min_edad');
+    let max_edad_cat = document.getElementById('max_edad');
+
+    min_edad_cat.innerText = age_min;
+    max_edad_cat.innerText = age_max;
+
+    age_min_value = age_min;
+    age_max_value = age_max;
+
+    console.log(age_min_value)
+    console.log(age_max_value)
+}
+
+$('.filtro__title__rspnsv').click(function () {
+    $('.color_list_rspnsv').fadeIn();
+
+});
+
+$('.close_filters svg').click(function () {
+    $('.color_list_rspnsv').fadeOut();
+});
 
 
 
-} */
+
+
+
+/* $('input[type=checkbox]').on('change', function() {
+    alert("Pruebas")
+}); */
 
 function dibujar_gatos(data) {
-    
+
     console.log('Entré')
     let cont_cats = document.getElementById('add_cats');
 
-    for (let i = 0; i < data.length; i++){
+    for (let i = 0; i < data.length; i++) {
         let box_back_cat = `<div class="box_card">
-        <div class="container">
+        <div class="container" onclick="rotate_container()">
             <div class="front card">
                 <div>
                     <img src="${data[i].foto}" alt="gatito en adopción de color ${data[i].color}">
                 </div>
-    
+
             </div>
             <div class="back card">
                 <div class="cont_back_card">
