@@ -683,10 +683,11 @@ header h1 {
     display: grid;
     max-width: 1200px;
     margin: auto;
+    grid-auto-flow: dense;
     z-index: 10;
     position: relative;
     padding: 0px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr));
     transition: all 0.5s ease-in-out 0s;
 }
 
@@ -1535,22 +1536,23 @@ header h1 {
         grid-template-columns: 1fr;
     }
 
-    .box_slider_cats ul {
+/*     .box_slider_cats ul {
         gap: 18px;
         flex-direction: column;
         position: relative;
-        height: 28vh;
-    }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    } */
 
     .box_slider_cats ul li {
-        list-style: none;
+/*         list-style: none;
         transition: all 0.5s linear 0s;
         width: 102px;
         height: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
     }
 
     .box_slider_cats ul li:nth-of-type(1) {
@@ -1564,8 +1566,7 @@ header h1 {
 
     .box_slider_cats ul li:nth-of-type(3) {
         top: 100%;
-        right: 10%;
-        left: initial;
+        left: 65%;
     }
 
     .box_slider_cats ul li:nth-of-type(4) {
@@ -1845,9 +1846,8 @@ header h1 {
         left: initial;
     }
 
-    .box_slider_cats ul li:nth-of-type(3) {
-        right: -5%;
-        left: initial;
+    .box_slider_cats ul li:nth-of-type(4) {
+        left: 70%;
     }
 
     .box_slider_cats ul li:nth-of-type(5) {
