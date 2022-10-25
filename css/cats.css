@@ -398,7 +398,8 @@ p {
 }
 
 .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-evenly;
@@ -489,16 +490,6 @@ transform: rotateY(180deg);
 .back{
   background-color: #e23;
 } */
-
-
-
-
-
-
-
-
-
-
 
 .container-footer {
     display: flex;

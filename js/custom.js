@@ -44,6 +44,7 @@ jQuery(document).ready(function ($) {
 		$("body, html").animate({
 			scrollTop: $("#menu_container").offset().top - 140
 		}, 800);
+		$('.toggle').removeClass('hamb_active');
 		$("#nav_respnsv").removeClass('hamb_active_nav');
 	});
 
@@ -51,6 +52,7 @@ jQuery(document).ready(function ($) {
 		$("body, html").animate({
 			scrollTop: $("#aboutus").offset().top - 140
 		}, 800);
+		$('.toggle').removeClass('hamb_active');
 		$("#nav_respnsv").removeClass('hamb_active_nav')
 	});
 
@@ -185,7 +187,7 @@ const maquinaEscribir3 = (text = '', tiempo = 10, etiqueta = '') => {
 		}
 	}, tiempo)
 }
-maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
+maquinaEscribir3("En Aromas & Maullidos somos amantes del café, de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables y degustar de nuestro menú.", 24, maquina4);
 
 
 // El problema es que si agregamos cualquier evento que nos permita controlar la ejecución del efecto de máquina de escribir, se daña el efecto.

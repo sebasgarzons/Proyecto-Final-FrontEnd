@@ -28,6 +28,10 @@
     font-size: 16px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -68,6 +72,9 @@ nav {
     background: rgba(0, 0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 4px;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
     z-index: 1;
     top: 0px;
 }
@@ -81,6 +88,9 @@ nav {
     background: rgba(253, 210, 191, 0.25);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 4px;
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
     height: 110px;
     z-index: 11;
 }
@@ -145,6 +155,9 @@ nav {
     display: none;
     font-size: 24px;
     padding: 23.5px 20px;
+    cursor: pointer;
+    right: 2%;
+    position: relative;
 }
 
 .carrito a svg {
@@ -875,20 +888,7 @@ header h1 {
     animation: 1s ease 0s infinite normal none running animloader;
 }
 
-@keyframes animloader {
-    0% {
-        box-shadow: rgba(255, 255, 255, 0) 2px 0px, rgba(255, 255, 255, 0.3) 12px 0px, rgba(255, 255, 255, 0) 20px 0px;
-    }
-
-    50% {
-        box-shadow: rgba(255, 255, 255, 0.5) 2px -5px, rgba(255, 255, 255, 0.5) 12px -3px, rgba(255, 255, 255, 0.6) 20px -2px;
-    }
-
-    100% {
-        box-shadow: rgba(255, 255, 255, 0) 2px -8px, rgba(255, 255, 255, 0) 12px -5px, rgba(255, 255, 255, 0) 20px -5px;
-    }
-}
-/* 
+/*
 .hidden_rgth {
     opacity: 0;
     transition: all 1s ease 0s;
@@ -947,6 +947,9 @@ header h1 {
     padding: 0.4em 0px;
     font-size: 1.2rem;
     vertical-align: middle;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .aboutus__icon {
@@ -1349,7 +1352,6 @@ header h1 {
     }
 }
 
-
 @keyframes cat_run {
     from {
         background-position: 0 0;
@@ -1371,7 +1373,6 @@ header h1 {
     }
 }
 
-
 @keyframes animloader {
     0% {
         box-shadow: rgba(255, 255, 255, 0) 2px 0px, rgba(255, 255, 255, 0.3) 12px 0px, rgba(255, 255, 255, 0) 20px 0px;
@@ -1383,6 +1384,18 @@ header h1 {
 
     100% {
         box-shadow: rgba(255, 255, 255, 0) 2px -8px, rgba(255, 255, 255, 0) 12px -5px, rgba(255, 255, 255, 0) 20px -5px;
+    }
+}
+
+@keyframes beats{
+    0%{
+        transform: scale(1);
+    }
+    60%{
+        transform: scale(.9);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
@@ -1493,8 +1506,6 @@ header h1 {
         gap: 3em 0;
     }
 
-
-
     .menu__item {
         justify-content: initial;
         grid-area: initial;
@@ -1520,12 +1531,10 @@ header h1 {
         width: 100%;
     }
 
-
     .button-adopt {
         /* margin: auto; */
         margin-top: 3rem;
     }
-
 
     .slider_reorder_cat img {
         border-top-left-radius: 25px;
@@ -1545,8 +1554,6 @@ header h1 {
         height: 295ex;
     }
 
-
-
     .box_slider_cat_display {
         grid-template-columns: 1fr;
     }
@@ -1560,14 +1567,8 @@ header h1 {
     } */
 
     .box_slider_cats ul li {
-        /*         list-style: none;
-        transition: all 0.5s linear 0s;
-        width: 102px;
-        height: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
+        animation: beats 1s infinite;
+        transition: .3s;
     }
 
     .box_slider_cats ul li:nth-of-type(1) {
@@ -1612,6 +1613,10 @@ header h1 {
     .circle_cat {
         width: 88px;
         height: 88px;
+    }
+
+    .contact__item{
+        font-size: 1rem;
     }
 
     .aboutus {
@@ -1661,7 +1666,7 @@ header h1 {
     }
 
     .icono {
-        display: inline-block;
+        display: block;
         cursor: pointer;
     }
 

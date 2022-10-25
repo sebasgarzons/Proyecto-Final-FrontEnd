@@ -8,7 +8,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -21,7 +21,7 @@
         "esterilizado": "no",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -34,7 +34,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -47,7 +47,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -60,7 +60,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -73,7 +73,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -86,7 +86,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -99,7 +99,7 @@
         "esterilizado": "no",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -112,7 +112,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -125,7 +125,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -138,7 +138,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "motora",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -151,7 +151,7 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "visual",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -227,7 +227,7 @@
         "esterilizado": "no",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -240,7 +240,7 @@
         "esterilizado": "no",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     },
 
     {
@@ -253,6 +253,6 @@
         "esterilizado": "si",
         "vacunado": "si",
         "discapacidad": "ninguna",
-        "estado": "buena"
+        "estado": "saludable"
     }
 ]
