@@ -1,54 +1,33 @@
+// Función a ejecutar cuando el DOM ha sido cargado en total.
 jQuery(document).ready(function ($) {
 	console.log("Hola");
 	console.log('Hola again')
 
-	introwrite()
-
-	/*     let nav = document.querySelector('nav');
-	    let toggle = document.querySelector('.toggle');
-	    toggle.onclick = function () {
-	        nav.classList.toggle('active');
-	    } */
-
-	/* 	$("#listCats").click(function () {
-			let test = this.src;
-			console.log(test);
-		}); */
-
-	//---FUNCIÓN SLIDER---//
-
-
-
-	$(".products_txt ul li").click(function () {
-		$(".products_txt ul li").not(this).removeClass("products_txt_actv");
-		$(this).addClass("products_txt_actv");
+	// Cuando la página termine de cargar deja de mostrar el Loader
+	let loader = document.getElementById('loader_cont_id');
+	window.addEventListener('load', function () {
+		loader.style.display = 'none';
 	});
 
+	/* 	$(".bttn_sldr").click(function () {
+			$(".cats_circle li").not(this).removeClass("active");
+			$(this).addClass("active");
+		}); */
+
+	// Hamburguer Icon and Nav Mobile
 	let nav = document.getElementById('nav_respnsv');
 	let toggle = document.querySelector('.toggle');
 
-
+	// Agregar clase para dar efectos al click del hamburguer icon
+	// Y al nav en mobile para qué aparezca
 	toggle.onclick = function () {
 		console.log('entré')
 		nav.classList.toggle('hamb_active_nav');
 		$('.toggle').toggleClass('hamb_active');
 	}
 
-
-
-
-	//---LOADER---//
-
-	let loader = document.getElementById('loader_cont_id');
-	window.addEventListener('load', function () {
-		loader.style.display = 'none';
-	});
-
-
-
-	/* */
-
-
+	/* ---------------------------------------------------------------- */
+	// NAVs, efectos, redireccionamientos en sus tabs
 	$("#enlace-menu").click(function () {
 		$("body, html").animate({
 			scrollTop: $("#menu_container").offset().top - 140
@@ -80,16 +59,15 @@ jQuery(document).ready(function ($) {
 	});
 	/* ---------------------------------------------------------------- */
 
-
-	//---EFECTO DE LOS GATITOS DEL SLIDER---//
-
 	reorder_slider_cats_home()
-
 });
 
 
 /* ----------------------------------------------------------------------- */
 
+// Fail: Esto era para cargar las imagenes de tantas en tantas con un botón
+// hasta que llegara al final. Pero no fue posible hacerlo metiéndole animaciones,
+// dejamos el código por útil pero lo deshabilitamos.
 /* $(function(){
     $(".cafes__item").slice(0, 9).show(); // select the first ten
     $("#load_more").click(function(e){ // click event for load more
@@ -98,8 +76,7 @@ jQuery(document).ready(function ($) {
     });
 }); */
 
-//---FUNCIÓN DEL BOTÓN DE LA GALERIA DE IMAGENES---//
-
+//---Load More in Gallery of food and pics---//
 $('#load_more').click(function () {
 	$('.cafes').toggleClass('load_more_height_first');
 	let load_more = document.getElementById('load_more').innerText;
@@ -110,97 +87,81 @@ $('#load_more').click(function () {
 	} else {
 		document.getElementById('load_more').innerText = 'Ver Menos';
 	}
-
-	/* 	switch (load_more) {
-			case "Ver Más":
-				document.getElementById('load_more').innerText = 'Ver Menos';
-				break;
-			case "Ver Menos":
-				document.getElementById('load_more').innerText = 'Ver Más';
-				break;
-		} */
-
-	/* 	if (load_more = 'Load More') {
-			console.log('Entré aquí');
-			document.getElementById('load_more').innerText = 'View Less';
-		}
-
-		load_more = document.getElementById('load_more').innerText;
-		console.log('El valor es: ' + load_more);
-
-		if(load_more = 'View Less'){
-			document.getElementById('load_more').innerText = 'View More';
-		} */
-
 });
+// Métodos Alternos: Puedes ignorar esto //
 
-/* 	$('#view_less').click(function(){
-		$('#view_less').fadeOut();
-		$('.cafes').removeClass('load_more_height_first');
-		$('#load_more').fadeIn();
-	}); */
+/* 	switch (load_more) {
+		case "Ver Más":
+			document.getElementById('load_more').innerText = 'Ver Menos';
+			break;
+		case "Ver Menos":
+			document.getElementById('load_more').innerText = 'Ver Más';
+			break;
+	} */
 
+/* 	if (load_more = 'Load More') {
+		console.log('Entré aquí');
+		document.getElementById('load_more').innerText = 'View Less';
+	}
+
+	load_more = document.getElementById('load_more').innerText;
+	console.log('El valor es: ' + load_more);
+
+	if(load_more = 'View Less'){
+		document.getElementById('load_more').innerText = 'View More';
+	} */
 /* ----------------------------------------------------------------------- */
 
-//---FUNCIÓN DE FLECHA PARA QUE LA PAGINA VUELVA AL INICIO---//
 
-$(".arrow_up").click(function () {
+//--- Effect Sections Specifics: At last time Slider Cats y Bloque de círculos ---//
+// Acá viene el qué es probablemente uno de los dos fracasos más notables que tuvimos.
+// Teníamos un efecto para hacer que las secciones aparezcan desde la derecha ó desde la izquierda cuando se entrara en ésa sección.
+// Pero el NAV de la página se extendía más allá de lo qué se veía en el body, así que se "cortaba". No lo hemos podido solucionar,
+// Ni con propiedades absolutas ni siquiera. Solo queda en el mazo mirar si con overflow hidden se puede. Pero al momento debido a
+// lo del nav, aún estamos debatiendo si dejar ó no las animaciones de éste tipo. Igual dejamos el código de una de las soluciones qué
+// encontramos porque es de los buenos.
 
-	$("body, html").animate({
-		scrollTop: $("main").offset().top - 80
-	}, 800);
-
-});
-
-
-
-/* ----------------------------------------------------------------------- */
-
-//---EFECTO DEL SLIDER DE PARA QUE APRAREZACAN DEDE LA IZQUIERDA---//
-
-const observer_left = new IntersectionObserver((entries) => {
+// Animar desde la izquierda <-
+/* const observer_left = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		console.log(entry);
 		if (entry.isIntersecting) {
 			entry.target.classList.add('show');
 		}
-		/*  else {
-					entry.target.classList.remove('show');
-				} */
+		// else{
+		//		entry.target.classList.remove('show');
+		//	}
 	});
 });
-
 
 const hiddenElements_left = document.querySelectorAll('.hidden_rgth');
-hiddenElements_left.forEach((el) => observer_left.observe(el));
+hiddenElements_left.forEach((el) => observer_left.observe(el)); */
 
-//---EFECTO DEL SLIDER DE PARA QUE APRAREZACAN DEDE LA Derecha---//
-
-const observer_right = new IntersectionObserver((entries) => {
+// Animar desde la derecha ->
+/* const observer_right = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		console.log(entry);
 		if (entry.isIntersecting) {
 			entry.target.classList.add('show');
 		}
-		/*  else {
-					entry.target.classList.remove('show');
-				} */
+		// else {
+		//		entry.target.classList.remove('show');
+		//	}
 	});
 });
 
-
 const hiddenElements_right = document.querySelectorAll('.hidden_lft');
-hiddenElements_right.forEach((el) => observer_right.observe(el));
-
-//---FUNCIÓN EFECTO DE INTRO---//
-
-/* const typeWriter = document.getElementById("typewriter-text");
-const text = "En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.";
-
-typeWriter.innerHTML = text;
-typeWriter.style.setProperty("--characters", text.length); */
+hiddenElements_right.forEach((el) => observer_right.observe(el)); */
+/* ----------------------------------------------------------------------- */
 
 
+// -- Efecto INTRO --- //
+// Bienvenidos al segundo fracaso del proyecto. La segunda cosa con la que no pudimos por más que le dimos.
+// Esta parte del código está bien. El problema es qué se maneja sola, decidimos dejarla en su punto más estable.
+
+// Crear constantes con texto, tiempo y etiqueta que se va a pasar al DOM.
+// Divide el texto, setea el DOM, almacena el valor a pasar, compara, almacena y mira longitud,
+// y va agregando al DOM una a una cada letra generando un efecto de máquina de escribir.
 const maquina4 = document.getElementById('maquina-escribir4')
 
 const maquinaEscribir3 = (text = '', tiempo = 10, etiqueta = '') => {
@@ -224,6 +185,14 @@ const maquinaEscribir3 = (text = '', tiempo = 10, etiqueta = '') => {
 		}
 	}, tiempo)
 }
+maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
+
+
+// El problema es que si agregamos cualquier evento que nos permita controlar la ejecución del efecto de máquina de escribir, se daña el efecto.
+// Se ralentiza ó se detiene sencillamente, y pasa lo mismo si comenzamos a jugar con los valores. Ó, el caso contrario, va muy muy muy rápido.
+// No sabemos como lograr que el evento espere a qué el usuario llegue a ésa sección sin qué se dañe. En caso de qué no veas el efecto
+// recarga la página justo en el intro, en la frase debajo del header, en cuánto desaparezca el loader verás con un poco de suerte el efecto.
+// Dejamos posteriormente algunos de los intentos fallidos de control del código:
 
 /* $(".contenedor__intro").mouseenter(function () {
 	console.log('Mouse entró');
@@ -233,24 +202,3 @@ const maquinaEscribir3 = (text = '', tiempo = 10, etiqueta = '') => {
 /* setTimeout(function() {
 	maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
 }, 4000) */
-
-
-
-function introwrite(){
-	console.log('Entré a escribir')
-	setTimeout(function(){
-	}, 4000)
-}
-maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
-
-
-/* function reorder_slider_cats_home(){
-	console.log('Entré a reordenar')
-	$('slider_cats>div:nth-of-type(1)').addClass('.slider_reorder_catssss');
-} */
-/* maquinaEscribir3("En Aromas & Maullidos somos amantes del café , de crear bonitos recuerdos pero sobre todo de los gatos, por esa razón contamos con una zona exclusiva para que puedas disfrutar de la compañia de gatitos adoptables, y degustar de nuestro menú.", 24, maquina4);
- */
-
-
-
-/* ------------------------------ */

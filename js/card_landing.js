@@ -1,78 +1,46 @@
-/* const fetchData = async () => {
-    try {
-        const res = await fetch('/api_cards_landing.json')
-        const data = await res.json()
-        return data
-
-        
-    } catch (error) {
-        console.log(error)
-    }
-}
-
-x = fetchData()
-console.log(x) */
-
-
-/* document.addEventListener("DOMContentLoaded", function(event) {  */
-//Do work
-/*     dibujar_gatos()
-}); */
-
-
-var URL_cats = 'https://api.thecatapi.com/v1/images/search'
-var api_key = 'live_nQaV2rAWiMpU642YGwytDwMDv6t48OAUVs1PklfDv92T8r2weL68u0jcBAYFLL4y'
-
 let age_min_value;
 let age_max_value;
 
+
+// Función asíncrona:
+// Almacenar respuesta de conexión fetch con un JSON. Usarla para dibujar esos elementos en el DOM.
+// Y filtrar en el momento qué se necesite con ésa respuesta del DOM según lo que se necesite.
 async function llamar_gatos() {
     const response = await fetch('api_cards_landing.json')
     const gatos = await response.json()
     dibujar_gatos(gatos);
-
-        check_age(gatos);
-        /* let sex_draw =  */check_sex(gatos);
-        check_color(gatos);
-        
-
-/*         $('#filter_cat').click(function () {
-            console.log('Entré a Draw')
-            console.log('Hola ' + sex_draw)
-        }); */
-
-    /* dibujar_gatos(gatos.filter((cat) => cat.edad>5 && cat.edad <10)); */
-
+    check_age(gatos);
+    check_sex(gatos);
+    check_color(gatos);
     /* dibujar_gatos(gatos.filter((cat) => cat.nombre.includes('ia'))); */
-
-    /* dibujar_gatos(gatos.filter((cat) => cat.edad>5 && cat.edad <10)); */
-    /* dibujar_gatos(gatos.filter((cat) => cat.color === 'amarillo')); */
-
 }
 
-
-
-function check_age(gatos){
+// Filtrar el elemento age en la respuesta del JSON, y mostrar solo los gatos que cumplen con la condición dada en edad.
+// Limpia el DOM y dibuja la respuesta.
+function check_age(gatos) {
     $('#filter_cat_age').click(function () {
         console.log('Entré a Age')
         let x = document.getElementById('add_cats');
 
-        // Fail, pero no entiendo poruq eno funca la lógica
-/*         if (age_min_value <= age_max_value ){
-            console.log('El valor min es ' + age_min_value + ' y El valor max es ' + age_max_value)
-            x.innerHTML = '';
-            dibujar_gatos(gatos.filter((cat) => cat.edad>=age_min_value && cat.edad <= age_max_value))
-        }else if(age_max_value < age_min_value){
-            alert('Haz seleccionado los valores al revés, ningún Gato es mayor a ' + age_min_value + ' Y menor a ' + age_max_value)
-        } */
+        // Fail, pero por qué no funciona adecuadamente el 100% de las veces!? -> Pendiente
+
+        /*      if (age_min_value <= age_max_value ){
+                    console.log('El valor min es ' + age_min_value + ' y El valor max es ' + age_max_value)
+                    x.innerHTML = '';
+                    dibujar_gatos(gatos.filter((cat) => cat.edad>=age_min_value && cat.edad <= age_max_value))
+                }else if(age_max_value < age_min_value){
+                    alert('Haz seleccionado los valores al revés, ningún Gato es mayor a ' + age_min_value + ' Y menor a ' + age_max_value)
+                } */
+
         console.log('El valor min es ' + age_min_value + ' y El valor max es ' + age_max_value)
         x.innerHTML = '';
-        dibujar_gatos(gatos.filter((cat) => cat.edad>=age_min_value && cat.edad <= age_max_value))
-
+        dibujar_gatos(gatos.filter((cat) => cat.edad >= age_min_value && cat.edad <= age_max_value))
     });
 }
 
-function check_sex(gatos){
+// Filtrar el elemento sex en la respuesta del JSON, y mostrar solo los gatos que cumplen con la condición dada en sexo.
+// Limpia el DOM y dibuja la respuesta.
+function check_sex(gatos) {
     $('#filter_cat_sex').click(function () {
         console.log('Entré a sex')
         let x = document.getElementById('add_cats');
@@ -80,70 +48,59 @@ function check_sex(gatos){
         if ($('input[name=sex_m]').is(':checked')) {
             x.innerHTML = ''
             dibujar_gatos(gatos.filter((cat) => cat.sexo === 'macho'));
-            return('macho');
+            return ('macho');
         } else if ($('input[name=sex_h]').is(':checked')) {
             x.innerHTML = ''
             dibujar_gatos(gatos.filter((cat) => cat.sexo === 'hembra'));
         } else {
             x.innerHTML = ''
-            dibujar_gatos(gatos.filter((cat) => cat.sexo === 'macho' || cat.sexo === 'hembra'));
+            dibujar_gatos(gatos.filter((cat) => cat.sexo === 'macho' || cat.sexo === 'hembra')); // Dibujar en caso de ningún check puesto
         }
-
     });
 }
 
-function check_color(gatos){
+// Filtrar el elemento color en la respuesta del JSON, y mostrar solo los gatos que cumplen con la condición dada en color.
+// Limpia el DOM y dibuja la respuesta.
+function check_color(gatos) {
     $('#filter_cat_color').click(function () {
         let x = document.getElementById('add_cats');
-        /*         let y = $('add_cats');
-                y.innerHTML = ''; */
         let color_value = document.getElementById('filtro_color').value;
         let color = document.getElementById('filtro_color');
 
-
-        // Why this dont work!?
-        // $('#add_cats').innerHTML = '';
         x.innerHTML = ''
-
         dibujar_gatos(gatos.filter((cat) => cat.color === color_value));
-        /* color.value = ''; */
 
-        /* 
-            Por qué no funciona con jQuery?????????
-            let color_value = $('#filtro_color').value;
-            console.log(color_value); */
+        // --- En teoría esto es lo mismo qué lo que se está haciendo con JS puro, pero por qué no funca JQuery --- //
+        /*Why this dont work!?
+        $('#add_cats').innerHTML = '';
+
+        Por qué no funciona con jQuery?????????
+        let color_value = $('#filtro_color').value;
+        console.log(color_value); */
     });
 }
 
-function check_sex_m() {
-    /* $('#checkh').attr('disabled', false) */
-
-    /* 
-        $('#checkh').attr('disabled', true)
-        alert('Hola'); */
-
+// Chequea los checkbox y el que esté seleccionado deshabilita el otro a modo de validación.
+function check_sex_chck() {
     if ($('#checkm').is(':checked')) {
         $('#checkh').attr('disabled', true)
     } else {
         $('#checkh').attr('disabled', false)
     }
-}
-
-function check_sex_h() {
 
     if ($('#checkh').is(':checked')) {
         $('#checkm').attr('disabled', true)
     } else {
         $('#checkm').attr('disabled', false)
     }
-
 }
 
-
+// Togglea una clase a un determinado elemento
 function rotate_container() {
     $('.container').toggleClass('container_rotate')
 }
 
+//  Obtiene el value escodigo por el usuario en ciertos inputs y los asigna a las variables globales
 function getvaluerange() {
     console.log('Hola')
     age_min = $('#filtro_edad_range_min').val()
@@ -161,26 +118,23 @@ function getvaluerange() {
     console.log(age_max_value)
 }
 
+// Muestra una sección específica al cliquear en cierto elemento
 $('.filtro__title__rspnsv').click(function () {
     $('.color_list_rspnsv').fadeIn();
-
 });
 
+// Cierra cierta sección específica al cliquear en determinado elemento
 $('.close_filters svg').click(function () {
     $('.color_list_rspnsv').fadeOut();
 });
-
-
-
-
-
 
 /* $('input[type=checkbox]').on('change', function() {
     alert("Pruebas")
 }); */
 
-function dibujar_gatos(data) {
 
+
+function dibujar_gatos(data) {
     console.log('Entré')
     let cont_cats = document.getElementById('add_cats');
 
@@ -214,132 +168,30 @@ function dibujar_gatos(data) {
         </div>
     </div>`
         cont_cats.innerHTML += box_back_cat
-
     }
-
-
-
-
-    /*     x.forEach(gato => {
-            console.log(gato);
-            console.log(gato.nombre)
-            console.log(gato.sexo);
-            document.getElementsByClassName('sex_cat').innerText=gato.sexo;
-        }); */
-
 }
 
-function adopt_me(){
-    
+// Abre el form de adopción al cliquear en el bitón de adopción.
+function adopt_me() {
     console.log('click');
     $(".overlay_form").addClass("active_form_overlay");
     console.log('click_overlay');
     $(".popup_form").addClass("active_form");
-    
-
 }
 
-$(".btn-cerrar-popup").click( e=> {
+// Cierra el form de adopció al cliquear en la X del form
+$(".btn-cerrar-popup").click(e => {
     e.preventDefault();
     console.log('click');
-	$(".overlay_form").removeClass("active_form_overlay");
+    $(".overlay_form").removeClass("active_form_overlay");
     console.log('click_overlay');
-	$(".popup_form").removeClass("active_form");
-
+    $(".popup_form").removeClass("active_form");
 });
 
-
-/* function dibujar_gatos_home(data) {
-    console.log('Entré a dibujar en el home')
-    let cont_cats = document.getElementById('slider_cats_cont');
-
-    for (let i = 0; i < data.length; i++){
-        let box_slider_cat = `<div class="cont_box_slider_cat_display adopcion__display">
-        <div class="box_slider_cat_display card">
-
-            <div class="slider_cat_text card__text">
-
-                            <div class="card-body">
-                                <h5 class="nombre-card-body" id="nombre"></h5>
-                                <ul>
-                                    <li>
-                                        <p class="sub-nombre">Edad:</p>
-                                        <p class="sub-resultado" id="edad"></p>
-                                    </li>
-                                    <li>
-                                        <p class="sub-nombre">Sexo:</p>
-                                        <p class="sub-resultado" id="sexo"></p>
-                                    </li>
-                                    <li>
-                                        <p class="sub-nombre">Color: </p>
-                                        <p class="sub-resultado" id="color"></p>
-                                    </li>
-                                    <li>
-                                        <p class="sub-nombre">Esterilización:</p>
-                                        <p class="sub-resultado" id="este"></p>
-                                    </li>
-                                    <li>
-                                        <p class="sub-nombre">Vacunas:</p>
-                                        <p class="sub-resultado" id="vacu"></p>
-                                    </li>
-                                    <li>
-                                        <p class="sub-nombre">Discapacidad:</p>
-                                        <p class="sub-resultado" id="dis"></p>
-                                    </li>
-                                    <li>
-                                        <p class="sub-nombre">Salud:</p>
-                                        <p class="sub-resultado" id="salu"></p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                
-                <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
-            </div>
-            <div class="slider_cat_display card__cats">
-                <img src="${data[i].foto}" class="card__img" alt="gatito en adopción de color ${data[i].color}" >
-            </div>
-        </div>
-    </div>
-        `
-        cont_cats.innerHTML += box_slider_cat
-
-    }
-
-} */
-
-
-
-/* function cats_home(data){
-
-    for (let index = 0; index < 4; index++) {
-
-        y.push(data[index])
-    }
-    console.log(y[0].nombre)
-
-    for (let index = 0; index <= y.length; index++) {
-        console.log('Katty' + [index])
-    }
-    console.log(y[0].nombre)
-    
-
-} */
-
+// Cuando se carga el DOM completamente ejecuta la funcón principal de llamada a los gatos.
 window.onload = llamar_gatos();
-/* dibujar_gatos(x); */
 
-
-
-
-/* window.onload = test() */
-
-function test(){
-    console.log('HOLA ya cargué')
-    buildTable2()
-}
-
-
+// --------- Éste código está bueno pero no lo supimos implementar -------------------- //
 
 /* let items = [];
 let x;

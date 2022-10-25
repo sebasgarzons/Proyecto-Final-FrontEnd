@@ -45,7 +45,7 @@ nav>div {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 body {
@@ -76,41 +76,36 @@ p {
   align-items: center;
   /* display: flex; */
   justify-content: space-evenly;
-  grid-template-rows: initial; 
-
-
-  
+  grid-template-rows: initial;
   background: rgba(253, 210, 191, 0.25);
   box-shadow: rgb(0 0 0 / 5%) 0px 4px 4px;
   backdrop-filter: blur(5px);
 }
 
-.car_carrito{
+.car_carrito {
   position: fixed;
   right: 2vh;
   top: 14vh;
   cursor: pointer;
 }
 
-.car_carrito{
+.car_carrito {
   color: var(--dark-brown);
   font-weight: 800;
   z-index: 1;
 }
 
-.car_carrito svg{
+.car_carrito svg {
   filter: invert(9%) sepia(67%) saturate(1570%) hue-rotate(6deg) brightness(100%) contrast(103%);
   transition: all 0.5s ease-in-out;
-  animation:  car_multclr 2s ease-in-out infinite;
+  animation: car_multclr 2s ease-in-out infinite;
   margin: auto;
   display: block;
 }
 
-.car_carrito:hover svg{
+.car_carrito:hover svg {
   filter: invert(74%) sepia(22%) saturate(537%) hue-rotate(98deg) brightness(89%) contrast(86%);
 }
-
-
 
 .logo img:hover {
   filter: hue-rotate(90deg);
@@ -193,13 +188,13 @@ p {
   cursor: pointer;
 }
 
-#items .btn:hover{
+#items .btn:hover {
   outline-color: rgba(54, 21, 0, 0);
-    outline-offset: 80px;
-    text-shadow: 1px 1px 6px var(--light-pink);
-  background-color:   var(--dark-brown);
-  color:var(--light-pink);
-  
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px var(--light-pink);
+  background-color: var(--dark-brown);
+  color: var(--light-pink);
+
 }
 
 
@@ -213,12 +208,12 @@ p {
   cursor: pointer;
 }
 
-#footer .btn:hover{
+#footer .btn:hover {
   outline-color: rgba(54, 21, 0, 0);
-    outline-offset: 80px;
-    text-shadow: 1px 1px 6px var(--light-pink);
-  background-color:   var(--dark-brown);
-  color:var(--light-pink);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px var(--light-pink);
+  background-color: var(--dark-brown);
+  color: var(--light-pink);
 }
 
 .card-body {
@@ -370,15 +365,11 @@ p {
 }
 
 .parrafo__footer {
-
-
   color: var(--light);
-
   background-color: #000;
   padding: 12px 0px;
   text-align: center;
 }
-
 
 .container-box-footer {
   display: grid;
@@ -419,6 +410,9 @@ p {
   /* background-color: #ffffff; */
   background: rgba(253, 210, 191, 0.6);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  -o-backdrop-filter: blur(5px);
   /* width: 70%; */
   max-width: 800px;
   right: -100%;
@@ -434,22 +428,22 @@ p {
   min-height: 85vh;
 }
 
-.cont_car .cont_titulo{
+.cont_car .cont_titulo {
   /* top:10px; */
   margin-top: 2rem;
-  color:var(--dark-brown);
+  color: var(--dark-brown);
   font-size: 2rem;
 }
 
-.cont_car_shw{
+.cont_car_shw {
   right: 0% !important;
 }
 
-.cont_car>div{
+.cont_car>div {
   position: relative;
 }
 
-.close_car{
+.close_car {
   position: absolute;
   right: -10px;
   top: -32px;
@@ -459,11 +453,11 @@ p {
   color: var(--dark-brown);
   transition: .4s ease all;
   cursor: pointer;
-   
+
 }
 
-.close_car:hover{
-  color:  rgba(54, 21, 0, 0.6);
+.close_car:hover {
+  color: rgba(54, 21, 0, 0.6);
 }
 
 #cards {
@@ -493,7 +487,7 @@ p {
   position: fixed;
   right: 0px;
   top: 0px;
-  background:var(--dark-brown);
+  background: var(--dark-brown);
   color: var(--light-pink);
   display: none;
   padding: 2rem 3rem;
@@ -507,12 +501,13 @@ p {
   margin-top: 4vh;
 }
 
-.cont_car table thead tr, .cont_car table tbody tr{
+.cont_car table thead tr,
+.cont_car table tbody tr {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.cont_car table thead tr{
+.cont_car table thead tr {
   font-style: italic;
   margin-bottom: 2rem;
   font-size: 1.6rem;
@@ -525,7 +520,7 @@ p {
   padding: 12px 0;
 }
 
-.cont_car table tfoot tr{
+.cont_car table tfoot tr {
   position: relative;
   top: 14px;
   display: flex;
@@ -533,37 +528,39 @@ p {
   justify-content: space-around;
 }
 
-.cont_car table tfoot tr th{
+.cont_car table tfoot tr th {
   font-size: 1.2rem;
 }
 
-.cont_car table tfoot tr td:not(.cont_car table tfoot tr td:nth-of-type(2)){
+.cont_car table tfoot tr td:not(.cont_car table tfoot tr td:nth-of-type(2)) {
   font-weight: 800;
 }
 
-#footer .pay_button{
-  background-color:var(--light-pink);
+#footer .pay_button {
+  background-color: var(--light-pink);
   color: var(--dark-brown);
   border: 2px solid var(--dark-brown);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
-#footer .pay_button:hover{
+#footer .pay_button:hover {
   outline-color: rgba(54, 21, 0, 0);
-    outline-offset: 80px;
-    text-shadow: 1px 1px 6px var(--light-pink);
-  background-color:   var(--dark-brown);
-  color:var(--light-pink);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px var(--light-pink);
+  background-color: var(--dark-brown);
+  color: var(--light-pink);
   border: 2px solid var(--light-pink);
 }
 
 
 
-@keyframes car_multclr{
-  from{
+@keyframes car_multclr {
+  from {
     filter: invert(9%) sepia(67%) saturate(1570%) hue-rotate(6deg) brightness(100%) contrast(103%);
-  }to{
+  }
+
+  to {
     filter: invert(74%) sepia(22%) saturate(537%) hue-rotate(98deg) brightness(89%) contrast(86%);
   }
 }
@@ -594,9 +591,9 @@ p {
   }
 
   .car_carrito {
-    z-index: 10;  
+    z-index: 10;
     margin-top: 3rem;
-    text-shadow: #e0e0e0 1px 1px 0, -1px -4px 5px rgba(255,237,237,0);
+    text-shadow: #e0e0e0 1px 1px 0, -1px -4px 5px rgba(255, 237, 237, 0);
   }
 
   .container-box-footer {
@@ -613,19 +610,19 @@ p {
 @media only screen and (max-width: 525px) {
 
   .contenedor-header nav {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  /* display: flex; */
-  justify-content: space-evenly;
-  grid-template-rows: initial; 
-
-
-  
-  background: rgba(253, 210, 191, 0.25);
-  box-shadow: rgb(0 0 0 / 5%) 0px 4px 4px;
-  backdrop-filter: blur(5px);
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* display: flex; */
+    justify-content: space-evenly;
+    grid-template-rows: initial;
+    background: rgba(253, 210, 191, 0.25);
+    box-shadow: rgb(0 0 0 / 5%) 0px 4px 4px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+  }
 
   .header__title_rspnsv {
     font-family: var(--titulos);
@@ -638,20 +635,18 @@ p {
     line-height: 64px;
   }
 
-  #cards{
+  #cards {
     grid-template-columns: 1fr;
   }
 
-  .cont_car{
+  .cont_car {
     right: -189%;
   }
 
-.car_carrito {
+  .car_carrito {
     z-index: 10;
     margin-top: -3rem;
     margin-right: -1rem;
     text-shadow: #e0e0e0 1px 1px 0, -1px -4px 5px rgb(255 237 237 / 0%);
-}
-
-
+  }
 }

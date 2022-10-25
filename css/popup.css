@@ -1,6 +1,6 @@
 /* Popup */
 
-.overlay{
+.overlay {
     background: rgba(54, 21, 0, 0.2);
     position: fixed;
     top: 0;
@@ -14,11 +14,11 @@
     z-index: 999;
 }
 
-.active_form_overlay{
+.active_form_overlay {
     visibility: visible;
 }
 
-.popup{
+.popup {
     background-color: var(--light);
     box-shadow: 0px 0px 5px 0px rgba(54, 21, 0, 0.2);
     border-radius: 3px;
@@ -33,7 +33,7 @@
     font-family: var(--parrafos);
 }
 
-.btn-cerrar-popup{
+.btn-cerrar-popup {
     /* font-size: 16px; */
     /* line-height: 16px; */
     display: block;
@@ -43,28 +43,28 @@
     cursor: pointer;
 }
 
-.btn-cerrar-popup:hover{
-    color:  rgba(54, 21, 0, 0.6);
+.btn-cerrar-popup:hover {
+    color: rgba(54, 21, 0, 0.6);
 }
 
-.popup img{
+.popup img {
     margin-bottom: 10px;
     opacity: 0;
 }
 
-.popup h3{
+.popup h3 {
     font-size: 36px;
-    
+
     opacity: 0;
     margin-bottom: 20px;
 }
 
-.contenedor-inputs{
+.contenedor-inputs {
     opacity: 0;
 }
 
 
-.input-adopt  {
+.input-adopt {
     width: 100%;
     margin-bottom: 20px;
     height: 52px;
@@ -75,37 +75,37 @@
     color: var(--dark-brown);
     font-family: var(--parrafos);
     text-transform: none;
-    
-    
+
+
 }
 
-.input-adopt:focus{
+.input-adopt:focus {
     outline: unset;
     border: 2px solid var(--dark-brown);
-    
+
 }
 
-.popup form::placeholder{
+.popup form::placeholder {
     color: var(--dark-brown);
     opacity: 0.6;
     text-transform: none;
 }
 
-.mensajes{
+.mensajes {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.advertencias{
+.advertencias {
     text-align: left;
     color: red;
     padding-top: 20px;
-    
+
     font-size: 19px;
 }
 
-.enviar{
+.enviar {
     /* width: 200px; */
     text-align: left;
     color: var(--dark-brown);
@@ -117,53 +117,55 @@
 
 /* Animaciones */
 
-.active_form{
+.active_form {
     opacity: 1;
     transform: scale(1);
 }
 
-.active_form img{
+.active_form img {
     animation: entradaImagen .8s ease .5s forwards;
 }
 
-.active_form h3{
+.active_form h3 {
     animation: entradaTitulo .8s ease .5s forwards;
 }
 
-.active_form .contenedor-inputs{
+.active_form .contenedor-inputs {
     animation: entradaInputs 1s ease 1s forwards;
 }
 
-@keyframes entradaImagen{
-    from{
+@keyframes entradaImagen {
+    from {
         transform: translateY(-25px);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-@keyframes entradaTitulo{
-    from{
+@keyframes entradaTitulo {
+    from {
         transform: translateY(25px);
         opacity: 0;
     }
-    to{
+
+    to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-@keyframes entradaInputs{
-    from{
-        
+@keyframes entradaInputs {
+    from {
+
         opacity: 0;
     }
-    to{
-        
+
+    to {
+
         opacity: 1;
     }
 }
-

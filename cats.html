@@ -14,18 +14,18 @@
     <link rel="icon" href="img/logos/gato-verde.ico">
     <link rel="apple-touch-icon" href="img/logos/gato-verde.ico">
 
-
     <link href="css/style.css" rel="stylesheet">
     <link href="css/popup.css" rel="stylesheet">
     <link href="css/cats.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script defer src="js/card_landing.js"></script>
     <script defer src="js/requests.js"></script>
-    <title>Página de adopción</title>
 
+    <title>Página de adopción</title>
 </head>
 
 
@@ -48,29 +48,25 @@
 </header>
 
 <body>
-    <section class="top grid">
+    <!-- Cats -->
+    <aside class="top grid">
         <h2>Ven y Adopta un Compañero de por vida!</h2>
-    </section>
+    </aside>
 
-
-    <!-- <div id="">
-    </div> -->
-
-
+    <!-- Cats Filter -->
     <section class="cont_cats grid">
-
-
-
         <div class="container__filtro">
             <h3 class="filtro__title">Filtrar por:</h3>
             <h3 class="filtro__title filtro__title__rspnsv">Filtrar por: (Click Aquí)</h3>
             <div class="color_list color_list_rspnsv">
-                <span class="close_filters"><svg class="carrito__logo" xmlns="http://www.w3.org/2000/svg"
-                    width="44" height="34" viewBox="0 0 24 24">
-                    <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
-                </svg></span>
+                <span class="close_filters">
+                    <svg class="carrito__logo" xmlns="http://www.w3.org/2000/svg" width="44" height="34"
+                        viewBox="0 0 24 24">
+                        <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z">
+                        </path>
+                    </svg>
+                </span>
                 <ul class="list">
-
                     <li class="list__item">
                         <div>
                             <label class="list__label" for="color">Color:</label>
@@ -91,12 +87,12 @@
                             <div class="div__check">
                                 <div class="check__list">
                                     <input class="checksex checksexm" type="checkbox" title="macho" id="checkm"
-                                        name="sex_m" onchange="check_sex_m()">
+                                        name="sex_m" onchange="check_sex_chck()">
                                     <label for="checkm" class="checkp">Macho</label>
                                 </div>
                                 <div class="check__list">
                                     <input class="checksex" type="checkbox" title="hembra" id="checkh" name="sex_h"
-                                        onchange="check_sex_h()">
+                                        onchange="check_sex_chck()">
                                     <label for="checkh" class="checkp">Hembra</label>
                                 </div>
                             </div>
@@ -121,541 +117,89 @@
                     </li>
                 </ul>
             </div>
-
-
             <!-- <button class="button filtro__button" id="filter_cat">Buscar</button> -->
         </div>
 
-
-
-
-
-
-        <div class="cont_cards" id="add_cats">
-            <!--             <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat3.jpg">
-                        </div>
-                    </div>
-                    <div class="back card">
-                        <div class="cont_back_card">
-                            <ul>
-                                <li>Edad: 6</li>
-                                <li>Sexo:</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="title">
-                    <p>Hola Oscuro</p>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat2.jpg">
-                        </div>
-                    </div>
-                    <div class="back card">
-                        <div class="cont_back_card">
-                            <ul>
-                                <li>Edad: 6</li>
-                                <li>Sexo: <span class="sex_cat"></span></li>
-                                <li>edad: 6</li>
-                                <li>sexo: macho</li>
-                                <li>color: blanco</li>
-                                <li>esterilizado: si</li>
-                                <li>vacunado: si</li>
-                                <li>discapacidad: ninguna</li>
-                                <li>estado: buena</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat2.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-                        <div class="cont_back_card">
-                            <ul>
-                                <li>Edad: 6</li>
-                                <li>Sexo: <span class="sex_cat"></span></li>
-                                <li>edad: 6</li>
-                                <li>sexo: macho</li>
-                                <li>color: blanco</li>
-                                <li>esterilizado: si</li>
-                                <li>vacunado: si</li>
-                                <li>discapacidad: ninguna</li>
-                                <li>estado: buena</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat3.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat5.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/modal-cat.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/c">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat2.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat2.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat2.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat2.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat2.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat2.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div>
-            <div class="box_card">
-                <div class="container">
-                    <div class="front card">
-                        <div>
-                            <img src="img/cat2.jpg">
-                        </div>
-        
-                    </div>
-                    <div class="back card">
-            
-                    </div>
-                    <div class="title">
-                        <p>Hola</p>
-                    </div>
-                </div>
-            </div> -->
+        <!-- Cats Show-->
+        <div class="cont_cards" id="add_cats"></div>
+    </section>
+    <section class="grid cont_cats_adopted">
+        <h2>Los que ya encontraron Hogar:</h2>
+        <div class="box_cats_adopted">
+            <div id="cats_adopted"></div>
         </div>
     </section>
-
-    <div class="overlay overlay_form" id="">
-        <div class="popup popup_form    popup" id="">
-            <div class="btn-cerrar-popup   popup__cerrar"><i class="fas fa-times   popup__icon"></i></div>
+    <div class="overlay overlay_form">
+        <div class="popup popup_form">
+            <div class="btn-cerrar-popup">
+                <i class="fas fa-times"></i>
+            </div>
 
             <img src="img/logos/logo-dark.png" alt="" width="80px" class="popup__logo">
             <h3 class="popup__title">Formulario de Adopción</h3>
 
             <form class="form-adopcion" action="" id="form_adopt" novalidate>
-
-
-                <div class="contenedor-inputs  form-adopcion__container">
-
-                    <input class="input-adopt adopt__input" type="text" name="" id="nom_adopt" placeholder="Nombre">
-                    <input class="input-adopt adopt__input" type="email" name="" id="eml_adopt"
+                <div class="contenedor-inputs">
+                    <input class="input-adopt" type="text" name="" id="nom_adopt" placeholder="Nombre">
+                    <input class="input-adopt" type="email" name="" id="eml_adopt"
                         placeholder="nombre@correo.com">
-                    <input class="input-adopt adopt__input" type="tel" name="" id="tel_adopt"
-                        placeholder="0123456789">
+                    <input class="input-adopt" type="tel" name="" id="tel_adopt" placeholder="0123456789">
                 </div>
 
-                <button type="submit" class="btn-submit button button-adopt  form-adopcion__button">Enviar</button>
+                <button type="submit" class="btn-submit button">Enviar</button>
 
-                <div class="mensajes form-adopcion__msg">
-                    <p class="advertencias form-adopcion__p" id="advertencias"></p>
-                    <p class="enviar form-adopcion__enviar" id="enviar"></p>
+                <div class="mensajes">
+                    <p class="advertencias" id="advertencias"></p>
+                    <p class="enviar" id="enviar"></p>
                 </div>
             </form>
         </div>
     </div>
-    <section class="grid cont_cats_adopted">
-        <h2>Los que ya encontraron Hogar:</h2>
-        <div class="box_cats_adopted">
-            <div id="cats_adopted">
-                
-            </div>
-        </div>
-    </section>
 </body>
 <footer>
-    <div class="container-footer         footer">
-
-        <div class="container-box-footer         footer__container">
-            <div class="logo__footer   footer__logo">
-                <a href="#header"><img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal"
-                        width="128px"></a>
+    <div class="container-footer">
+        <div class="container-box-footer">
+            <div class="logo__footer">
+                <a href="#header">
+                    <img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal" width="128px">
+                </a>
             </div>
-
-            <div class="subtitulo__footer      footer__title">
+            <div class="subtitulo__footer">
                 <h3>Aromas y Maullidos</h3>
             </div>
-
-            <div class="iconos__footer    footer-social">
-
-
-                <div class="cont_iconos_footer   footer-social__container">
-
-
-                    <div class="icono_ftr instagram    footer__ig">
-                        <a href="#" class="footer__link" title="Ir a nuestro perfil de instagram"><i
-                                class="fab fa-instagram"></i></a>
+            <div class="iconos__footer">
+                <div class="cont_iconos_footer">
+                    <div class="icono_ftr instagram">
+                        <a href="#" class="footer__link" title="Ir a nuestro perfil de instagram">
+                            <i class="fab fa-instagram"></i></a>
                     </div>
-
-                    <div class="icono_ftr whatsaap   footer__whatsapp">
-                        <a href="#" class="footer__link" title="Escribenos por whatsapp"><i
-                                class="fab fa-whatsapp"></i></a>
+                    <div class="icono_ftr whatsaap">
+                        <a href="#" class="footer__link" title="Escribenos por whatsapp">
+                            <i class="fab fa-whatsapp"></i></a>
                     </div>
-
-                    <div class="icono_ftr twitter    footer__twitter">
-                        <a href="#" class="footer__link" title="Ir a nuestro Twitter"><i class="fab fa-twitter"></i></a>
+                    <div class="icono_ftr twitter">
+                        <a href="#" class="footer__link" title="Ir a nuestro Twitter">
+                            <i class="fab fa-twitter"></i></a>
                     </div>
-
-                    <div class="icono_ftr facebook     footer__facebook">
-                        <a href="#" class="footer__link" title="Ir a nuestra página de Facebook"><i
-                                class="fab fa-facebook"></i></a>
+                    <div class="icono_ftr facebook">
+                        <a href="#" class="footer__link" title="Ir a nuestra página de Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="parrafo__footer    footer-text">
-
-        <p class="footer__p   footer-text__p">Copyright &copy; 2022 Autores:
-            <a href="https://github.com/sebasgarzons" class="autores   footer-text__autores"
+    <div class="parrafo__footer">
+        <p class="footer__p">Copyright &copy; 2022 Autores:
+            <a href="https://github.com/sebasgarzons" class="autores  footer-text__autores"
                 title="Ir a github de Sebastián">Sebastian</a> -
-            <a href="https://github.com/Janselin" class="autores   footer-text__autores"
+            <a href="https://github.com/Janselin" class="autores  footer-text__autores"
                 title="Ir a github de Mary">Mary</a> -
-            <a href="https://github.com/kaymikatty" class="autores   footer-text__autores"
+            <a href="https://github.com/kaymikatty" class="autores  footer-text__autores"
                 title="Ir a github de Katherine">Katherine</a>.
-            Todos los derechos reservados.</p>
+            Todos los derechos reservados.
+        </p>
     </div>
 </footer>
 

@@ -1,5 +1,4 @@
 /*Para crear las trajetas */
-
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
@@ -18,11 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-function pay_car(){
+// Alerta de compra éxitosa
+function pay_car() {
     alert('Compra Éxitosa');
     location.assign('index.html');
 }
 
+// Escuchar los clicks para ejecutar determinadas acciones
 cards.addEventListener('click', e => {
     addCArrito(e)
 })
@@ -31,11 +32,13 @@ items.addEventListener('click', e => {
     btnAction(e)
 })
 
+// Conexión fetch para traer a través del DOM el contenido de un elemento JSON,
+// dibujar cada uno de los elementos del array resultante.
 const fetchData = async () => {
     try {
         const res = await fetch('api.json')
         const data = await res.json()
-        /*console.log(data);*/
+        console.log(data);
         pintarCards(data)
     } catch (error) {
         console.log(error)
@@ -43,7 +46,6 @@ const fetchData = async () => {
 }
 
 /*Para mostrar los elementos */
-
 const pintarCards = data => {
     data.forEach(producto => {
         templateCard.querySelector('h5').textContent = producto.title
@@ -53,15 +55,11 @@ const pintarCards = data => {
 
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
-
     })
-
     cards.appendChild(fragment)
-
 }
 
 /*Para que el boton haga la función de seleccionar los productos  */
-
 const addCArrito = e => {
     //console.log(e.target)
     //console.log(e.target.classList.contains('btn-dark'))
@@ -75,7 +73,6 @@ const addCArrito = e => {
 }
 
 //Para capturar los elementos
-
 const setCarrito = objeto => {
     //console.log(objeto)
     const producto = {
@@ -93,14 +90,10 @@ const setCarrito = objeto => {
         ...producto
     }
     pintarCarrito()
-
-    //console.log(carrito)
 }
 
-//Pintar el carrito en el DOM
-
+//Pintar el carrito en el DOM. Almacena cada elemento para pasarlo al template y setea la info en el LocalStorage.
 const pintarCarrito = () => {
-    //console.log(carrito)
     items.innerHTML = ''
     Object.values(carrito).forEach(producto => {
         templateCarrito.querySelector('th').textContent = producto.id
@@ -122,16 +115,14 @@ const pintarCarrito = () => {
 }
 
 //Pintar el footer y las operaciones de suma y multiplicación
-
 const pintarFooter = () => {
     footer.innerHTML = ''
     if (Object.keys(carrito).length === 0) {
         footer.innerHTML = '<th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>'
-
         return
     }
 
-const nCantidad = Object.values(carrito).reduce((acc, {
+    const nCantidad = Object.values(carrito).reduce((acc, {
         cantidad
     }) => acc + cantidad, 0)
     const nPrecio = Object.values(carrito).reduce((acc, {
@@ -148,6 +139,7 @@ const nCantidad = Object.values(carrito).reduce((acc, {
     footer.appendChild(fragment)
 
     const btnVaciar = document.getElementById('vaciar-carrito')
+    // Vaciar carrito
     btnVaciar.addEventListener('click', () => {
         carrito = {}
         pintarCarrito()
@@ -155,7 +147,6 @@ const nCantidad = Object.values(carrito).reduce((acc, {
 }
 
 //Funcionalidad de los botones aumentar y disminuir
-
 const btnAction = e => {
     //console.log(e.target)
     //Acción de aumentar
@@ -169,7 +160,6 @@ const btnAction = e => {
         carrito[e.target.dataset.id] = {
             ...producto
         }
-
         pintarCarrito()
     }
 
@@ -179,21 +169,20 @@ const btnAction = e => {
         if (producto.cantidad === 0) {
             delete carrito[e.target.dataset.id]
         }
-
         pintarCarrito()
     }
     e.stopPropagation()
 }
 
-function show_add_car(){
-
+// Mostrar si un producto ha sido agregado al carrito al darle al botón de "Comprar"
+function show_add_car() {
     $(".cont_alert_car").fadeIn();
-    setTimeout(function (){
+    setTimeout(function () {
         $('.cont_alert_car').fadeOut();
     }, 1500);
-
 }
 
+// Icono de carrito y X del carrito muestran u ocultan el carrito
 $(".car_carrito, .close_car").click(function () {
     $(".cont_car").toggleClass("cont_car_shw");
 });

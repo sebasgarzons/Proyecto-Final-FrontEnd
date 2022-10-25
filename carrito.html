@@ -11,9 +11,9 @@
         content="cafetería,gatos,adopción de gatitos,café,postres,tortas,gatitos,adopción responsable">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Katty, Sebas & Mary">
+
     <link rel="icon" href="img/logos/gato-verde.ico">
     <link rel="apple-touch-icon" href="img/logos/gato-verde.ico">
-
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/carrito.css" rel="stylesheet">
@@ -23,49 +23,50 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script defer src="js/carrito.js"></script>
-    <title>Tienda</title>
 
+    <title>Tienda</title>
 </head>
 
-
-<body class="body">
-<header class="contenedor-header   header" id="header">
+<header class="contenedor-header" id="header">
     <nav>
-        <div class="logo      header__logo">
-            <a href="index.html" class="header__link"><img src="img/logos/logo-dark.png" alt="" width="100px"
-                    class="header__logo"></a>
+        <div class="logo">
+            <a href="index.html" class="header__link" title="go_index">
+                <img src="img/logos/logo-dark.png" alt="" width="100px" class="header__logo">
+            </a>
         </div>
-
 
         <h1 class="header__title">Aromas y Maullidos</h1>
 
-
         <div class="go_home">
-            <a href="index.html" class="carrito__link"><svg class="carrito__logo" xmlns="http://www.w3.org/2000/svg"
-                    width="44" height="34" viewBox="0 0 24 24">
+            <a href="index.html" class="carrito__link" title="go_store">
+                <svg class="carrito__logo" xmlns="http://www.w3.org/2000/svg" width="44" height="34"
+                    viewBox="0 0 24 24">
                     <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
-                </svg></a>
+                </svg>
+            </a>
         </div>
-
     </nav>
 </header>
 
-<main class="carrito_main">
-    
+<body>
+    <main class="carrito_main">
         <figure class="car_carrito">
-        <span href="carrito.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px " viewBox="0 0 24 24">
-                <circle cx="10.5" cy="19.5" r="1.5"></circle>
-                <circle cx="17.5" cy="19.5" r="1.5"></circle>
-                <path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path>
-                <path
-                    d="M10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14l-2.31 6h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17z">
-                </path>
-            </svg>Ver Pedido</span>
+            <span href="carrito.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44px" height="34px " viewBox="0 0 24 24">
+                    <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                    <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                    <path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path>
+                    <path
+                        d="M10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14l-2.31 6h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17z">
+                    </path>
+                </svg>
+                Ver Pedido
+            </span>
         </figure>
+
+        <!-- Carrito Products -->
         <div class="cont_car_html">
             <h2 class="carrito-texts">Nuestros Productos</h2>
-    
             <div class="cont_car">
                 <div>
                     <h3 class="cont_titulo">Tú Pedido</h3>
@@ -89,12 +90,11 @@
                     </table>
                 </div>
             </div>
-    
-            <div class="row" id="cards">
-    
-            </div>
+
+            <div class="row" id="cards"></div>
         </div>
-    
+
+        <!-- Templates -->
         <template id="template-footer">
             <th scope="row" colspan="2">Total productos</th>
             <td>10</td>
@@ -108,7 +108,6 @@
             </td>
             <td class="font-weight-bold">$ <span>5000</span></td>
         </template>
-    
         <template id="template-carrito">
             <tr>
                 <th scope="row">id</th>
@@ -125,7 +124,6 @@
                 <td>$ <span>500</span></td>
             </tr>
         </template>
-    
         <template id="template-card">
             <div class="">
                 <div class="card">
@@ -140,54 +138,48 @@
                 </div>
             </div>
         </template>
-        </div>
-    
+
         <div class="cont_alert_car">
             <h4>¡Producto agregado éxitosamente!</h4>
         </div>
-</main>
+    </main>
+    <!-- BOTON WHATSAPP -->
 
-
-  <!-- BOTON WHATSAPP -->
-
-  <a href="https://api.whatsapp.com/send?phone=34111223344" class="whatsapp__icon"
-  alt="Comunicate con nosotros vía whatsapp" target="_blank" title="Comunicate con nosotros vía whatsapp"></a>
+    <a href="https://api.whatsapp.com/send?phone=34111223344" class="whatsapp__icon"
+        alt="Comunicate con nosotros vía whatsapp" target="_blank" title="Comunicate con nosotros vía whatsapp"
+        rel="noopener"></a>
+</body>
 
 <!-- FOOTER -->
 <footer>
-    <div class="container-footer         footer">
-
-        <div class="container-box-footer         footer__container">
-            <div class="logo__footer   footer__logo">
-                <a href="#header"><img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal"
-                        width="128px"></a>
+    <div class="container-footer">
+        <div class="container-box-footer">
+            <div class="logo__footer">
+                <a href="#header">
+                    <img src="img/logos/light_pink.png" class="footer__img" alt="Ir a página principal" width="128px">
+                </a>
             </div>
-
-            <div class="subtitulo__footer      footer__title">
+            <div class="subtitulo__footer">
                 <h3>Aromas y Maullidos</h3>
             </div>
-
-            <div class="iconos__footer    footer-social">
-
-
-                <div class="cont_iconos_footer   footer-social__container">
-
-
-                    <div class="icono_ftr instagram    footer__ig">
-                        <a href="#" class="footer__link" title="Ir a nuestro perfil de instagram"><i
-                                class="fab fa-instagram"></i></a>
+            <div class="iconos__footer">
+                <div class="cont_iconos_footer">
+                    <div class="icono_ftr instagram">
+                        <a href="#" class="footer__link" title="Ir a nuestro perfil de instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
-
-                    <div class="icono_ftr whatsaap   footer__whatsapp">
-                        <a href="#" class="footer__link" title="Escribenos por whatsapp"><i
-                                class="fab fa-whatsapp"></i></a>
+                    <div class="icono_ftr whatsaap">
+                        <a href="#" class="footer__link" title="Escribenos por whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
-
-                    <div class="icono_ftr twitter    footer__twitter">
-                        <a href="#" class="footer__link" title="Ir a nuestro Twitter"><i class="fab fa-twitter"></i></a>
+                    <div class="icono_ftr twitter">
+                        <a href="#" class="footer__link" title="Ir a nuestro Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </div>
-
-                    <div class="icono_ftr facebook     footer__facebook">
+                    <div class="icono_ftr facebook">
                         <a href="#" class="footer__link" title="Ir a nuestra página de Facebook"><i
                                 class="fab fa-facebook"></i></a>
                     </div>
@@ -195,21 +187,13 @@
             </div>
         </div>
     </div>
-    <div class="parrafo__footer    footer-text">
-
-        <p class="footer__p   footer-text__p">Copyright &copy; 2022 Autores:
-            <a href="https://github.com/sebasgarzons" class="autores   footer-text__autores"
-                title="Ir a github de Sebastian">Sebastian</a> -
-            <a href="https://github.com/Janselin" class="autores   footer-text__autores"
-                title="Ir a github de Mary">Mary</a> -
-            <a href="https://github.com/kaymikatty" class="autores   footer-text__autores"
-                title="Ir a github de Katherine">Katherine</a>.
+    <div class="parrafo__footer">
+        <p class="footer__p">Copyright &copy; 2022 Autores:
+            <a href="https://github.com/sebasgarzons" class="autores" title="Ir a github de Sebastian">Sebastian</a> -
+            <a href="https://github.com/Janselin" class="autores" title="Ir a github de Mary">Mary</a> -
+            <a href="https://github.com/kaymikatty" class="autores" title="Ir a github de Katherine">Katherine</a>.
             Todos los derechos reservados.</p>
     </div>
 </footer>
-
-
-
-</body>
 
 </html>

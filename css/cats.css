@@ -348,16 +348,6 @@ p {
     margin-top: 16px;
 }
 
-@keyframes spin {
-    from {
-        transform: rotateY(0deg)
-    }
-
-    to {
-        transform: rotateY(360deg)
-    }
-}
-
 .top {
     text-align: center;
     /* padding: 0.8em 0; */
@@ -595,17 +585,6 @@ transform: rotateY(180deg);
     box-shadow: 0 0 20px var(--light);
 }
 
-.parrafo__footer {
-
-
-    color: var(--light);
-
-    background-color: #000;
-    padding: 12px 0px;
-    text-align: center;
-}
-
-
 .container-box-footer {
     display: grid;
     margin: auto;
@@ -622,10 +601,6 @@ transform: rotateY(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer__p {
-    text-align: center;
 }
 
 .footer-text__autores {
@@ -676,12 +651,21 @@ transform: rotateY(180deg);
     height: 100%;
 }
 
+@keyframes spin {
+    from {
+        transform: rotateY(0deg)
+    }
+
+    to {
+        transform: rotateY(360deg)
+    }
+}
+
 @keyframes moveSlideshow {
     100% {
         transform: translateX(-66.6666%);
     }
 }
-
 
 /*PANTALLA 1280px*/
 
@@ -796,5 +780,4 @@ transform: rotateY(180deg);
     .list {
         display: block;
     }
-
 }
