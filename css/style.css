@@ -382,29 +382,6 @@ header h1 {
     width: 100%;
 }
 
-@keyframes cat_run {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: -1384px 0;
-    }
-}
-
-@keyframes move {
-    0% {
-        transform: translateX(-120%);
-    }
-
-    100% {
-        transform: translateX(860%);
-
-    }
-}
-
-
-
 .intro {
     position: relative;
     padding: 4vh 0px;
@@ -898,20 +875,6 @@ header h1 {
     animation: 1s ease 0s infinite normal none running animloader;
 }
 
-@keyframes animloader {
-    0% {
-        box-shadow: rgba(255, 255, 255, 0) 2px 0px, rgba(255, 255, 255, 0.3) 12px 0px, rgba(255, 255, 255, 0) 20px 0px;
-    }
-
-    50% {
-        box-shadow: rgba(255, 255, 255, 0.5) 2px -5px, rgba(255, 255, 255, 0.5) 12px -3px, rgba(255, 255, 255, 0.6) 20px -2px;
-    }
-
-    100% {
-        box-shadow: rgba(255, 255, 255, 0) 2px -8px, rgba(255, 255, 255, 0) 12px -5px, rgba(255, 255, 255, 0) 20px -5px;
-    }
-}
-
 .hidden_rgth {
     opacity: 0;
     transition: all 1s ease 0s;
@@ -1050,16 +1013,6 @@ header h1 {
 
 .whatsapp:hover {
     opacity: 0.7;
-}
-
-@keyframes escribir {
-    0% {
-        width: 100%;
-    }
-
-    100% {
-        width: 0%;
-    }
 }
 
 .container-footer {
@@ -1372,6 +1325,53 @@ header h1 {
     text-transform: none;
 }
 
+@keyframes escribir {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+
+@keyframes cat_run {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1384px 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-120%);
+    }
+
+    100% {
+        transform: translateX(860%);
+
+    }
+}
+
+
+@keyframes animloader {
+    0% {
+        box-shadow: rgba(255, 255, 255, 0) 2px 0px, rgba(255, 255, 255, 0.3) 12px 0px, rgba(255, 255, 255, 0) 20px 0px;
+    }
+
+    50% {
+        box-shadow: rgba(255, 255, 255, 0.5) 2px -5px, rgba(255, 255, 255, 0.5) 12px -3px, rgba(255, 255, 255, 0.6) 20px -2px;
+    }
+
+    100% {
+        box-shadow: rgba(255, 255, 255, 0) 2px -8px, rgba(255, 255, 255, 0) 12px -5px, rgba(255, 255, 255, 0) 20px -5px;
+    }
+}
+
 /*PANTALLA 1280px*/
 @media only screen and (max-width: 1280px) {
     header h1 {
@@ -1537,7 +1537,7 @@ header h1 {
         grid-template-columns: 1fr;
     }
 
-/*     .box_slider_cats ul {
+    /*     .box_slider_cats ul {
         gap: 18px;
         flex-direction: column;
         position: relative;
@@ -1546,7 +1546,7 @@ header h1 {
     } */
 
     .box_slider_cats ul li {
-/*         list-style: none;
+        /*         list-style: none;
         transition: all 0.5s linear 0s;
         width: 102px;
         height: 100%;
@@ -1797,7 +1797,7 @@ header h1 {
     }
 
     .box_slider_cats ul {
-/*         display: table;
+        /*         display: table;
         margin: auto; */
     }
 
@@ -1881,6 +1881,4 @@ header h1 {
         align-items: center;
         flex-direction: column;
     }
-
-
 }
