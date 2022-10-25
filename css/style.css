@@ -875,6 +875,20 @@ header h1 {
     animation: 1s ease 0s infinite normal none running animloader;
 }
 
+@keyframes animloader {
+    0% {
+        box-shadow: rgba(255, 255, 255, 0) 2px 0px, rgba(255, 255, 255, 0.3) 12px 0px, rgba(255, 255, 255, 0) 20px 0px;
+    }
+
+    50% {
+        box-shadow: rgba(255, 255, 255, 0.5) 2px -5px, rgba(255, 255, 255, 0.5) 12px -3px, rgba(255, 255, 255, 0.6) 20px -2px;
+    }
+
+    100% {
+        box-shadow: rgba(255, 255, 255, 0) 2px -8px, rgba(255, 255, 255, 0) 12px -5px, rgba(255, 255, 255, 0) 20px -5px;
+    }
+}
+/* 
 .hidden_rgth {
     opacity: 0;
     transition: all 1s ease 0s;
@@ -887,7 +901,7 @@ header h1 {
     transition: all 1s ease 0s;
     filter: blur(5px);
     transform: translateX(-100%);
-}
+} */
 
 .show {
     opacity: 1;

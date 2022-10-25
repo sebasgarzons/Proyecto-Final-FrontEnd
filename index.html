@@ -91,7 +91,7 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="img/icons/reserva.png" alt="Ir a página principal">
+                        <img src="img/icons/reserva.svg" alt="Ir a página principal">
                         <span class="title nav_respnsv_title">Aromas & Maullidos</span>
                     </a>
                 </li>
@@ -115,7 +115,7 @@
                 </li>
                 <li>
                     <a id="enlace-sobre-nosotros_mbl">
-                        <img src="img/icons/contacto.png"  alt="Ir a contacto">
+                        <img src="img/icons/contacto.svg"  alt="Ir a contacto">
                         <span class="title">Contacto</span>
                     </a>
                 </li>
@@ -218,7 +218,9 @@
                 </figure>
                 <figure class="cafes__item" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="130"
                     data-aos-offset="0">
-                    <img src="./img/comidas/cafe.jpg" data-aos="zoom-in-up" alt="Café en una taza negra con arte latte"
+
+
+                    <img src="./img/comidas/cafe.webp" data-aos="zoom-in-up" alt="Café en una taza negra con arte latte"
                         class="cafes__img" loading="lazy" />
                 </figure>
                 <figure class="cafes__item cafes__item--tall" data-aos="zoom-in">
@@ -337,13 +339,219 @@
         <!-- Slider Box -->
 
         <section class="content adopcion">
-            <div class="slider_cats adopcion__container" id="slider_cats_cont"></div>
-            
-        <!-- Slider Circles -->
+
+            <div class="slider_cats adopcion__container" id="slider_cats_cont" data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"            
+            data-aos-once="true"
+            >
+
+<!-- 
+
+                <div class="cont_box_slider_cat_display adopcion__display">
+
+                    <div class="box_slider_cat_display card">
+
+                        <div class="slider_cat_text card__text">
+
+                            
+                                        <div class="card-body">
+                                            <h5 class="nombre-card-body" id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p class="sub-nombre">Edad:</p>
+                                                    <p class="sub-resultado" id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Sexo:</p>
+                                                    <p class="sub-resultado" id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Color: </p>
+                                                    <p class="sub-resultado" id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Esterilización:</p>
+                                                    <p class="sub-resultado" id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Vacunas:</p>
+                                                    <p class="sub-resultado" id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Discapacidad:</p>
+                                                    <p class="sub-resultado" id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Salud:</p>
+                                                    <p class="sub-resultado" id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            
+                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
+                        </div>
+                        <div class="slider_cat_display  card__cats">
+                            <img   src="img/cat2.jpg" class="card__img">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cont_box_slider_cat_display adopcion__display">
+                    <div class="box_slider_cat_display card">
+
+                        <div class="slider_cat_text card__text">
+                            
+                                        <div class="card-body">
+                                            <h5 class="nombre-card-body" id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p class="sub-nombre">Edad:</p>
+                                                    <p class="sub-resultado" id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Sexo:</p>
+                                                    <p class="sub-resultado" id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Color: </p>
+                                                    <p class="sub-resultado" id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Esterilización:</p>
+                                                    <p class="sub-resultado" id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Vacunas:</p>
+                                                    <p class="sub-resultado" id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Discapacidad:</p>
+                                                    <p class="sub-resultado" id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Salud:</p>
+                                                    <p class="sub-resultado" id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            
+                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
+                        </div>
+                        <div class="slider_cat_display slider_reorder_cat  card__cats">
+                            <img src="img/cat3.jpg" class="card__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont_box_slider_cat_display adopcion__display">
+                    <div class="box_slider_cat_display card">
+
+                        <div class="slider_cat_text card__text">
+                            
+                                        <div class="card-body">
+                                            <h5 class="nombre-card-body" id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p class="sub-nombre">Edad:</p>
+                                                    <p class="sub-resultado" id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Sexo:</p>
+                                                    <p class="sub-resultado" id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Color: </p>
+                                                    <p class="sub-resultado" id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Esterilización:</p>
+                                                    <p class="sub-resultado" id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Vacunas:</p>
+                                                    <p class="sub-resultado" id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Discapacidad:</p>
+                                                    <p class="sub-resultado" id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Salud:</p>
+                                                    <p class="sub-resultado" id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            
+                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
+                        </div>
+                        <div class="slider_cat_display  card__cats">
+                            <img src="img/cat5.jpg" class="card__img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont_box_slider_cat_display adopcion__display">
+                    <div class="box_slider_cat_display card">
+
+                        <div class="slider_cat_text card__text">
+                            
+                                        <div class="card-body">
+                                            <h5 class="nombre-card-body" id="nombre"></h5>
+                                            <ul>
+                                                <li>
+                                                    <p class="sub-nombre">Edad:</p>
+                                                    <p class="sub-resultado" id="edad"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Sexo:</p>
+                                                    <p class="sub-resultado" id="sexo"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Color: </p>
+                                                    <p class="sub-resultado" id="color"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Esterilización:</p>
+                                                    <p class="sub-resultado" id="este"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Vacunas:</p>
+                                                    <p class="sub-resultado" id="vacu"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Discapacidad:</p>
+                                                    <p class="sub-resultado" id="dis"></p>
+                                                </li>
+                                                <li>
+                                                    <p class="sub-nombre">Salud:</p>
+                                                    <p class="sub-resultado" id="salu"></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                            
+                            <button class="button button-adopt  card__button" id="btn_slider">Adoptame</button>
+                        </div>
+                        <div class="slider_cat_display slider_reorder_cat  card__cats">
+                            <img src="img/proxy.jpg" class="card__img">
+                        </div>
+
+                    </div>
+                </div> -->
+            </div>
+            <!-- SLIDER GATITOS-->
     
-            <aside class="cont_slider_cats_box">
-            <div class="cont_slider_cats hidden_rgth    slider-cats slider_cats--hidden">
-                <div class="box_slider_cats   slider-cats__container">
+            <aside class="cont_slider_cats_box" 
+                data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+                data-aos-once="true">
+                <div class="cont_slider_cats hidden_rgth  slider-cats slider_cats--hidden
+" 
+                >
+
+                    <div class="box_slider_cats   slider-cats__container" >
     
                     <ul id="list_cats">
     
@@ -551,7 +759,7 @@
 
 
             <div class="modal-content-left">
-                <img src="img/modal-cat.jpg" alt="Un gato gris sentado a la mesa mirando un plato de pancakes."
+                <img src="img/modal-cat.webp" alt="Un gato gris sentado a la mesa mirando un plato de pancakes."
                     class="modal-img">
             </div>
 
